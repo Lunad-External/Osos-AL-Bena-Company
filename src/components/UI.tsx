@@ -3,6 +3,7 @@ import { useState, type ReactNode, type SVGProps } from "react";
 import company from "../data/company.json";
 import t from "../locales/en.json";
 import { whatsappUrl, type Product } from "../catalog";
+import { sitePath } from "../sitePath";
 
 export function WhatsAppIcon({
   size = 18,
@@ -72,7 +73,7 @@ export function ProductImage({
   return (
     <div className={`product-image ${className}`}>
       <img
-        src={unavailable ? "/images/product-fallback.svg" : src!}
+        src={unavailable ? sitePath("/images/product-fallback.svg") : sitePath(src!)}
         alt={unavailable ? t.catalog.imageUnavailable : alt}
         width="960"
         height="720"
@@ -94,7 +95,7 @@ export function ProductCard({ product }: { product: Product }) {
   return (
     <article className="product-card">
       <a
-        href={`/products/${product.slug}/`}
+        href={sitePath(`/products/${product.slug}/`)}
         className="product-image-link"
         tabIndex={-1}
         aria-hidden="true"
@@ -103,14 +104,14 @@ export function ProductCard({ product }: { product: Product }) {
       </a>
       <div className="product-card-body">
         <h3>
-          <a href={`/products/${product.slug}/`}>{product.name}</a>
+          <a href={sitePath(`/products/${product.slug}/`)}>{product.name}</a>
         </h3>
         <p className="metadata">{product.family}</p>
         <p className="product-meta">
           {product.model || product.partNumber || product.brand}{" "}
           <span aria-hidden="true">/</span> {product.origin}
         </p>
-        <a className="text-link" href={`/products/${product.slug}/`}>
+        <a className="text-link" href={sitePath(`/products/${product.slug}/`)}>
           {t.actions.view}
           <ArrowUpRight size={18} />
         </a>
@@ -140,11 +141,11 @@ export function Breadcrumb({
 }) {
   return (
     <nav className="breadcrumb" aria-label={t.common.breadcrumb}>
-      <a href="/">{t.common.home}</a>
+      <a href={sitePath("/")}>{t.common.home}</a>
       <span aria-hidden="true">/</span>
       {parent ? (
         <>
-          <a href="/products/">{t.common.products}</a>
+          <a href={sitePath("/products/")}>{t.common.products}</a>
           <span aria-hidden="true">/</span>
         </>
       ) : null}

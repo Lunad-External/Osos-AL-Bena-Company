@@ -1,6 +1,7 @@
 import { ArrowUpRight, Check } from "lucide-react";
 import company from "../data/company.json";
 import t from "../locales/en.json";
+import { sitePath } from "../sitePath";
 import { Breadcrumb, EnquiryBand, WhatsAppLink } from "../components/UI";
 export function About() {
   return (
@@ -15,7 +16,7 @@ export function About() {
       <section className="about-panel container">
         <figure>
           <img
-            src="/images/system.webp"
+            src={sitePath("/images/system.webp")}
             alt={t.images.systemAlt}
             width="1200"
             height="900"

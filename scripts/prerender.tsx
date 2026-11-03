@@ -5,6 +5,7 @@ import { products } from "../src/catalog";
 import site from "../src/data/site.json";
 import company from "../src/data/company.json";
 import t from "../src/locales/en.json";
+import { siteSrcSet } from "../src/sitePath";
 const ids = new Set(),
   slugs = new Set();
 for (const p of products) {
@@ -123,7 +124,7 @@ for (const path of routes) {
   head += `<script type="application/ld+json">${JSON.stringify(structured).replace(/</g, "\\u003c")}</script>`;
   const heroPreload =
     path === "/"
-      ? `<link rel="preload" as="image" type="image/avif" imagesrcset="${escape(site.heroSlides[0].avifSrcSet)}" imagesizes="100vw" fetchpriority="high">`
+      ? `<link rel="preload" as="image" type="image/avif" imagesrcset="${escape(siteSrcSet(site.heroSlides[0].avifSrcSet))}" imagesizes="100vw" fetchpriority="high">`
       : "";
   const html = template
     .replace("</title>", () => "</title>" + heroPreload)

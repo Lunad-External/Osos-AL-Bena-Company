@@ -20,6 +20,8 @@ npm run preview
 
 Deploy the **contents of `dist/`** to your static web server. Every route has its own `index.html`; do not use an SPA catch-all that serves the Home HTML for every URL. Configure the host to serve `404.html` for missing routes. The site assumes deployment at the domain root.
 
+GitHub Pages deployment is configured in `.github/workflows/deploy-pages.yml`. It publishes the `main` branch to the project site at `https://lunad-external.github.io/Osos-AL-Bena-Company/`. In the repository settings, set **Pages > Build and deployment > Source** to **GitHub Actions**.
+
 The default canonical domain is `https://www.ososalbenaa.com`, taken from the supplied brochure. Confirm this is the intended production domain. To override it at build time:
 
 ```sh

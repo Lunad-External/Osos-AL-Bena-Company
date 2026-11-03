@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import t from "../locales/en.json";
+import { sitePath } from "../sitePath";
 import { products, type Product } from "../catalog";
 import {
   Breadcrumb,
@@ -19,7 +20,7 @@ export function ProductDetail({ product: p }: { product: Product }) {
         <div className="detail-grid">
           <div>
             <ProductImage
-              src={p.image}
+              src={p.image ? sitePath(p.image) : null}
               alt={p.imageAlt}
               className="detail-image"
             />
@@ -81,7 +82,7 @@ export function ProductDetail({ product: p }: { product: Product }) {
           <div className="container">
             <div className="section-heading">
               <h2>{t.product.related}</h2>
-              <a href="/products/" className="text-link">
+              <a href={sitePath("/products/")} className="text-link">
                 {t.actions.all}
                 <ArrowUpRight size={18} />
               </a>

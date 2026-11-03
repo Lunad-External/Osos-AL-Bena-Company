@@ -4,6 +4,7 @@ import company from "../data/company.json";
 import site from "../data/site.json";
 import t from "../locales/en.json";
 import { products, selectionUrl, emptyFilters, type Product } from "../catalog";
+import { sitePath } from "../sitePath";
 import { EnquiryBand, ProductCard } from "../components/UI";
 export function Home() {
   return (
@@ -19,12 +20,12 @@ export function Home() {
             {site.families.map((f, i) => (
               <a
                 className={`family-card family-${i}`}
-                href={selectionUrl("", { ...emptyFilters(), family: [f.name] })}
+                href={sitePath(selectionUrl("", { ...emptyFilters(), family: [f.name] }))}
                 key={f.name}
               >
                 <div className="family-image">
                   <img
-                    src={f.image || "/images/product-fallback.svg"}
+                    src={sitePath(f.image || "/images/product-fallback.svg")}
                     alt={f.short}
                     width="600"
                     height="450"
@@ -44,7 +45,7 @@ export function Home() {
       <section className="section company-section container">
         <div className="company-visual">
           <img
-            src="/images/system.webp"
+            src={sitePath("/images/system.webp")}
             alt={t.images.systemAlt}
             width="1200"
             height="900"
@@ -56,7 +57,7 @@ export function Home() {
           <h2>{t.home.aboutTitle}</h2>
           <p>{company.intro}</p>
           <p>{company.about}</p>
-          <a className="text-link" href="/about/">
+          <a className="text-link" href={sitePath("/about/")}>
             {t.home.aboutLink}
             <ArrowUpRight size={18} />
           </a>
@@ -69,7 +70,7 @@ export function Home() {
               <h2>{t.home.featuredTitle}</h2>
               <p>{t.home.featuredIntro}</p>
             </div>
-            <a className="text-link" href="/products/">
+            <a className="text-link" href={sitePath("/products/")}>
               {t.actions.all}
               <ArrowUpRight size={18} />
             </a>

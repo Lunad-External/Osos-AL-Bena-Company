@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import site from "../data/site.json";
 import t from "../locales/en.json";
+import { sitePath, siteSrcSet } from "../sitePath";
 
 export function HeroSlider() {
   const [active, setActive] = useState(0);
@@ -28,15 +29,15 @@ export function HeroSlider() {
             <picture key={slide.image}>
               <source
                 type="image/avif"
-                srcSet={slide.avifSrcSet}
+                srcSet={siteSrcSet(slide.avifSrcSet)}
                 sizes="100vw"
               />
               <img
                 className={
                   index === active ? "hero-slide is-active" : "hero-slide"
                 }
-                src={slide.image}
-                srcSet={slide.srcSet}
+                src={sitePath(slide.image)}
+                srcSet={siteSrcSet(slide.srcSet)}
                 sizes="100vw"
                 alt=""
                 width="1440"
@@ -54,11 +55,11 @@ export function HeroSlider() {
           <h1>{t.home.title}</h1>
           <p>{t.home.intro}</p>
           <div className="hero-actions">
-            <a className="button" href="/products/">
+            <a className="button" href={sitePath("/products/")}>
               {t.actions.explore}
               <ArrowUpRight size={20} />
             </a>
-            <a className="button button-white" href="/about/">
+            <a className="button button-white" href={sitePath("/about/")}>
               {t.home.aboutLink}
               <ArrowRight size={18} />
             </a>

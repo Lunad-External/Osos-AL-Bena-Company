@@ -4,6 +4,7 @@ import company from "../data/company.json";
 import site from "../data/site.json";
 import t from "../locales/en.json";
 import { WhatsAppLink } from "./UI";
+import { sitePath } from "../sitePath";
 export function Header({ path }: { path: string }) {
   const [open, setOpen] = useState(false);
   return (
@@ -23,12 +24,12 @@ export function Header({ path }: { path: string }) {
       <header className="header">
         <div className="container header-inner">
           <a
-            href="/"
+            href={sitePath("/")}
             className="brand"
             aria-label={`${company.name} ${t.common.homeLink}`}
           >
             <img
-              src="/images/logo.webp"
+              src={sitePath("/images/logo.webp")}
               alt={company.brand}
               width="152"
               height="64"
@@ -66,7 +67,7 @@ export function Header({ path }: { path: string }) {
             {site.nav.map((n) => (
               <a
                 key={n.href}
-                href={n.href}
+                href={sitePath(n.href)}
                 aria-current={
                   (n.href === "/" ? path === "/" : path.startsWith(n.href))
                     ? "page"
@@ -76,7 +77,7 @@ export function Header({ path }: { path: string }) {
                 {n.label}
               </a>
             ))}
-            <a className="button button-small" href="/contact/">
+            <a className="button button-small" href={sitePath("/contact/")}>
               {t.actions.contact}
               <ArrowUpRight size={16} />
             </a>
@@ -92,7 +93,7 @@ export function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div>
-            <a href="/" className="footer-brand">
+            <a href={sitePath("/")} className="footer-brand">
               {company.wordmark}
               <span>{company.brand}</span>
             </a>
@@ -101,7 +102,7 @@ export function Footer() {
           <div>
             <h3>{t.footer.navigation}</h3>
             {site.nav.map((n) => (
-              <a key={n.href} href={n.href}>
+              <a key={n.href} href={sitePath(n.href)}>
                 {n.label}
               </a>
             ))}
