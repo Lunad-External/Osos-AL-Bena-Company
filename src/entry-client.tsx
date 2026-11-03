@@ -8,7 +8,7 @@ import "./styles.css";
 import { basePath } from "./sitePath";
 const root = document.getElementById("root")!;
 const appPath = window.location.pathname.startsWith(basePath)
-  ? window.location.pathname.slice(basePath.length) || "/"
+  ? `/${window.location.pathname.slice(basePath.length)}`
   : window.location.pathname;
 const path = appPath.endsWith("/") ? appPath : appPath + "/";
 const app = <App path={path} />;
