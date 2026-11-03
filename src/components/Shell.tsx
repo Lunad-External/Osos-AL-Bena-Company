@@ -15,7 +15,7 @@ export function Header({ path }: { path: string }) {
         <div className="container">
           <span>{company.legalName}</span>
           <a href={`tel:+${company.phoneDigits}`}>
-            <Phone size={12} />
+            <Phone size={16} />
             {company.phone}
           </a>
         </div>

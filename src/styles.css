@@ -2,11 +2,11 @@
 @theme {
   --color-action: #c81520;
   --color-ink: #17202a;
-  --font-sans: "Barlow", sans-serif;
-  --font-display: "Barlow Condensed", sans-serif;
+  --font-sans:  sans-serif;
+  --font-display: sans-serif;
 }
 :root {
-  font-family: "Barlow", sans-serif;
+  font-family: var(--font-sans);
   color: #17202a;
   background: #f3f4f7;
   font-synthesis: none;
@@ -117,9 +117,10 @@ select {
 }
 .utility {
   background: #f4f5f6;
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: #5b6470;
   border-bottom: 1px solid #e5e7eb;
+  font-weight: 500;
 }
 .utility > .container {
   height: 32px;
@@ -175,7 +176,6 @@ select {
   font-weight: 500;
 }
 .main-nav > a:not(.button) {
-  padding-block: 15px;
   border-bottom: 2px solid transparent;
 }
 .main-nav > a[aria-current="page"]:not(.button) {
@@ -211,9 +211,15 @@ select {
   min-height: 44px;
   font-size: 14px;
   padding: 10px 16px;
+  border-radius: 100px;
+}
+.button-small:hover {
+  background: #a9111b !important;
+  color: #fff !important;
 }
 .button-green {
   background: #087a43;
+  border-radius: 100px;
 }
 .button-green:hover {
   background: #066236;
@@ -1038,6 +1044,13 @@ select {
   .container {
     width: calc(100% - 64px);
   }
+  .range-section,
+  .featured-section,
+  .applications,
+  .related-section,
+  .enquiry-band {
+    width: calc(100% - 64px);
+  }
   .main-nav {
     gap: 22px;
   }
@@ -1560,6 +1573,7 @@ select {
 .hero-actions .button {
   min-height: 52px;
   padding-inline: 24px;
+  border-radius: 100px;
 }
 .button-white {
   background: #fff;
@@ -1577,7 +1591,7 @@ select {
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 32px;
-  font-size: 13px;
+  font-size: 15px;
   color: #fff;
 }
 .origin-line {
@@ -1631,7 +1645,7 @@ select {
 .featured-section,
 .applications,
 .related-section {
-  width: min(1360px, calc(100% - 64px));
+  width: min(1280px, calc(100% - 96px));
   margin: 32px auto;
   background: #fff;
   border: 1px solid #e0e3e9;
@@ -1671,7 +1685,7 @@ select {
   border-color: var(--action);
 }
 .enquiry-band {
-  width: min(1360px, calc(100% - 64px));
+  width: min(1280px, calc(100% - 96px));
   margin: 32px auto;
   border: 1px solid #e0e3e9;
   border-radius: 12px;
@@ -1808,7 +1822,7 @@ select {
   .applications,
   .related-section,
   .enquiry-band {
-    width: calc(100% - 24px);
+    width: calc(100% - 40px);
     margin: 20px auto;
     padding-block: 32px;
     border-radius: 10px;
