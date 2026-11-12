@@ -12,7 +12,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/tray-1.webp",
+    "image": "/images/item-001.webp",
     "imageAlt": "Cable Tray and Fittings - Type TF",
     "specifications": {
       "Standard": "ASTM A123 / NEMA VE 1, BS 729, EN ISO 1461"
@@ -48,9 +48,8 @@
       }
     },
     "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 72,
-      "kind": "technical illustration"
+      "file": "Product images/FYND/CABLE TRAY & FITTINGS/PERFOARTED CABLE TRAY OUTSIDE FLANGE.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -120,7 +119,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/tray-3.webp",
+    "image": "/images/item-003.webp",
     "imageAlt": "Cable Tray and Fittings - Type LE",
     "specifications": {
       "Standard": "ASTM A123 / NEMA VE 1, BS 729, EN ISO 1461"
@@ -156,9 +155,8 @@
       }
     },
     "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 72,
-      "kind": "technical illustration"
+      "file": "Product images/FYND/CABLE TRAY & FITTINGS/PERFOARTED CABLE TRAY WITHOUT FLANGE.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -174,7 +172,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/tray-4.webp",
+    "image": "/images/item-004.webp",
     "imageAlt": "Cable Tray and Fittings - Type CE",
     "specifications": {
       "Standard": "ASTM A123 / NEMA VE 1, BS 729, EN ISO 1461"
@@ -210,9 +208,8 @@
       }
     },
     "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 72,
-      "kind": "technical illustration"
+      "file": "Product images/FYND/CABLE TRAY & FITTINGS/PERFOARTED CABLE TRAY INSIDE FLANGE.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -282,7 +279,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/product-6.webp",
+    "image": "/images/item-006.webp",
     "imageAlt": "Cable Tray Fitting - 90 Degree Horizontal Elbow",
     "specifications": {
       "Type": "Horizontal Elbow",
@@ -319,9 +316,8 @@
       }
     },
     "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 73,
-      "kind": "source-matched illustration"
+      "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY 90° ELBOW.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -337,7 +333,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/product-7.webp",
+    "image": "/images/item-007.webp",
     "imageAlt": "Cable Tray Fitting - 45 Degree Horizontal Elbow",
     "specifications": {
       "Type": "Horizontal Elbow",
@@ -374,9 +370,8 @@
       }
     },
     "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 73,
-      "kind": "source-matched illustration"
+      "file": "Product images/FYND/CABLE TRAY & FITTINGS/45° ELBOW.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -392,7 +387,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/product-8.webp",
+    "image": "/images/item-008.webp",
     "imageAlt": "Cable Tray Fitting - Horizontal Tee",
     "specifications": {
       "Type": "Horizontal Tee"
@@ -428,9 +423,8 @@
       }
     },
     "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 73,
-      "kind": "source-matched illustration"
+      "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY TEE.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -446,7 +440,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/product-9.webp",
+    "image": "/images/item-009.webp",
     "imageAlt": "Cable Tray Fitting - Horizontal Cross (4 Way)",
     "specifications": {
       "Type": "Horizontal Cross"
@@ -482,9 +476,8 @@
       }
     },
     "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 73,
-      "kind": "source-matched illustration"
+      "file": "Product images/FYND/CABLE TRAY & FITTINGS/4 WAY CROSS.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -500,7 +493,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/product-10.webp",
+    "image": "/images/item-010.webp",
     "imageAlt": "Cable Tray Fitting - Right Hand Reducer",
     "specifications": {
       "Type": "Right Hand Reducer"
@@ -536,9 +529,8 @@
       }
     },
     "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 74,
-      "kind": "source-matched illustration"
+      "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY RIGHT SIDE REDUCER.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -554,7 +546,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/product-11.webp",
+    "image": "/images/item-011.webp",
     "imageAlt": "Cable Tray Fitting - Left Hand Reducer",
     "specifications": {
       "Type": "Left Hand Reducer"
@@ -590,9 +582,8 @@
       }
     },
     "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 74,
-      "kind": "source-matched illustration"
+      "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY LEFT SIDE REDUCER.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -608,7 +599,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/product-12.webp",
+    "image": "/images/item-012.webp",
     "imageAlt": "Cable Tray Fitting - Straight Reducer",
     "specifications": {
       "Type": "Straight Reducer"
@@ -644,9 +635,8 @@
       }
     },
     "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 74,
-      "kind": "source-matched illustration"
+      "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY REDUCER.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -662,7 +652,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/product-13.webp",
+    "image": "/images/item-013.webp",
     "imageAlt": "Cable Tray Fitting - Outside Raiser 90 Degree",
     "specifications": {
       "Type": "Outside Raiser",
@@ -699,9 +689,8 @@
       }
     },
     "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 75,
-      "kind": "source-matched illustration"
+      "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY 90° OUTSIDE RISER.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -772,7 +761,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/product-15.webp",
+    "image": "/images/item-015.webp",
     "imageAlt": "Cable Tray Fitting - Inside Raiser 90 Degree",
     "specifications": {
       "Type": "Inside Raiser",
@@ -809,9 +798,8 @@
       }
     },
     "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 75,
-      "kind": "source-matched illustration"
+      "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY 90° INSIDE RISER.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -936,7 +924,7 @@
     "partNumber": "S-C1",
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/product-18.webp",
+    "image": "/images/item-018.webp",
     "imageAlt": "Cable Tray Fitting - Standard Connector",
     "specifications": {
       "Type": "Standard Connector"
@@ -972,9 +960,8 @@
       }
     },
     "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 76,
-      "kind": "source-matched illustration"
+      "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY ANGLE CONNECTOR.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -1098,7 +1085,7 @@
     "partNumber": "VAC 6",
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/product-21.webp",
+    "image": "/images/item-021.webp",
     "imageAlt": "Cable Tray Fitting - Vertical Adjustable Connector",
     "specifications": {
       "Type": "Vertical Adjustable Connector"
@@ -1134,9 +1121,8 @@
       }
     },
     "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 76,
-      "kind": "source-matched illustration"
+      "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY SDJUSTABLE CONNECTOR.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -1152,7 +1138,7 @@
     "partNumber": "SFC 5",
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/product-22.webp",
+    "image": "/images/item-022.webp",
     "imageAlt": "Cable Tray Fitting - Standard Flat Connector",
     "specifications": {
       "Type": "Standard Flat Connector",
@@ -1189,9 +1175,8 @@
       }
     },
     "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 76,
-      "kind": "source-matched illustration"
+      "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY FISH PLATE.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -1315,7 +1300,7 @@
     "partNumber": "BEU",
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/product-25.webp",
+    "image": "/images/item-025.webp",
     "imageAlt": "Cable Tray Fitting - Blind End",
     "specifications": {
       "Type": "Blind End"
@@ -1351,9 +1336,8 @@
       }
     },
     "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 76,
-      "kind": "source-matched illustration"
+      "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY END CAP.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -1423,7 +1407,7 @@
     "partNumber": null,
     "material": "Hot Dip Galvanized Carbon Steel",
     "finishes": ["Hot Dip Galvanized"],
-    "image": null,
+    "image": "/images/item-027.webp",
     "imageAlt": "Cable Ladder (NEMA VE1/VE2, Perforated Ladder Type Cable Tray)",
     "specifications": {
       "Standard": "NEMA VE 1, NEMA VE 2",
@@ -1460,6 +1444,10 @@
         "Maximum Cable Diameter": null,
         "Brand": "OBC"
       }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER OUTSIDE STREIGHT FLANGE.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -1475,7 +1463,7 @@
     "partNumber": null,
     "material": null,
     "finishes": ["Hot Dip Galvanized"],
-    "image": null,
+    "image": "/images/item-028.webp",
     "imageAlt": "Hot Dip Galvanized Cable Tray (ER Type)",
     "specifications": {
       "Type": "ER Type",
@@ -1513,6 +1501,10 @@
         "Maximum Cable Diameter": null,
         "Brand": "OBC"
       }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/HOME PAGE/01.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -1528,7 +1520,7 @@
     "partNumber": null,
     "material": null,
     "finishes": ["Hot Dip Galvanized"],
-    "image": null,
+    "image": "/images/item-029.webp",
     "imageAlt": "Cable Ladder Fittings & Accessories",
     "specifications": {},
     "source": {
@@ -1560,6 +1552,10 @@
         "Maximum Cable Diameter": null,
         "Brand": "OBC"
       }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER TEE.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -1575,7 +1571,7 @@
     "partNumber": null,
     "material": "Hot Dip Galvanized Carbon Steel",
     "finishes": [],
-    "image": null,
+    "image": "/images/item-030.webp",
     "imageAlt": "Cable Tray Cover (Flat Louvered)",
     "specifications": {
       "Type": "Cover - Flat Louvered"
@@ -1609,6 +1605,10 @@
         "Maximum Cable Diameter": null,
         "Brand": "OBC"
       }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY VENTILATED COVER.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -1624,7 +1624,7 @@
     "partNumber": null,
     "material": null,
     "finishes": ["Hot Dip Galvanized"],
-    "image": null,
+    "image": "/images/item-031.webp",
     "imageAlt": "Cable Tray Hanger",
     "specifications": {
       "Type": "Hanger"
@@ -1658,6 +1658,10 @@
         "Maximum Cable Diameter": null,
         "Brand": "OBC"
       }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE TRUNKING & FITTINGS/CABLE TRUNK HANGER.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -1673,7 +1677,7 @@
     "partNumber": null,
     "material": null,
     "finishes": ["Hot Dip Galvanized"],
-    "image": null,
+    "image": "/images/item-032.webp",
     "imageAlt": "Cable Tray Bracket",
     "specifications": {
       "Type": "Bracket"
@@ -1707,6 +1711,10 @@
         "Maximum Cable Diameter": null,
         "Brand": "OBC"
       }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/CANTILIVER ARM BRACKET 2 HOLE.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -1722,7 +1730,7 @@
     "partNumber": null,
     "material": "Galvanized Steel",
     "finishes": ["Hot Dip Galvanized"],
-    "image": null,
+    "image": "/images/item-033.webp",
     "imageAlt": "HDG Cable Trunking 300x100x2mm",
     "specifications": {
       "Height": "100 mm",
@@ -1758,6 +1766,10 @@
         "Maximum Cable Diameter": null,
         "Brand": "OBC"
       }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE TRUNKING & FITTINGS/CABLE TRUNKING W-COVER.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -1773,7 +1785,7 @@
     "partNumber": null,
     "material": "Galvanized Steel",
     "finishes": [],
-    "image": null,
+    "image": "/images/item-034.webp",
     "imageAlt": "HDG Cable Trunking Elbow 300x100x2mm",
     "specifications": {
       "Type": "Elbow",
@@ -1810,6 +1822,10 @@
         "Maximum Cable Diameter": null,
         "Brand": "OBC"
       }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE TRUNKING & FITTINGS/CABLE TRUNK 90° ELBOW.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -1825,7 +1841,7 @@
     "partNumber": null,
     "material": "Galvanized Steel",
     "finishes": [],
-    "image": null,
+    "image": "/images/item-035.webp",
     "imageAlt": "Cable Trunking Accessories",
     "specifications": {},
     "source": {
@@ -1857,6 +1873,10 @@
         "Maximum Cable Diameter": null,
         "Brand": "OBC"
       }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE TRUNKING & FITTINGS/CABLE TRUNK TEE.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -1872,7 +1892,7 @@
     "partNumber": null,
     "material": null,
     "finishes": ["Hot Dip Galvanized"],
-    "image": null,
+    "image": "/images/item-036.webp",
     "imageAlt": "HDG Slotted C-Channel 41x41x2mm",
     "specifications": {
       "Type": "Slotted C-Channel",
@@ -1908,6 +1928,10 @@
         "Maximum Cable Diameter": null,
         "Brand": "OBC"
       }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/41X41 SLOTTED CHANNEL.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -1923,7 +1947,7 @@
     "partNumber": null,
     "material": null,
     "finishes": ["Hot Dip Galvanized"],
-    "image": null,
+    "image": "/images/item-037.webp",
     "imageAlt": "Slotted Channel Fittings",
     "specifications": {},
     "source": {
@@ -1955,6 +1979,10 @@
         "Maximum Cable Diameter": null,
         "Brand": "OBC"
       }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/HOME PAGE/BRACKETS & CLAMPS.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -1970,7 +1998,7 @@
     "partNumber": null,
     "material": null,
     "finishes": ["Hot Dip Galvanized"],
-    "image": null,
+    "image": "/images/item-038.webp",
     "imageAlt": "Slotted Channel Base Plate",
     "specifications": {},
     "source": {
@@ -2002,6 +2030,10 @@
         "Maximum Cable Diameter": null,
         "Brand": "OBC"
       }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/SINGLE BASE PLATE 4 HOLE.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -2017,7 +2049,7 @@
     "partNumber": null,
     "material": null,
     "finishes": ["GI / Hot Dip Galvanized"],
-    "image": "/images/baskets.webp",
+    "image": "/images/item-039.webp",
     "imageAlt": "Cable Basket Tray",
     "specifications": {
       "Tray Type": "Basket"
@@ -2053,9 +2085,8 @@
       }
     },
     "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 96,
-      "kind": "technical illustration"
+      "file": "Product images/FYND/HOME PAGE/CABLE BASKET TRAY.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -2071,7 +2102,7 @@
     "partNumber": null,
     "material": null,
     "finishes": ["GI / Hot Dip Galvanized"],
-    "image": null,
+    "image": "/images/item-040.webp",
     "imageAlt": "Cable Basket Tray Accessories",
     "specifications": {
       "Tray Type": "Basket"
@@ -2105,6 +2136,10 @@
         "Maximum Cable Diameter": null,
         "Brand": "OBC"
       }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE BASKET & FITTINGS/CABLE BASKET TRAY CONNECTOR.png",
+      "kind": "supplied product image"
     }
   }
 ]
