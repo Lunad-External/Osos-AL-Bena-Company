@@ -38,6 +38,7 @@ const routes = [
   "/",
   "/about/",
   "/products/",
+  "/catalogue/",
   "/contact/",
   ...products.map((p) => `/products/${p.slug}/`),
   "/404.html",
@@ -55,9 +56,11 @@ for (const path of routes) {
         ? t.seo.aboutTitle
         : path === "/products/"
           ? t.seo.productsTitle
-          : path === "/contact/"
-            ? t.seo.contactTitle
-            : "Page not found | OBC";
+          : path === "/catalogue/"
+            ? t.seo.catalogueTitle
+            : path === "/contact/"
+              ? t.seo.contactTitle
+              : "Page not found | OBC";
   const description = product
     ? `${product.name}. ${product.description || "Contact OBC for product specifications and requirements."}`.slice(
         0,
@@ -67,7 +70,9 @@ for (const path of routes) {
       ? t.seo.aboutDescription
       : path === "/products/"
         ? t.seo.productsDescription
-        : path === "/contact/"
+        : path === "/catalogue/"
+          ? t.seo.catalogueDescription
+          : path === "/contact/"
           ? t.seo.contactDescription
           : t.seo.homeDescription;
   const url = origin ? new URL(path, origin).href : null;

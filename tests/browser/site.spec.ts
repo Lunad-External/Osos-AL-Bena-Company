@@ -13,26 +13,31 @@ test("catalog searching, multi-facets, chips, URL restore and empty recovery", a
   const errors: string[] = [];
   page.on("pageerror", (e) => errors.push(e.message));
   await page.goto("/products/");
-  await expect(page.locator(".product-card")).toHaveCount(41);
+  await expect(page.locator(".product-card")).toHaveCount(40);
   await page.getByRole("searchbox").fill("TYPE-TF");
   await expect(page.locator(".product-card")).toHaveCount(1);
   await page.getByRole("button", { name: "Clear search" }).click();
   const rail = page.locator(".filter-rail");
   await rail.getByLabel("Cable baskets", { exact: true }).check();
-  await rail.getByLabel("Cable cleats", { exact: true }).check();
-  await expect(page.locator(".product-card")).toHaveCount(3);
-  await rail.getByLabel("BTS", { exact: true }).check();
+  await rail.getByLabel("Cable ladders & accessories", { exact: true }).check();
+  await expect(page.locator(".product-card")).toHaveCount(4);
+  await rail
+    .getByLabel("Hot Dip Galvanized Carbon Steel", { exact: true })
+    .check();
   await expect(page.locator(".product-card")).toHaveCount(1);
   await page.reload();
   await expect(page.locator(".product-card")).toHaveCount(1);
   await page
-    .getByRole("button", { name: "Remove Brand BTS", exact: true })
+    .getByRole("button", {
+      name: "Remove Material Hot Dip Galvanized Carbon Steel",
+      exact: true,
+    })
     .click();
-  await expect(page.locator(".product-card")).toHaveCount(3);
+  await expect(page.locator(".product-card")).toHaveCount(4);
   await page.goBack();
   await expect(page.locator(".product-card")).toHaveCount(1);
   await page.goForward();
-  await expect(page.locator(".product-card")).toHaveCount(3);
+  await expect(page.locator(".product-card")).toHaveCount(4);
   await page.getByRole("searchbox").fill("no-such-product");
   await expect(
     page.getByText("No products match your selection."),
@@ -41,7 +46,7 @@ test("catalog searching, multi-facets, chips, URL restore and empty recovery", a
     .locator(".empty-state")
     .getByRole("button", { name: "Clear all" })
     .click();
-  await expect(page.locator(".product-card")).toHaveCount(41);
+  await expect(page.locator(".product-card")).toHaveCount(40);
   expect(errors).toEqual([]);
 });
 test("every product detail is directly served with specifications", async ({
@@ -62,7 +67,7 @@ test("no JavaScript still has all catalog links and actual page content", async 
   const context = await browser.newContext({ javaScriptEnabled: false });
   const page = await context.newPage();
   await page.goto("/products/");
-  await expect(page.locator(".product-card")).toHaveCount(41);
+  await expect(page.locator(".product-card")).toHaveCount(40);
   await page.goto(`/products/${products[0].slug}/`);
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
     products[0].name,
@@ -107,11 +112,11 @@ test("mobile menu, filter dialog and focus return", async ({ page }) => {
   ).toEqual([]);
   await page
     .getByRole("dialog")
-    .getByLabel("Cable cleats", { exact: true })
+    .getByLabel("Cable baskets", { exact: true })
     .check();
-  await page.getByRole("button", { name: "Show products (1)" }).click();
+  await page.getByRole("button", { name: "Show products (2)" }).click();
   await expect(trigger).toBeFocused();
-  await expect(page.locator(".product-card")).toHaveCount(1);
+  await expect(page.locator(".product-card")).toHaveCount(2);
 });
 test("broken images switch to local fallback", async ({ page }) => {
   await page.goto("/");

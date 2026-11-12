@@ -4,6 +4,7 @@ import { About } from "./pages/About";
 import { Catalog } from "./pages/Catalog";
 import { ProductDetail } from "./pages/ProductDetail";
 import { Contact } from "./pages/Contact";
+import { CataloguePage } from "./pages/CataloguePage";
 import { NotFound } from "./pages/NotFound";
 import { products } from "./catalog";
 export function App({ path }: { path: string }) {
@@ -15,6 +16,8 @@ export function App({ path }: { path: string }) {
       <About />
     ) : path === "/products/" ? (
       <Catalog />
+    ) : path === "/catalogue/" ? (
+      <CataloguePage />
     ) : path === "/contact/" ? (
       <Contact />
     ) : product ? (
