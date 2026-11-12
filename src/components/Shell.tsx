@@ -115,7 +115,7 @@ export function Footer() {
               <MapPin size={16} />
               {company.address}
             </p>
-            <WhatsAppLink className="footer-whatsapp" />
+            <WhatsAppLink className="button button-green footer-whatsapp" />
           </div>
         </div>
         <div className="footer-bottom">
