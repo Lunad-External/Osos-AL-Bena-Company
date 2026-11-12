@@ -8,16 +8,14 @@ import {
   selectionUrl,
   whatsappUrl,
 } from "../src/catalog";
-test("all source rows retained, identities unique and BTS origin correct", () => {
-  assert.equal(products.length, 41);
-  assert.equal(new Set(products.map((p) => p.slug)).size, 41);
+test("source rows retained, identities unique and removed product absent", () => {
+  assert.equal(products.length, 40);
+  assert.equal(new Set(products.map((p) => p.slug)).size, 40);
   assert.deepEqual(
     products.map((p) => p.source.row),
-    Array.from({ length: 41 }, (_, i) => i + 2),
+    Array.from({ length: 40 }, (_, i) => i + 2),
   );
-  const bts = products.find((p) => p.brand === "BTS")!;
-  assert.equal(bts.origin, "India");
-  assert.equal(bts.manufacturer, "BTS (India)");
+  assert.ok(products.every((p) => p.slug !== "nylon-two-bolt-cable-cleat-type-ntc"));
 });
 test("search handles terms, model, part number and no results", () => {
   assert.equal(filterProducts(" TYPE-TF ", emptyFilters()).length, 1);
@@ -26,10 +24,11 @@ test("search handles terms, model, part number and no results", () => {
   assert.equal(filterProducts("unobtainium", emptyFilters()).length, 0);
 });
 test("facets OR internally and AND across facets", () => {
-  const f = { ...emptyFilters(), family: ["Cable cleats", "Cable baskets"] };
-  assert.equal(filterProducts("", f).length, 3);
-  assert.equal(filterProducts("", { ...f, brand: ["BTS"] }).length, 1);
-  assert.equal(filterProducts("basket", { ...f, brand: ["BTS"] }).length, 0);
+  const f = { ...emptyFilters(), family: ["Cable trunking", "Cable baskets"] };
+  assert.equal(filterProducts("", f).length, 5);
+  assert.equal(filterProducts("", { ...f, brand: ["OBC"] }).length, 5);
+  assert.equal(filterProducts("basket", { ...f, brand: ["OBC"] }).length, 2);
+  assert.equal(filterProducts("", { ...f, material: ["Nylon 06 Glass-filled (LSOH/LSZH)"] }).length, 0);
 });
 test("URL state roundtrips, rejects unknown values and deduplicates", () => {
   const f = {
@@ -43,8 +42,8 @@ test("URL state roundtrips, rejects unknown values and deduplicates", () => {
     filters: f,
   });
   assert.deepEqual(
-    readSelection("?brand=unknown&brand=BTS&brand=BTS").filters.brand,
-    ["BTS"],
+    readSelection("?brand=unknown&brand=OBC&brand=OBC").filters.brand,
+    ["OBC"],
   );
 });
 test("WhatsApp encodes reserved characters and Unicode", () => {
