@@ -93,7 +93,9 @@
     "call": "Call our team",
     "email": "Email",
     "privacy": "Your enquiry is not stored on this website. WhatsApp’s own privacy terms apply when you continue.",
-    "noJs": "You can also use the direct WhatsApp link or phone number. The form requires JavaScript."
+    "noJs": "You can also use the direct WhatsApp link or phone number. The form requires JavaScript.",
+    "mapTitle": "Find us",
+    "mapLabel": "Map showing the location of Osos Al Benaa in Riyadh"
   },
   "cta": {
     "title": "Your project.\nOur next conversation.",
@@ -117,9 +119,11 @@
     "aboutTitle": "About Osos Al Benaa | OBC",
     "aboutDescription": "Meet Osos Al Benaa, a Riyadh-based cable management manufacturer and supplier established in 2022.",
     "productsTitle": "Products | OBC Cable Management",
-    "productsDescription": "Browse 41 cable management products. Find cable trays, ladders, trunking, supports, baskets and cable cleats.",
+    "productsDescription": "Browse 40 cable management products. Find cable trays, ladders, trunking, supports and cable baskets.",
     "contactTitle": "Contact OBC | Discuss Your Project",
-    "contactDescription": "Contact Osos Al Benaa in Riyadh. Discuss product specifications and project requirements through WhatsApp or phone."
+    "contactDescription": "Contact Osos Al Benaa in Riyadh. Discuss product specifications and project requirements through WhatsApp or phone.",
+    "catalogueTitle": "Catalogue | OBC",
+    "catalogueDescription": "Download and browse the Osos Al Benaa cable management catalogue."
   },
   "common": {
     "home": "Home",
@@ -131,7 +135,8 @@
     "homeLink": "home",
     "brandTagline": "METAL INDUSTRY",
     "contactMark": "LET’S BUILD\nTHE CONNECTION.",
-    "heroLabel": "CABLE MANAGEMENT SYSTEMS"
+    "heroLabel": "CABLE MANAGEMENT SYSTEMS",
+    "catalogue": "Catalogue"
   },
   "images": {
     "heroAlt": "Illustrative view of galvanized cable management systems in an industrial interior",
