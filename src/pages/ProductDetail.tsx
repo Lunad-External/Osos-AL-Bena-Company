@@ -20,7 +20,7 @@ export function ProductDetail({ product: p }: { product: Product }) {
         <div className="detail-grid">
           <div>
             <ProductImage
-              src={p.image ? sitePath(p.image) : null}
+              src={p.image}
               alt={p.imageAlt}
               className="detail-image"
             />
@@ -51,9 +51,7 @@ export function ProductDetail({ product: p }: { product: Product }) {
                 "{product}",
                 p.name + (p.model ? " (" + p.model + ")" : ""),
               )}
-            >
-              {t.product.enquire}
-            </WhatsAppLink>
+            />
           </div>
         </div>
         <div className="spec-section">

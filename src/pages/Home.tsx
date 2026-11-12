@@ -17,7 +17,9 @@ export function Home() {
             <p>{t.home.rangeIntro}</p>
           </div>
           <div className="family-grid">
-            {site.families.map((f, i) => (
+            {site.families
+              .filter((f) => products.some((p) => p.family === f.name))
+              .map((f, i) => (
               <a
                 className={`family-card family-${i}`}
                 href={sitePath(selectionUrl("", { ...emptyFilters(), family: [f.name] }))}
