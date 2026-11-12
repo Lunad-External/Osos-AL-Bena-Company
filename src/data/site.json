@@ -16,11 +16,15 @@
       "href": "/products/"
     },
     {
+      "label": "Catalogue",
+      "href": "/catalogue/"
+    },
+    {
       "label": "Contact us",
       "href": "/contact/"
     }
   ],
-  "featuredIds": ["obc-001", "obc-006", "obc-039", "obc-041"],
+  "featuredIds": ["obc-001", "obc-006", "obc-039", "obc-008"],
   "families": [
     {
       "name": "Cable trays & fittings",
