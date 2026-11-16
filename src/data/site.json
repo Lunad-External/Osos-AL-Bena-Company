@@ -35,19 +35,19 @@
     {
       "name": "Cable ladders & accessories",
       "short": "Cable ladders",
-      "image": "/images/ladders.webp",
+      "image": "/images/family-ladders.webp",
       "description": "Ladder systems and accessories for cable support."
     },
     {
       "name": "Cable trunking",
       "short": "Cable trunking",
-      "image": null,
+      "image": "/images/family-trunking.webp",
       "description": "Enclosed cable routing and matching accessories."
     },
     {
       "name": "Channels & supports",
       "short": "Channels & supports",
-      "image": "/images/channels.webp",
+      "image": "/images/family-channels.webp",
       "description": "Channels, brackets, hangers and support fittings."
     },
     {
@@ -55,12 +55,6 @@
       "short": "Cable baskets",
       "image": "/images/baskets.webp",
       "description": "Wire basket trays and their accessories."
-    },
-    {
-      "name": "Cable cleats",
-      "short": "Cable cleats",
-      "image": "/images/product-41.webp",
-      "description": "Cable restraint products with supplied specifications."
     }
   ],
   "copyrightYear": 2026,

@@ -12,7 +12,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/item-001.webp",
+    "image": "/images/item-004.webp",
     "imageAlt": "Cable Tray and Fittings - Type TF",
     "specifications": {
       "Standard": "ASTM A123 / NEMA VE 1, BS 729, EN ISO 1461"
@@ -48,7 +48,7 @@
       }
     },
     "imageSource": {
-      "file": "Product images/FYND/CABLE TRAY & FITTINGS/PERFOARTED CABLE TRAY OUTSIDE FLANGE.png",
+      "file": "Product images/FYND/CABLE TRAY & FITTINGS/PERFOARTED CABLE TRAY INSIDE FLANGE.png",
       "kind": "supplied product image"
     }
   },
@@ -65,7 +65,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/tray-2.webp",
+    "image": "/images/item-001.webp",
     "imageAlt": "Cable Tray and Fittings - Type FE",
     "specifications": {
       "Standard": "ASTM A123 / NEMA VE 1, BS 729, EN ISO 1461"
@@ -101,9 +101,8 @@
       }
     },
     "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 72,
-      "kind": "technical illustration"
+      "file": "Product images/FYND/CABLE TRAY & FITTINGS/PERFOARTED CABLE TRAY OUTSIDE FLANGE.png",
+      "kind": "supplied product image"
     }
   },
   {
@@ -172,7 +171,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/item-004.webp",
+    "image": "/images/tray-4.webp",
     "imageAlt": "Cable Tray and Fittings - Type CE",
     "specifications": {
       "Standard": "ASTM A123 / NEMA VE 1, BS 729, EN ISO 1461"
@@ -208,62 +207,8 @@
       }
     },
     "imageSource": {
-      "file": "Product images/FYND/CABLE TRAY & FITTINGS/PERFOARTED CABLE TRAY INSIDE FLANGE.png",
-      "kind": "supplied product image"
-    }
-  },
-  {
-    "id": "obc-005",
-    "slug": "cable-tray-and-fittings-type-me",
-    "name": "Cable Tray and Fittings - Type ME",
-    "family": "Cable trays & fittings",
-    "manufacturer": "Osos Al Benaa Company For Metal Industry",
-    "origin": "Saudi Arabia",
-    "brand": "OBC",
-    "description": "Hot dip galvanized after fabrication (HDGAF) to ASTM A123 / NEMA VE 1, BS 729, EN ISO 1461 (zinc coating 49-70 microns depending on sheet thickness); also available in aluminium alloy 5754 (NFA 30-451) or polyester powder coating on mild steel in RAL colours",
-    "model": "TYPE-ME",
-    "partNumber": null,
-    "material": "Mild Steel",
-    "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/tray-5.webp",
-    "imageAlt": "Cable Tray and Fittings - Type ME",
-    "specifications": {
-      "Standard": "ASTM A123 / NEMA VE 1, BS 729, EN ISO 1461"
-    },
-    "source": {
-      "file": "Osos Al Benaa Company - product list.xlsx",
-      "sheet": "Sheet1",
-      "row": 6,
-      "values": {
-        "Product Name": "Cable Tray and Fittings - Type ME",
-        "Manufacturer": "Osos Al Benaa Company For Metal Industry",
-        "Place Of Origin": "Saudi Arabia",
-        "Product Description": "Hot dip galvanized after fabrication (HDGAF) to ASTM A123 / NEMA VE 1, BS 729, EN ISO 1461 (zinc coating 49-70 microns depending on sheet thickness); also available in aluminium alloy 5754 (NFA 30-451) or polyester powder coating on mild steel in RAL colours",
-        "Model": "TYPE-ME",
-        "Material": "Mild Steel",
-        "Finish": "Hot Dip Galvanized, Aluminium, Polyester Powder Coating",
-        "Standard": "ASTM A123 / NEMA VE 1, BS 729, EN ISO 1461",
-        "Type": null,
-        "Angle": null,
-        "Part Number": null,
-        "Height": null,
-        "Width": null,
-        "Loading Depth": null,
-        "Rung Space": null,
-        "Thickness": null,
-        "Length": null,
-        "Size": null,
-        "Tray Type": null,
-        "Color": null,
-        "Minimum Cable Diameter": null,
-        "Maximum Cable Diameter": null,
-        "Brand": "OBC"
-      }
-    },
-    "imageSource": {
       "file": "Brochure.pdf",
-      "page": 72,
-      "kind": "technical illustration"
+      "kind": "source-matched illustration"
     }
   },
   {
@@ -706,7 +651,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/product-14.webp",
+    "image": "/images/item-014.webp",
     "imageAlt": "Cable Tray Fitting - Outside Raiser 45 Degree",
     "specifications": {
       "Type": "Outside Raiser",
@@ -743,9 +688,8 @@
       }
     },
     "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 75,
-      "kind": "source-matched illustration"
+      "file": "Cable_tray_45d_outside_riser.jpeg",
+      "kind": "supplied product image"
     }
   },
   {
@@ -815,7 +759,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/product-16.webp",
+    "image": "/images/item-016.webp",
     "imageAlt": "Cable Tray Fitting - Inside Raiser 45 Degree",
     "specifications": {
       "Type": "Inside Raiser",
@@ -852,63 +796,8 @@
       }
     },
     "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 75,
-      "kind": "source-matched illustration"
-    }
-  },
-  {
-    "id": "obc-017",
-    "slug": "cable-tray-fitting-bendable-splice-plate",
-    "name": "Cable Tray Fitting - Bendable Splice Plate",
-    "family": "Cable trays & fittings",
-    "manufacturer": "Osos Al Benaa Company For Metal Industry",
-    "origin": "Saudi Arabia",
-    "brand": "OBC",
-    "description": "Hot dip galvanized after fabrication (HDGAF) to ASTM A123 / NEMA VE 1, BS 729, EN ISO 1461 (zinc coating 49-70 microns depending on sheet thickness); also available in aluminium alloy 5754 (NFA 30-451) or polyester powder coating on mild steel in RAL colours",
-    "model": null,
-    "partNumber": "BSP 2",
-    "material": "Mild Steel",
-    "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/product-17.webp",
-    "imageAlt": "Cable Tray Fitting - Bendable Splice Plate",
-    "specifications": {
-      "Type": "Bendable Splice Plate"
-    },
-    "source": {
-      "file": "Osos Al Benaa Company - product list.xlsx",
-      "sheet": "Sheet1",
-      "row": 18,
-      "values": {
-        "Product Name": "Cable Tray Fitting - Bendable Splice Plate",
-        "Manufacturer": "Osos Al Benaa Company For Metal Industry",
-        "Place Of Origin": "Saudi Arabia",
-        "Product Description": "Hot dip galvanized after fabrication (HDGAF) to ASTM A123 / NEMA VE 1, BS 729, EN ISO 1461 (zinc coating 49-70 microns depending on sheet thickness); also available in aluminium alloy 5754 (NFA 30-451) or polyester powder coating on mild steel in RAL colours",
-        "Model": null,
-        "Material": "Mild Steel",
-        "Finish": "Hot Dip Galvanized, Aluminium, Polyester Powder Coating",
-        "Standard": null,
-        "Type": "Bendable Splice Plate",
-        "Angle": null,
-        "Part Number": "BSP 2",
-        "Height": null,
-        "Width": null,
-        "Loading Depth": null,
-        "Rung Space": null,
-        "Thickness": null,
-        "Length": null,
-        "Size": null,
-        "Tray Type": null,
-        "Color": null,
-        "Minimum Cable Diameter": null,
-        "Maximum Cable Diameter": null,
-        "Brand": "OBC"
-      }
-    },
-    "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 76,
-      "kind": "source-matched illustration"
+      "file": "Cable_tray_45d_inside_riser.jpeg",
+      "kind": "supplied product image"
     }
   },
   {
@@ -962,114 +851,6 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY ANGLE CONNECTOR.png",
       "kind": "supplied product image"
-    }
-  },
-  {
-    "id": "obc-019",
-    "slug": "cable-tray-fitting-horizontal-fittings-connector",
-    "name": "Cable Tray Fitting - Horizontal Fittings Connector",
-    "family": "Cable trays & fittings",
-    "manufacturer": "Osos Al Benaa Company For Metal Industry",
-    "origin": "Saudi Arabia",
-    "brand": "OBC",
-    "description": "Hot dip galvanized after fabrication (HDGAF) to ASTM A123 / NEMA VE 1, BS 729, EN ISO 1461 (zinc coating 49-70 microns depending on sheet thickness); also available in aluminium alloy 5754 (NFA 30-451) or polyester powder coating on mild steel in RAL colours",
-    "model": null,
-    "partNumber": "HFC 4",
-    "material": "Mild Steel",
-    "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/product-19.webp",
-    "imageAlt": "Cable Tray Fitting - Horizontal Fittings Connector",
-    "specifications": {
-      "Type": "Horizontal Fittings Connector"
-    },
-    "source": {
-      "file": "Osos Al Benaa Company - product list.xlsx",
-      "sheet": "Sheet1",
-      "row": 20,
-      "values": {
-        "Product Name": "Cable Tray Fitting - Horizontal Fittings Connector",
-        "Manufacturer": "Osos Al Benaa Company For Metal Industry",
-        "Place Of Origin": "Saudi Arabia",
-        "Product Description": "Hot dip galvanized after fabrication (HDGAF) to ASTM A123 / NEMA VE 1, BS 729, EN ISO 1461 (zinc coating 49-70 microns depending on sheet thickness); also available in aluminium alloy 5754 (NFA 30-451) or polyester powder coating on mild steel in RAL colours",
-        "Model": null,
-        "Material": "Mild Steel",
-        "Finish": "Hot Dip Galvanized, Aluminium, Polyester Powder Coating",
-        "Standard": null,
-        "Type": "Horizontal Fittings Connector",
-        "Angle": null,
-        "Part Number": "HFC 4",
-        "Height": null,
-        "Width": null,
-        "Loading Depth": null,
-        "Rung Space": null,
-        "Thickness": null,
-        "Length": null,
-        "Size": null,
-        "Tray Type": null,
-        "Color": null,
-        "Minimum Cable Diameter": null,
-        "Maximum Cable Diameter": null,
-        "Brand": "OBC"
-      }
-    },
-    "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 76,
-      "kind": "source-matched illustration"
-    }
-  },
-  {
-    "id": "obc-020",
-    "slug": "cable-tray-fitting-bendable-horizontal-fitting-connector",
-    "name": "Cable Tray Fitting - Bendable Horizontal Fitting Connector",
-    "family": "Cable trays & fittings",
-    "manufacturer": "Osos Al Benaa Company For Metal Industry",
-    "origin": "Saudi Arabia",
-    "brand": "OBC",
-    "description": "Hot dip galvanized after fabrication (HDGAF) to ASTM A123 / NEMA VE 1, BS 729, EN ISO 1461 (zinc coating 49-70 microns depending on sheet thickness); also available in aluminium alloy 5754 (NFA 30-451) or polyester powder coating on mild steel in RAL colours",
-    "model": null,
-    "partNumber": "BHFC 3",
-    "material": "Mild Steel",
-    "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/product-20.webp",
-    "imageAlt": "Cable Tray Fitting - Bendable Horizontal Fitting Connector",
-    "specifications": {
-      "Type": "Bendable Horizontal Fitting Connector"
-    },
-    "source": {
-      "file": "Osos Al Benaa Company - product list.xlsx",
-      "sheet": "Sheet1",
-      "row": 21,
-      "values": {
-        "Product Name": "Cable Tray Fitting - Bendable Horizontal Fitting Connector",
-        "Manufacturer": "Osos Al Benaa Company For Metal Industry",
-        "Place Of Origin": "Saudi Arabia",
-        "Product Description": "Hot dip galvanized after fabrication (HDGAF) to ASTM A123 / NEMA VE 1, BS 729, EN ISO 1461 (zinc coating 49-70 microns depending on sheet thickness); also available in aluminium alloy 5754 (NFA 30-451) or polyester powder coating on mild steel in RAL colours",
-        "Model": null,
-        "Material": "Mild Steel",
-        "Finish": "Hot Dip Galvanized, Aluminium, Polyester Powder Coating",
-        "Standard": null,
-        "Type": "Bendable Horizontal Fitting Connector",
-        "Angle": null,
-        "Part Number": "BHFC 3",
-        "Height": null,
-        "Width": null,
-        "Loading Depth": null,
-        "Rung Space": null,
-        "Thickness": null,
-        "Length": null,
-        "Size": null,
-        "Tray Type": null,
-        "Color": null,
-        "Minimum Cable Diameter": null,
-        "Maximum Cable Diameter": null,
-        "Brand": "OBC"
-      }
-    },
-    "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 76,
-      "kind": "source-matched illustration"
     }
   },
   {
@@ -1180,60 +961,6 @@
     }
   },
   {
-    "id": "obc-023",
-    "slug": "cable-tray-fitting-box-connector",
-    "name": "Cable Tray Fitting - Box Connector",
-    "family": "Cable trays & fittings",
-    "manufacturer": "Osos Al Benaa Company For Metal Industry",
-    "origin": "Saudi Arabia",
-    "brand": "OBC",
-    "description": "Hot dip galvanized after fabrication (HDGAF) to ASTM A123 / NEMA VE 1, BS 729, EN ISO 1461 (zinc coating 49-70 microns depending on sheet thickness); also available in aluminium alloy 5754 (NFA 30-451) or polyester powder coating on mild steel in RAL colours",
-    "model": null,
-    "partNumber": "BC 8",
-    "material": "Mild Steel",
-    "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/product-23.webp",
-    "imageAlt": "Cable Tray Fitting - Box Connector",
-    "specifications": {
-      "Type": "Box Connector"
-    },
-    "source": {
-      "file": "Osos Al Benaa Company - product list.xlsx",
-      "sheet": "Sheet1",
-      "row": 24,
-      "values": {
-        "Product Name": "Cable Tray Fitting - Box Connector",
-        "Manufacturer": "Osos Al Benaa Company For Metal Industry",
-        "Place Of Origin": "Saudi Arabia",
-        "Product Description": "Hot dip galvanized after fabrication (HDGAF) to ASTM A123 / NEMA VE 1, BS 729, EN ISO 1461 (zinc coating 49-70 microns depending on sheet thickness); also available in aluminium alloy 5754 (NFA 30-451) or polyester powder coating on mild steel in RAL colours",
-        "Model": null,
-        "Material": "Mild Steel",
-        "Finish": "Hot Dip Galvanized, Aluminium, Polyester Powder Coating",
-        "Standard": null,
-        "Type": "Box Connector",
-        "Angle": null,
-        "Part Number": "BC 8",
-        "Height": null,
-        "Width": null,
-        "Loading Depth": null,
-        "Rung Space": null,
-        "Thickness": null,
-        "Length": null,
-        "Size": null,
-        "Tray Type": null,
-        "Color": null,
-        "Minimum Cable Diameter": null,
-        "Maximum Cable Diameter": null,
-        "Brand": "OBC"
-      }
-    },
-    "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 76,
-      "kind": "source-matched illustration"
-    }
-  },
-  {
     "id": "obc-024",
     "slug": "cable-tray-fitting-ground-bonding-jumper",
     "name": "Cable Tray Fitting - Ground Bonding Jumper",
@@ -1246,7 +973,7 @@
     "partNumber": "GBJ 7",
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/product-24.webp",
+    "image": "/images/item-024.webp",
     "imageAlt": "Cable Tray Fitting - Ground Bonding Jumper",
     "specifications": {
       "Type": "Ground Bonding Jumper"
@@ -1282,9 +1009,8 @@
       }
     },
     "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 76,
-      "kind": "source-matched illustration"
+      "file": "Earthing_jumper.jpeg",
+      "kind": "supplied product image"
     }
   },
   {
@@ -1353,7 +1079,7 @@
     "partNumber": "DO 9",
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/product-26.webp",
+    "image": "/images/item-026.webp",
     "imageAlt": "Cable Tray Fitting - Drop Out",
     "specifications": {
       "Type": "Drop Out"
@@ -1389,9 +1115,8 @@
       }
     },
     "imageSource": {
-      "file": "Brochure.pdf",
-      "page": 76,
-      "kind": "source-matched illustration"
+      "file": "Cable_tray_drop_out.jpeg",
+      "kind": "supplied product image"
     }
   },
   {
@@ -1452,21 +1177,21 @@
   },
   {
     "id": "obc-028",
-    "slug": "hot-dip-galvanized-cable-tray-er-type",
-    "name": "Hot Dip Galvanized Cable Tray (ER Type)",
+    "slug": "hot-dip-galvanized-cable-tray-b-type",
+    "name": "Hot Dip Galvanized Cable Tray (B Type)",
     "family": "Cable trays & fittings",
     "manufacturer": "Osos Al Benaa Company For Metal Industry",
     "origin": "Saudi Arabia",
     "brand": "OBC",
-    "description": "Listed in the project approval as 'Hotdip Galvanized Cable Tray & Ladder ER Type (500x100x1.2mm x 2.4m)'",
+    "description": "Hot dip galvanized cable tray, Type B (500 x 100 x 1.2 mm x 2.4 m)",
     "model": null,
     "partNumber": null,
     "material": null,
     "finishes": ["Hot Dip Galvanized"],
     "image": "/images/item-028.webp",
-    "imageAlt": "Hot Dip Galvanized Cable Tray (ER Type)",
+    "imageAlt": "Hot Dip Galvanized Cable Tray (B Type)",
     "specifications": {
-      "Type": "ER Type",
+      "Type": "B Type",
       "Height": "100 mm",
       "Width": "500 mm",
       "Thickness": "1.2 mm",
@@ -1613,19 +1338,19 @@
   },
   {
     "id": "obc-031",
-    "slug": "cable-tray-hanger",
-    "name": "Cable Tray Hanger",
+    "slug": "cable-tray-trunk-hanger",
+    "name": "Cable Tray / Trunk Hanger",
     "family": "Channels & supports",
     "manufacturer": "Osos Al Benaa Company For Metal Industry",
     "origin": "Saudi Arabia",
     "brand": "OBC",
-    "description": "Hangings and supports for cable tray",
+    "description": "Hangers and supports for cable tray and cable trunking",
     "model": null,
     "partNumber": null,
     "material": null,
     "finishes": ["Hot Dip Galvanized"],
     "image": "/images/item-031.webp",
-    "imageAlt": "Cable Tray Hanger",
+    "imageAlt": "Cable Tray / Trunk Hanger",
     "specifications": {
       "Type": "Hanger"
     },
@@ -2139,6 +1864,1434 @@
     },
     "imageSource": {
       "file": "Product images/FYND/CABLE BASKET & FITTINGS/CABLE BASKET TRAY CONNECTOR.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-042",
+    "slug": "cable-basket-tray-90-degree-elbow",
+    "name": "Cable Basket Tray 90° Elbow",
+    "family": "Cable baskets",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-042.webp",
+    "imageAlt": "Cable Basket Tray 90° Elbow",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Basket Tray 90° Elbow",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE BASKET & FITTINGS/CABLE BASKET TRAY 90° ELBOW.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-043",
+    "slug": "cable-basket-tray-90-degree-inside-riser",
+    "name": "Cable Basket Tray 90° Inside Riser",
+    "family": "Cable baskets",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-043.webp",
+    "imageAlt": "Cable Basket Tray 90° Inside Riser",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Basket Tray 90° Inside Riser",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE BASKET & FITTINGS/CABLE BASKET TRAY 90° INSIDE RISER.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-044",
+    "slug": "cable-basket-tray-90-degree-outside-riser",
+    "name": "Cable Basket Tray 90° Outside Riser",
+    "family": "Cable baskets",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-044.webp",
+    "imageAlt": "Cable Basket Tray 90° Outside Riser",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Basket Tray 90° Outside Riser",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE BASKET & FITTINGS/CABLE BASKET TRAY 90° OUTSIDE RISER.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-045",
+    "slug": "cable-basket-tray-cross",
+    "name": "Cable Basket Tray Cross",
+    "family": "Cable baskets",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-045.webp",
+    "imageAlt": "Cable Basket Tray Cross",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Basket Tray Cross",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE BASKET & FITTINGS/CABLE BASKET TRAY CROSS.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-046",
+    "slug": "cable-basket-tray-drop-out",
+    "name": "Cable Basket Tray Drop Out",
+    "family": "Cable baskets",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-046.webp",
+    "imageAlt": "Cable Basket Tray Drop Out",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Basket Tray Drop Out",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE BASKET & FITTINGS/CABLE BASKET TRAY DROP OUT.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-047",
+    "slug": "cable-basket-tray-tee",
+    "name": "Cable Basket Tray Tee",
+    "family": "Cable baskets",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-047.webp",
+    "imageAlt": "Cable Basket Tray Tee",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Basket Tray Tee",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE BASKET & FITTINGS/CABLE BASKET TRAY TEE.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-048",
+    "slug": "cable-ladder-4-way-cross",
+    "name": "Cable Ladder 4 Way Cross",
+    "family": "Cable ladders & accessories",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-048.webp",
+    "imageAlt": "Cable Ladder 4 Way Cross",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Ladder 4 Way Cross",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER 4 WAY CROSS.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-049",
+    "slug": "cable-ladder-90-degree-elbow",
+    "name": "Cable Ladder 90° Elbow",
+    "family": "Cable ladders & accessories",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-049.webp",
+    "imageAlt": "Cable Ladder 90° Elbow",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Ladder 90° Elbow",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER 90° ELBOW.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-050",
+    "slug": "cable-ladder-45-degree-elbow",
+    "name": "Cable Ladder 45° Elbow",
+    "family": "Cable ladders & accessories",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-050.webp",
+    "imageAlt": "Cable Ladder 45° Elbow",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Ladder 45° Elbow",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE LADDER & FITTINGS/LADDER 45° ELBOW.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-051",
+    "slug": "cable-ladder-90-degree-inside-riser",
+    "name": "Cable Ladder 90° Inside Riser",
+    "family": "Cable ladders & accessories",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-051.webp",
+    "imageAlt": "Cable Ladder 90° Inside Riser",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Ladder 90° Inside Riser",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER 90° INSIDE RISER.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-052",
+    "slug": "cable-ladder-90-degree-outside-riser",
+    "name": "Cable Ladder 90° Outside Riser",
+    "family": "Cable ladders & accessories",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-052.webp",
+    "imageAlt": "Cable Ladder 90° Outside Riser",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Ladder 90° Outside Riser",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER 90° OUTSIDE RISER.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-053",
+    "slug": "cable-ladder-hold-down-clamp-type-1",
+    "name": "Cable Ladder Hold Down Clamp – Type 1",
+    "family": "Cable ladders & accessories",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-053.webp",
+    "imageAlt": "Cable Ladder Hold Down Clamp – Type 1",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Ladder Hold Down Clamp – Type 1",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER HOLD DOWN CLAMP.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-054",
+    "slug": "cable-ladder-hold-down-clamp-type-2",
+    "name": "Cable Ladder Hold Down Clamp – Type 2",
+    "family": "Cable ladders & accessories",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-054.webp",
+    "imageAlt": "Cable Ladder Hold Down Clamp – Type 2",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Ladder Hold Down Clamp – Type 2",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER HOLD DOWN CLAMP-2.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-055",
+    "slug": "cable-ladder-inside-straight-flange",
+    "name": "Cable Ladder Inside Straight Flange",
+    "family": "Cable ladders & accessories",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-055.webp",
+    "imageAlt": "Cable Ladder Inside Straight Flange",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Ladder Inside Straight Flange",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER INSIDE STREIGHT FLANGE.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-056",
+    "slug": "cable-ladder-left-hand-reducer",
+    "name": "Cable Ladder Left Hand Reducer",
+    "family": "Cable ladders & accessories",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-056.webp",
+    "imageAlt": "Cable Ladder Left Hand Reducer",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Ladder Left Hand Reducer",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER LEFT HAND REDUCER.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-057",
+    "slug": "cable-ladder-right-hand-reducer",
+    "name": "Cable Ladder Right Hand Reducer",
+    "family": "Cable ladders & accessories",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-057.webp",
+    "imageAlt": "Cable Ladder Right Hand Reducer",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Ladder Right Hand Reducer",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER RIGHT HAND REDUCER.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-058",
+    "slug": "cable-ladder-straight-reducer",
+    "name": "Cable Ladder Straight Reducer",
+    "family": "Cable ladders & accessories",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-058.webp",
+    "imageAlt": "Cable Ladder Straight Reducer",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Ladder Straight Reducer",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER STREIGHT REDUCER.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-059",
+    "slug": "cable-ladder-straight-connector",
+    "name": "Cable Ladder Straight Connector",
+    "family": "Cable ladders & accessories",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-059.webp",
+    "imageAlt": "Cable Ladder Straight Connector",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Ladder Straight Connector",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER STREIGHT CONNECTOR.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-060",
+    "slug": "cable-ladder-peaked-cover",
+    "name": "Cable Ladder Peaked Cover",
+    "family": "Cable ladders & accessories",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-060.webp",
+    "imageAlt": "Cable Ladder Peaked Cover",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Ladder Peaked Cover",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER PEACKED COVER.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-061",
+    "slug": "cable-ladder-solid-cover",
+    "name": "Cable Ladder Solid Cover",
+    "family": "Cable ladders & accessories",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-061.webp",
+    "imageAlt": "Cable Ladder Solid Cover",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Ladder Solid Cover",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER SOLID COVER.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-062",
+    "slug": "cable-ladder-ventilated-cover",
+    "name": "Cable Ladder Ventilated Cover",
+    "family": "Cable ladders & accessories",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-062.webp",
+    "imageAlt": "Cable Ladder Ventilated Cover",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Ladder Ventilated Cover",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER VENTILATED COVER.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-063",
+    "slug": "cable-tray-peaked-cover",
+    "name": "Cable Tray Peaked Cover",
+    "family": "Cable trays & fittings",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-063.webp",
+    "imageAlt": "Cable Tray Peaked Cover",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Tray Peaked Cover",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY PEACKED COVER.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-064",
+    "slug": "cable-tray-solid-cover",
+    "name": "Cable Tray Solid Cover",
+    "family": "Cable trays & fittings",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-064.webp",
+    "imageAlt": "Cable Tray Solid Cover",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Tray Solid Cover",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY SOLID COVER.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-065",
+    "slug": "cable-compartment-trunk",
+    "name": "Cable Compartment Trunk",
+    "family": "Cable trunking",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-065.webp",
+    "imageAlt": "Cable Compartment Trunk",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Compartment Trunk",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE TRUNKING & FITTINGS/CABELE COMPARTMENT TRUNK.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-066",
+    "slug": "cable-trunk-45-degree-elbow",
+    "name": "Cable Trunk 45° Elbow",
+    "family": "Cable trunking",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-066.webp",
+    "imageAlt": "Cable Trunk 45° Elbow",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Trunk 45° Elbow",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE TRUNKING & FITTINGS/CABLE TRUNK 45° ELBOW.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-067",
+    "slug": "cable-trunk-90-degree-inside-riser",
+    "name": "Cable Trunk 90° Inside Riser",
+    "family": "Cable trunking",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-067.webp",
+    "imageAlt": "Cable Trunk 90° Inside Riser",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Trunk 90° Inside Riser",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE TRUNKING & FITTINGS/CABLE TRUNK 90° INSIDE RISER.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-068",
+    "slug": "cable-trunk-90-degree-outside-riser",
+    "name": "Cable Trunk 90° Outside Riser",
+    "family": "Cable trunking",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-068.webp",
+    "imageAlt": "Cable Trunk 90° Outside Riser",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Trunk 90° Outside Riser",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE TRUNKING & FITTINGS/CABLE TRUNK 90° OUTSIDE RISER.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-069",
+    "slug": "cable-trunk-cross",
+    "name": "Cable Trunk Cross",
+    "family": "Cable trunking",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-069.webp",
+    "imageAlt": "Cable Trunk Cross",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Trunk Cross",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE TRUNKING & FITTINGS/CABLE TRUNK CROSS.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-070",
+    "slug": "cable-trunk-reducer",
+    "name": "Cable Trunk Reducer",
+    "family": "Cable trunking",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-070.webp",
+    "imageAlt": "Cable Trunk Reducer",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Trunk Reducer",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE TRUNKING & FITTINGS/CABLE TRUNK REDUCER.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-071",
+    "slug": "cable-trunk-straight-connector",
+    "name": "Cable Trunk Straight Connector",
+    "family": "Cable trunking",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-071.webp",
+    "imageAlt": "Cable Trunk Straight Connector",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Trunk Straight Connector",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE TRUNKING & FITTINGS/CABLE TRUNK STREIGHT CONNECTOR.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-072",
+    "slug": "cable-trunk-u-connector",
+    "name": "Cable Trunk U-Connector",
+    "family": "Cable trunking",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-072.webp",
+    "imageAlt": "Cable Trunk U-Connector",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cable Trunk U-Connector",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/CABLE TRUNKING & FITTINGS/CABLE TRUNK U-CONNECTOR.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-073",
+    "slug": "41x21-slotted-channel",
+    "name": "41x21 Slotted Channel",
+    "family": "Channels & supports",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-073.webp",
+    "imageAlt": "41x21 Slotted Channel",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "41x21 Slotted Channel",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/41X21 SLOTTED CHANNEL.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-074",
+    "slug": "41x41-plain-channel",
+    "name": "41x41 Plain Channel",
+    "family": "Channels & supports",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-074.webp",
+    "imageAlt": "41x41 Plain Channel",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "41x41 Plain Channel",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/41X41 PLAIN CHANNEL.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-075",
+    "slug": "41x61-slotted-channel",
+    "name": "41x61 Slotted Channel",
+    "family": "Channels & supports",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-075.webp",
+    "imageAlt": "41x61 Slotted Channel",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "41x61 Slotted Channel",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/41X61 SLOTTED CHANNEL.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-076",
+    "slug": "41x82-back-to-back-welded-slotted-channel",
+    "name": "41x82 Back-to-Back Welded Slotted Channel",
+    "family": "Channels & supports",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-076.webp",
+    "imageAlt": "41x82 Back-to-Back Welded Slotted Channel",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "41x82 Back-to-Back Welded Slotted Channel",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/41X82 B2B WELDED SLOTTED CHANNEL.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-077",
+    "slug": "angle-bracket-1x1-hole",
+    "name": "Angle Bracket 1x1 Hole",
+    "family": "Channels & supports",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-077.webp",
+    "imageAlt": "Angle Bracket 1x1 Hole",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Angle Bracket 1x1 Hole",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/ANGLE BARCKET 1X1 HOLE.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-078",
+    "slug": "angle-bracket-2x1-hole",
+    "name": "Angle Bracket 2x1 Hole",
+    "family": "Channels & supports",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-078.webp",
+    "imageAlt": "Angle Bracket 2x1 Hole",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Angle Bracket 2x1 Hole",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/ANGLE BARCKET 2X1 HOLE.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-079",
+    "slug": "angle-bracket-2x2-hole",
+    "name": "Angle Bracket 2x2 Hole",
+    "family": "Channels & supports",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-079.webp",
+    "imageAlt": "Angle Bracket 2x2 Hole",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Angle Bracket 2x2 Hole",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/ANGLE BARCKET 2X2 HOLE.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-080",
+    "slug": "angle-bracket-welded",
+    "name": "Angle Bracket Welded",
+    "family": "Channels & supports",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-080.webp",
+    "imageAlt": "Angle Bracket Welded",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Angle Bracket Welded",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/ANGLE BRACKET WELDED.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-081",
+    "slug": "cantilever-arm-bracket-4-hole",
+    "name": "Cantilever Arm Bracket 4 Hole",
+    "family": "Channels & supports",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-081.webp",
+    "imageAlt": "Cantilever Arm Bracket 4 Hole",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Cantilever Arm Bracket 4 Hole",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/CANTILIVER ARM BRACKET 4 HOLE.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-082",
+    "slug": "double-base-plate",
+    "name": "Double Base Plate",
+    "family": "Channels & supports",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-082.webp",
+    "imageAlt": "Double Base Plate",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Double Base Plate",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/DOUBLE BASE PLATE.png",
+      "kind": "supplied product image"
+    }
+  },
+  {
+    "id": "obc-083",
+    "slug": "single-base-plate-2-hole",
+    "name": "Single Base Plate 2 Hole",
+    "family": "Channels & supports",
+    "manufacturer": "Osos Al Benaa Company For Metal Industry",
+    "origin": "Saudi Arabia",
+    "brand": "OBC",
+    "description": "Available in hot dip galvanized (HDG), GI and stainless steel (SS) finishes.",
+    "model": null,
+    "partNumber": null,
+    "material": null,
+    "finishes": [
+      "Hot Dip Galvanized",
+      "GI (Galvanized Iron)",
+      "Stainless Steel"
+    ],
+    "image": "/images/item-083.webp",
+    "imageAlt": "Single Base Plate 2 Hole",
+    "specifications": {},
+    "source": {
+      "file": "Book1.xlsx (client update)",
+      "sheet": "Sheet2",
+      "row": null,
+      "values": {
+        "Product Name": "Single Base Plate 2 Hole",
+        "Finish": "HDG, GI, SS"
+      }
+    },
+    "imageSource": {
+      "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/SINGLE BASE PLATE 2 HOLE.png",
       "kind": "supplied product image"
     }
   }
