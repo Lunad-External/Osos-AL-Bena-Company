@@ -8,14 +8,16 @@ import {
   selectionUrl,
   whatsappUrl,
 } from "../src/catalog";
-test("source rows retained, identities unique and removed product absent", () => {
-  assert.equal(products.length, 40);
-  assert.equal(new Set(products.map((p) => p.slug)).size, 40);
-  assert.deepEqual(
-    products.map((p) => p.source.row),
-    Array.from({ length: 40 }, (_, i) => i + 2),
-  );
-  assert.ok(products.every((p) => p.slug !== "nylon-two-bolt-cable-cleat-type-ntc"));
+test("identities unique and removed products absent", () => {
+  assert.equal(products.length, 77);
+  assert.equal(new Set(products.map((p) => p.slug)).size, 77);
+  assert.equal(new Set(products.map((p) => p.id)).size, 77);
+  for (const slug of [
+    "nylon-two-bolt-cable-cleat-type-ntc",
+    "cable-tray-and-fittings-type-me",
+    "cable-tray-fitting-box-connector",
+  ])
+    assert.ok(products.every((p) => p.slug !== slug));
 });
 test("search handles terms, model, part number and no results", () => {
   assert.equal(filterProducts(" TYPE-TF ", emptyFilters()).length, 1);
@@ -25,9 +27,9 @@ test("search handles terms, model, part number and no results", () => {
 });
 test("facets OR internally and AND across facets", () => {
   const f = { ...emptyFilters(), family: ["Cable trunking", "Cable baskets"] };
-  assert.equal(filterProducts("", f).length, 5);
-  assert.equal(filterProducts("", { ...f, brand: ["OBC"] }).length, 5);
-  assert.equal(filterProducts("basket", { ...f, brand: ["OBC"] }).length, 2);
+  assert.equal(filterProducts("", f).length, 19);
+  assert.equal(filterProducts("", { ...f, brand: ["OBC"] }).length, 19);
+  assert.equal(filterProducts("basket", { ...f, brand: ["OBC"] }).length, 8);
   assert.equal(filterProducts("", { ...f, material: ["Nylon 06 Glass-filled (LSOH/LSZH)"] }).length, 0);
 });
 test("URL state roundtrips, rejects unknown values and deduplicates", () => {
