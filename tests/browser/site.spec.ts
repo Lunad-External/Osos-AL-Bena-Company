@@ -86,6 +86,8 @@ test("WhatsApp form encodes draft without pretending it was sent", async ({
     }) as typeof window.open;
   });
   await page.getByLabel("Your name").fill("A&B");
+  await page.getByLabel("Phone number").fill("+966 50 000 0000");
+  await page.getByLabel("Company", { exact: false }).first().fill("Test Co");
   await page.getByLabel("What do you need?").fill("41×41 + supports");
   await page.getByRole("button", { name: "Continue to WhatsApp" }).click();
   const url = await page.evaluate(() => (window as any).__opened);
