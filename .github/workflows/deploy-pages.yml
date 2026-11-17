@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy staging preview to GitHub Pages (noindex)
 
 on:
   push:
@@ -28,7 +28,7 @@ jobs:
       - name: Build site
         env:
           BASE_PATH: /Osos-AL-Bena-Company/
-        run: npm ci && npm run build
+        run: npm ci && npm run build:pages
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

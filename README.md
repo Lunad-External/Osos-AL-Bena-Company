@@ -1,56 +1,56 @@
-# Osos Al Benaa — static React website
+# Osos Al Benaa — server-side rendered React website
 
-React 19, TypeScript, Vite and Tailwind CSS. The production build renders real HTML for Home, About, Products, Contact, all 41 product details and a 404 page. React hydrates existing HTML for search, filters, the mobile menu and the WhatsApp enquiry form. No application server or CMS is needed.
+React 19, TypeScript, Vite and Tailwind CSS, served by a small Node.js (Express) server that renders every page on each request (genuine SSR). The HTML response already contains the page content, title, meta description, canonical URL, Open Graph tags and JSON-LD structured data. React then hydrates the page for search, filters, the mobile menu and the WhatsApp enquiry form.
 
 ## Run locally
 
-Requires Node.js 22.12+ (Node 24 was used here) and npm.
+Requires Node.js 20+ (22 recommended) and npm.
 
 ```sh
 npm ci
-npm run dev
+npm run dev          # Vite dev server (client only, for design work)
+npm run build        # client bundle -> dist/, server renderer -> dist-server/
+npm run preview      # SSR server on http://localhost:3000
 ```
 
-## Build and deploy
+## Production (SSR)
 
 ```sh
-npm run build
-npm run preview
+npm ci && npm run build
+NODE_ENV=production PORT=3000 SITE_URL=https://ososalbenaa.com npm start
 ```
 
-Deploy the **contents of `dist/`** to your static web server. Every route has its own `index.html`; do not use an SPA catch-all that serves the Home HTML for every URL. Configure the host to serve `404.html` for missing routes. The site assumes deployment at the domain root.
+Or with Docker: `docker build -t obc-website . && docker run -p 3000:3000 obc-website`.
 
-GitHub Pages deployment is configured in `.github/workflows/deploy-pages.yml`. It publishes the `main` branch to the project site at `https://lunad-external.github.io/Osos-AL-Bena-Company/`. In the repository settings, set **Pages > Build and deployment > Source** to **GitHub Actions**.
+Run it behind HTTPS (a load balancer, Nginx or the host's TLS). The server:
 
-The default canonical domain is `https://www.ososalbenaa.com`, taken from the supplied brochure. Confirm this is the intended production domain. To override it at build time:
+- renders every page per request and returns real status codes (200, 301, 404, 410);
+- redirects other hosts (e.g. `www.ososalbenaa.com`) and plain HTTP to `https://ososalbenaa.com` in one 301 hop (it trusts `X-Forwarded-Proto`/`X-Forwarded-Host`); set `ENFORCE_CANONICAL_ORIGIN=false` to turn this off;
+- lowercases URLs and adds the trailing slash, and 301-redirects renamed product URLs (see `movedPaths` in `src/seo.ts`); withdrawn products return 410;
+- serves `/robots.txt` and `/sitemap.xml` (with product images) generated from the product data;
+- compresses responses, caches hashed assets for a year, and sends security headers (HSTS in production).
 
-```sh
-SITE_URL=https://your-company-domain.com npm run build
-```
+Environment variables: `PORT`, `SITE_URL` (preferred origin, default `https://ososalbenaa.com`), `NODE_ENV=production`, `NOINDEX=true` for a staging deployment, `SITEMAP_LASTMOD` (YYYY-MM-DD).
 
-This emits canonical URLs, Open Graph URLs and `sitemap.xml`. Without `SITE_URL`, the build uses `canonicalOrigin` from `site.json`. If that JSON field is null, domain-dependent metadata and sitemap are omitted. `robots.txt` is always emitted. Set the same domain in `src/data/site.json` as `canonicalOrigin` if you prefer JSON configuration. Every page has its own title and description; product structured data contains no fabricated price, ratings or stock information.
+All SEO rules live in `src/seo.ts`: page titles and descriptions, URL slug rules, redirects, structured data, robots.txt and the sitemap.
 
-You can inspect all generated HTML without running JavaScript. A plain static server is sufficient:
+## Staging preview (GitHub Pages)
 
-```sh
-python3 -m http.server 4173 --directory dist
-```
+`.github/workflows/deploy-pages.yml` publishes a **noindex** static preview of `main` to `https://lunad-external.github.io/Osos-AL-Bena-Company/` using `npm run build:pages`. It is for review only and is hidden from search engines; production must use the SSR server above.
 
 ## Edit content without editing components
 
 | File | Owns |
 | --- | --- |
-| `src/data/products.json` | All 41 products, stable IDs/slugs, manufacturer/origin, descriptions, specifications, facet values, image paths and source-row provenance |
+| `src/data/products.json` | All 77 products, stable IDs/slugs, manufacturer/origin, descriptions, specifications, facet values, image paths and source-row provenance |
 | `src/data/company.json` | Company introduction, capabilities, address, phone, WhatsApp destination and verification status |
 | `src/data/site.json` | Navigation, product families, featured product IDs, hero image slides, locale metadata, canonical domain and copyright year |
 | `src/locales/en.json` | English UI labels, page copy, image descriptions, validation messages, WhatsApp message templates and SEO text |
 | `public/images/provenance.json` | Source and generation provenance for images |
 
-After changing JSON, rebuild and redeploy `dist/`. A static deployment does not update itself when repository JSON changes.
+After changing JSON, run `npm run build` and restart the server.
 
-Product IDs and slugs must be unique. Preserve slugs after publication, or add permanent redirects on your host. Source metadata records the original workbook; source values are historical evidence, not the field to edit for displayed content. Do not fill missing specifications by guessing. If a spec is absent, omit it. An unknown/null image uses the local fallback; a broken image also switches to the fallback after hydration. Use a root-relative local path for a new image and a meaningful `imageAlt`.
-
-The BTS cleat is kept as **BTS (India), India**. The rest of the workbook names OBC. This distinction must survive content updates.
+Product IDs and slugs must be unique. Preserve slugs after publication; if one must change, add the old path to `movedPaths` in `src/seo.ts` (301 redirect). Source metadata records the original workbook; source values are historical evidence, not the field to edit for displayed content. Do not fill missing specifications by guessing. If a spec is absent, omit it. An unknown/null image uses the local fallback; a broken image also switches to the fallback after hydration. Use a root-relative local path for a new image and a meaningful `imageAlt`.
 
 ## WhatsApp enquiries
 
@@ -60,7 +60,7 @@ The contact form validates required fields and opens a URL-encoded draft in What
 
 ## Localization and future CMS
 
-English is the only shipped language. UI copy is separated from components, and product/company data is separated from rendering. Future localization should introduce translated JSON, locale selection at build time, localized routes, `lang`/`dir`, hreflang and RTL review. Do not show a language switcher until another language exists. Stable JSON IDs can map to CMS records; replace the build-time data source rather than rewrite page layouts. There is no unused CMS integration in this implementation.
+English is the only shipped language. UI copy is separated from components, and product/company data is separated from rendering. Future localization should introduce professionally translated JSON, `/ar/` routes rendered by the same server, `lang`/`dir`, hreflang and RTL review. Do not show a language switcher until another language exists. Stable JSON IDs can map to CMS records; replace the build-time data source rather than rewrite page layouts. There is no unused CMS integration in this implementation.
 
 ## Tests
 
@@ -70,9 +70,9 @@ npm run build
 npm run test:e2e
 ```
 
-The browser suite uses Chromium. This cloud environment has `/usr/bin/chromium`; on another machine install Playwright Chromium with `npx playwright install chromium`, or set `CHROMIUM_PATH` to an installed executable. The config automatically uses the bundled browser if the cloud path is absent.
+The browser suite starts the SSR server (`node server.mjs`) and uses Chromium. This cloud environment has `/usr/bin/chromium`; on another machine install Playwright Chromium with `npx playwright install chromium`, or set `CHROMIUM_PATH` to an installed executable. The config automatically uses the bundled browser if the cloud path is absent.
 
-Unit tests cover source-row retention, search, combined facets, URL state and WhatsApp encoding. Browser tests cover catalog interactions, every detail URL, content without JavaScript, mobile navigation/filter focus, image fallback, form handoff, responsive overflow and automated WCAG checks. Automated accessibility checks are useful evidence, not a certification of compliance.
+Unit tests cover URL slug rules, redirects, unique metadata, structured data, the sitemap, search, combined facets, URL state and WhatsApp encoding. Browser tests cover catalog interactions, every detail URL, content without JavaScript, mobile navigation/filter focus, image fallback, form handoff, responsive overflow and automated WCAG checks. Automated accessibility checks are useful evidence, not a certification of compliance.
 
 ## Assets and design
 

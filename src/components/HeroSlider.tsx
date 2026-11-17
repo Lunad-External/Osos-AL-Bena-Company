@@ -52,7 +52,9 @@ export function HeroSlider() {
       <div className="hero-overlay" aria-hidden="true" />
       <div className="container hero-inner">
         <div className="hero-copy">
-          <h1>{t.home.title}</h1>
+          <h1>
+            <span className="h1-lead">{t.home.h1Lead}</span> {t.home.title}
+          </h1>
           <p>{t.home.intro}</p>
           <div className="hero-actions">
             <a className="button" href={sitePath("/products/")}>

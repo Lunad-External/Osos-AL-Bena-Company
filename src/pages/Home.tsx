@@ -20,27 +20,36 @@ export function Home() {
             {site.families
               .filter((f) => products.some((p) => p.family === f.name))
               .map((f, i) => (
-              <a
-                className={`family-card family-${i}`}
-                href={sitePath(selectionUrl("", { ...emptyFilters(), family: [f.name] }))}
-                key={f.name}
-              >
-                <div className="family-image">
-                  <img
-                    src={sitePath(f.image || "/images/product-fallback.svg")}
-                    alt={f.short}
-                    width="600"
-                    height="450"
-                    loading="lazy"
-                  />
-                </div>
-                <div>
-                  <h3>{f.short}</h3>
-                  <ArrowUpRight size={24} />
-                </div>
-                <p>{f.description}</p>
-              </a>
-            ))}
+                <a
+                  className={`family-card family-${i}`}
+                  href={sitePath(
+                    selectionUrl("", { ...emptyFilters(), family: [f.name] }),
+                  )}
+                  key={f.name}
+                >
+                  <div className="family-image">
+                    <img
+                      src={sitePath(f.image || "/images/product-fallback.svg")}
+                      srcSet={
+                        f.image && f.imageWidth && f.imageWidth > 480
+                          ? `${sitePath(f.image.replace(/\.webp$/, "-480.webp"))} 480w, ${sitePath(f.image)} ${f.imageWidth}w`
+                          : undefined
+                      }
+                      sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 400px"
+                      alt={f.name}
+                      width={f.imageWidth ?? 600}
+                      height={f.imageHeight ?? 450}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div>
+                    <h3>{f.short}</h3>
+                    <ArrowUpRight size={24} />
+                  </div>
+                  <p>{f.description}</p>
+                </a>
+              ))}
           </div>
         </div>
       </section>
@@ -48,10 +57,13 @@ export function Home() {
         <div className="company-visual">
           <img
             src={sitePath("/images/system.webp")}
+            srcSet={`${sitePath("/images/system-480.webp")} 480w, ${sitePath("/images/system.webp")} 1186w`}
+            sizes="(max-width: 899px) 100vw, 50vw"
             alt={t.images.systemAlt}
-            width="1200"
+            width="1186"
             height="900"
             loading="lazy"
+            decoding="async"
           />
           <span>{company.legalName}</span>
         </div>

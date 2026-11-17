@@ -12,7 +12,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/item-004.webp",
+    "image": "/images/product-cable-tray-and-fittings-type-tf.webp",
     "imageAlt": "Cable Tray and Fittings - Type TF",
     "specifications": {
       "Standard": "ASTM A123 / NEMA VE 1, BS 729, EN ISO 1461"
@@ -50,7 +50,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRAY & FITTINGS/PERFOARTED CABLE TRAY INSIDE FLANGE.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 373,
+    "imageHeight": 246
   },
   {
     "id": "obc-002",
@@ -65,7 +67,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/item-001.webp",
+    "image": "/images/product-cable-tray-and-fittings-type-fe.webp",
     "imageAlt": "Cable Tray and Fittings - Type FE",
     "specifications": {
       "Standard": "ASTM A123 / NEMA VE 1, BS 729, EN ISO 1461"
@@ -103,7 +105,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRAY & FITTINGS/PERFOARTED CABLE TRAY OUTSIDE FLANGE.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 388,
+    "imageHeight": 254
   },
   {
     "id": "obc-003",
@@ -118,7 +122,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/item-003.webp",
+    "image": "/images/product-cable-tray-and-fittings-type-le.webp",
     "imageAlt": "Cable Tray and Fittings - Type LE",
     "specifications": {
       "Standard": "ASTM A123 / NEMA VE 1, BS 729, EN ISO 1461"
@@ -156,7 +160,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRAY & FITTINGS/PERFOARTED CABLE TRAY WITHOUT FLANGE.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 525,
+    "imageHeight": 362
   },
   {
     "id": "obc-004",
@@ -171,7 +177,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/tray-4.webp",
+    "image": "/images/product-cable-tray-and-fittings-type-ce.webp",
     "imageAlt": "Cable Tray and Fittings - Type CE",
     "specifications": {
       "Standard": "ASTM A123 / NEMA VE 1, BS 729, EN ISO 1461"
@@ -209,7 +215,9 @@
     "imageSource": {
       "file": "Brochure.pdf",
       "kind": "source-matched illustration"
-    }
+    },
+    "imageWidth": 644,
+    "imageHeight": 380
   },
   {
     "id": "obc-006",
@@ -224,7 +232,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/item-006.webp",
+    "image": "/images/product-cable-tray-fitting-90-degree-horizontal-elbow.webp",
     "imageAlt": "Cable Tray Fitting - 90 Degree Horizontal Elbow",
     "specifications": {
       "Type": "Horizontal Elbow",
@@ -263,7 +271,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY 90° ELBOW.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 416,
+    "imageHeight": 181
   },
   {
     "id": "obc-007",
@@ -278,7 +288,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/item-007.webp",
+    "image": "/images/product-cable-tray-fitting-45-degree-horizontal-elbow.webp",
     "imageAlt": "Cable Tray Fitting - 45 Degree Horizontal Elbow",
     "specifications": {
       "Type": "Horizontal Elbow",
@@ -317,7 +327,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRAY & FITTINGS/45° ELBOW.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 284,
+    "imageHeight": 148
   },
   {
     "id": "obc-008",
@@ -332,7 +344,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/item-008.webp",
+    "image": "/images/product-cable-tray-fitting-horizontal-tee.webp",
     "imageAlt": "Cable Tray Fitting - Horizontal Tee",
     "specifications": {
       "Type": "Horizontal Tee"
@@ -370,7 +382,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY TEE.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 292,
+    "imageHeight": 184
   },
   {
     "id": "obc-009",
@@ -385,7 +399,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/item-009.webp",
+    "image": "/images/product-cable-tray-fitting-horizontal-cross-4-way.webp",
     "imageAlt": "Cable Tray Fitting - Horizontal Cross (4 Way)",
     "specifications": {
       "Type": "Horizontal Cross"
@@ -423,7 +437,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRAY & FITTINGS/4 WAY CROSS.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 339,
+    "imageHeight": 220
   },
   {
     "id": "obc-010",
@@ -438,7 +454,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/item-010.webp",
+    "image": "/images/product-cable-tray-fitting-right-hand-reducer.webp",
     "imageAlt": "Cable Tray Fitting - Right Hand Reducer",
     "specifications": {
       "Type": "Right Hand Reducer"
@@ -476,7 +492,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY RIGHT SIDE REDUCER.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 522,
+    "imageHeight": 310
   },
   {
     "id": "obc-011",
@@ -491,7 +509,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/item-011.webp",
+    "image": "/images/product-cable-tray-fitting-left-hand-reducer.webp",
     "imageAlt": "Cable Tray Fitting - Left Hand Reducer",
     "specifications": {
       "Type": "Left Hand Reducer"
@@ -529,7 +547,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY LEFT SIDE REDUCER.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 541,
+    "imageHeight": 341
   },
   {
     "id": "obc-012",
@@ -544,7 +564,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/item-012.webp",
+    "image": "/images/product-cable-tray-fitting-straight-reducer.webp",
     "imageAlt": "Cable Tray Fitting - Straight Reducer",
     "specifications": {
       "Type": "Straight Reducer"
@@ -582,7 +602,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY REDUCER.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 440,
+    "imageHeight": 308
   },
   {
     "id": "obc-013",
@@ -597,7 +619,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/item-013.webp",
+    "image": "/images/product-cable-tray-fitting-outside-raiser-90-degree.webp",
     "imageAlt": "Cable Tray Fitting - Outside Raiser 90 Degree",
     "specifications": {
       "Type": "Outside Raiser",
@@ -636,7 +658,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY 90° OUTSIDE RISER.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 324,
+    "imageHeight": 314
   },
   {
     "id": "obc-014",
@@ -651,7 +675,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/item-014.webp",
+    "image": "/images/product-cable-tray-fitting-outside-raiser-45-degree.webp",
     "imageAlt": "Cable Tray Fitting - Outside Raiser 45 Degree",
     "specifications": {
       "Type": "Outside Raiser",
@@ -690,7 +714,9 @@
     "imageSource": {
       "file": "Cable_tray_45d_outside_riser.jpeg",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 702,
+    "imageHeight": 663
   },
   {
     "id": "obc-015",
@@ -705,7 +731,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/item-015.webp",
+    "image": "/images/product-cable-tray-fitting-inside-raiser-90-degree.webp",
     "imageAlt": "Cable Tray Fitting - Inside Raiser 90 Degree",
     "specifications": {
       "Type": "Inside Raiser",
@@ -744,7 +770,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY 90° INSIDE RISER.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 385,
+    "imageHeight": 383
   },
   {
     "id": "obc-016",
@@ -759,7 +787,7 @@
     "partNumber": null,
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/item-016.webp",
+    "image": "/images/product-cable-tray-fitting-inside-raiser-45-degree.webp",
     "imageAlt": "Cable Tray Fitting - Inside Raiser 45 Degree",
     "specifications": {
       "Type": "Inside Raiser",
@@ -798,7 +826,9 @@
     "imageSource": {
       "file": "Cable_tray_45d_inside_riser.jpeg",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 768,
+    "imageHeight": 1024
   },
   {
     "id": "obc-018",
@@ -813,7 +843,7 @@
     "partNumber": "S-C1",
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/item-018.webp",
+    "image": "/images/product-cable-tray-fitting-standard-connector.webp",
     "imageAlt": "Cable Tray Fitting - Standard Connector",
     "specifications": {
       "Type": "Standard Connector"
@@ -851,7 +881,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY ANGLE CONNECTOR.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 375,
+    "imageHeight": 215
   },
   {
     "id": "obc-021",
@@ -866,7 +898,7 @@
     "partNumber": "VAC 6",
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/item-021.webp",
+    "image": "/images/product-cable-tray-fitting-vertical-adjustable-connector.webp",
     "imageAlt": "Cable Tray Fitting - Vertical Adjustable Connector",
     "specifications": {
       "Type": "Vertical Adjustable Connector"
@@ -904,7 +936,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY SDJUSTABLE CONNECTOR.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 542,
+    "imageHeight": 336
   },
   {
     "id": "obc-022",
@@ -919,7 +953,7 @@
     "partNumber": "SFC 5",
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/item-022.webp",
+    "image": "/images/product-cable-tray-fitting-standard-flat-connector.webp",
     "imageAlt": "Cable Tray Fitting - Standard Flat Connector",
     "specifications": {
       "Type": "Standard Flat Connector",
@@ -958,7 +992,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY FISH PLATE.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 410,
+    "imageHeight": 283
   },
   {
     "id": "obc-024",
@@ -973,7 +1009,7 @@
     "partNumber": "GBJ 7",
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/item-024.webp",
+    "image": "/images/product-cable-tray-fitting-ground-bonding-jumper.webp",
     "imageAlt": "Cable Tray Fitting - Ground Bonding Jumper",
     "specifications": {
       "Type": "Ground Bonding Jumper"
@@ -1011,7 +1047,9 @@
     "imageSource": {
       "file": "Earthing_jumper.jpeg",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 463,
+    "imageHeight": 486
   },
   {
     "id": "obc-025",
@@ -1026,7 +1064,7 @@
     "partNumber": "BEU",
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/item-025.webp",
+    "image": "/images/product-cable-tray-fitting-blind-end.webp",
     "imageAlt": "Cable Tray Fitting - Blind End",
     "specifications": {
       "Type": "Blind End"
@@ -1064,7 +1102,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY END CAP.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 450,
+    "imageHeight": 432
   },
   {
     "id": "obc-026",
@@ -1079,7 +1119,7 @@
     "partNumber": "DO 9",
     "material": "Mild Steel",
     "finishes": ["Hot Dip Galvanized", "Aluminium", "Polyester Powder Coating"],
-    "image": "/images/item-026.webp",
+    "image": "/images/product-cable-tray-fitting-drop-out.webp",
     "imageAlt": "Cable Tray Fitting - Drop Out",
     "specifications": {
       "Type": "Drop Out"
@@ -1117,7 +1157,9 @@
     "imageSource": {
       "file": "Cable_tray_drop_out.jpeg",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 534,
+    "imageHeight": 390
   },
   {
     "id": "obc-027",
@@ -1132,7 +1174,7 @@
     "partNumber": null,
     "material": "Hot Dip Galvanized Carbon Steel",
     "finishes": ["Hot Dip Galvanized"],
-    "image": "/images/item-027.webp",
+    "image": "/images/product-cable-ladder-nema-ve1-ve2-perforated-ladder-type-cable-tray.webp",
     "imageAlt": "Cable Ladder (NEMA VE1/VE2, Perforated Ladder Type Cable Tray)",
     "specifications": {
       "Standard": "NEMA VE 1, NEMA VE 2",
@@ -1173,7 +1215,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER OUTSIDE STREIGHT FLANGE.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 509,
+    "imageHeight": 401
   },
   {
     "id": "obc-028",
@@ -1188,7 +1232,7 @@
     "partNumber": null,
     "material": null,
     "finishes": ["Hot Dip Galvanized"],
-    "image": "/images/item-028.webp",
+    "image": "/images/product-hot-dip-galvanized-cable-tray-b-type.webp",
     "imageAlt": "Hot Dip Galvanized Cable Tray (B Type)",
     "specifications": {
       "Type": "B Type",
@@ -1230,11 +1274,13 @@
     "imageSource": {
       "file": "Product images/FYND/HOME PAGE/01.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 380,
+    "imageHeight": 257
   },
   {
     "id": "obc-029",
-    "slug": "cable-ladder-fittings-accessories",
+    "slug": "cable-ladder-fittings-and-accessories",
     "name": "Cable Ladder Fittings & Accessories",
     "family": "Cable ladders & accessories",
     "manufacturer": "Osos Al Benaa Company For Metal Industry",
@@ -1245,7 +1291,7 @@
     "partNumber": null,
     "material": null,
     "finishes": ["Hot Dip Galvanized"],
-    "image": "/images/item-029.webp",
+    "image": "/images/product-cable-ladder-fittings-and-accessories.webp",
     "imageAlt": "Cable Ladder Fittings & Accessories",
     "specifications": {},
     "source": {
@@ -1281,7 +1327,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER TEE.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 375,
+    "imageHeight": 244
   },
   {
     "id": "obc-030",
@@ -1296,7 +1344,7 @@
     "partNumber": null,
     "material": "Hot Dip Galvanized Carbon Steel",
     "finishes": [],
-    "image": "/images/item-030.webp",
+    "image": "/images/product-cable-tray-cover-flat-louvered.webp",
     "imageAlt": "Cable Tray Cover (Flat Louvered)",
     "specifications": {
       "Type": "Cover - Flat Louvered"
@@ -1334,7 +1382,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY VENTILATED COVER.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 573,
+    "imageHeight": 539
   },
   {
     "id": "obc-031",
@@ -1349,7 +1399,7 @@
     "partNumber": null,
     "material": null,
     "finishes": ["Hot Dip Galvanized"],
-    "image": "/images/item-031.webp",
+    "image": "/images/product-cable-tray-trunk-hanger.webp",
     "imageAlt": "Cable Tray / Trunk Hanger",
     "specifications": {
       "Type": "Hanger"
@@ -1387,7 +1437,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRUNKING & FITTINGS/CABLE TRUNK HANGER.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 279,
+    "imageHeight": 367
   },
   {
     "id": "obc-032",
@@ -1402,7 +1454,7 @@
     "partNumber": null,
     "material": null,
     "finishes": ["Hot Dip Galvanized"],
-    "image": "/images/item-032.webp",
+    "image": "/images/product-cable-tray-bracket.webp",
     "imageAlt": "Cable Tray Bracket",
     "specifications": {
       "Type": "Bracket"
@@ -1440,7 +1492,9 @@
     "imageSource": {
       "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/CANTILIVER ARM BRACKET 2 HOLE.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 592,
+    "imageHeight": 439
   },
   {
     "id": "obc-033",
@@ -1455,7 +1509,7 @@
     "partNumber": null,
     "material": "Galvanized Steel",
     "finishes": ["Hot Dip Galvanized"],
-    "image": "/images/item-033.webp",
+    "image": "/images/product-hdg-cable-trunking-300x100x2mm.webp",
     "imageAlt": "HDG Cable Trunking 300x100x2mm",
     "specifications": {
       "Height": "100 mm",
@@ -1495,7 +1549,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRUNKING & FITTINGS/CABLE TRUNKING W-COVER.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 493,
+    "imageHeight": 327
   },
   {
     "id": "obc-034",
@@ -1510,7 +1566,7 @@
     "partNumber": null,
     "material": "Galvanized Steel",
     "finishes": [],
-    "image": "/images/item-034.webp",
+    "image": "/images/product-hdg-cable-trunking-elbow-300x100x2mm.webp",
     "imageAlt": "HDG Cable Trunking Elbow 300x100x2mm",
     "specifications": {
       "Type": "Elbow",
@@ -1551,7 +1607,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRUNKING & FITTINGS/CABLE TRUNK 90° ELBOW.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 288,
+    "imageHeight": 213
   },
   {
     "id": "obc-035",
@@ -1566,7 +1624,7 @@
     "partNumber": null,
     "material": "Galvanized Steel",
     "finishes": [],
-    "image": "/images/item-035.webp",
+    "image": "/images/product-cable-trunking-accessories.webp",
     "imageAlt": "Cable Trunking Accessories",
     "specifications": {},
     "source": {
@@ -1602,7 +1660,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRUNKING & FITTINGS/CABLE TRUNK TEE.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 427,
+    "imageHeight": 319
   },
   {
     "id": "obc-036",
@@ -1617,7 +1677,7 @@
     "partNumber": null,
     "material": null,
     "finishes": ["Hot Dip Galvanized"],
-    "image": "/images/item-036.webp",
+    "image": "/images/product-hdg-slotted-c-channel-41x41x2mm.webp",
     "imageAlt": "HDG Slotted C-Channel 41x41x2mm",
     "specifications": {
       "Type": "Slotted C-Channel",
@@ -1657,7 +1717,9 @@
     "imageSource": {
       "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/41X41 SLOTTED CHANNEL.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 452,
+    "imageHeight": 425
   },
   {
     "id": "obc-037",
@@ -1672,7 +1734,7 @@
     "partNumber": null,
     "material": null,
     "finishes": ["Hot Dip Galvanized"],
-    "image": "/images/item-037.webp",
+    "image": "/images/product-slotted-channel-fittings.webp",
     "imageAlt": "Slotted Channel Fittings",
     "specifications": {},
     "source": {
@@ -1708,7 +1770,9 @@
     "imageSource": {
       "file": "Product images/FYND/HOME PAGE/BRACKETS & CLAMPS.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 488,
+    "imageHeight": 435
   },
   {
     "id": "obc-038",
@@ -1723,7 +1787,7 @@
     "partNumber": null,
     "material": null,
     "finishes": ["Hot Dip Galvanized"],
-    "image": "/images/item-038.webp",
+    "image": "/images/product-slotted-channel-base-plate.webp",
     "imageAlt": "Slotted Channel Base Plate",
     "specifications": {},
     "source": {
@@ -1759,7 +1823,9 @@
     "imageSource": {
       "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/SINGLE BASE PLATE 4 HOLE.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 535,
+    "imageHeight": 477
   },
   {
     "id": "obc-039",
@@ -1774,7 +1840,7 @@
     "partNumber": null,
     "material": null,
     "finishes": ["GI / Hot Dip Galvanized"],
-    "image": "/images/item-039.webp",
+    "image": "/images/product-cable-basket-tray.webp",
     "imageAlt": "Cable Basket Tray",
     "specifications": {
       "Tray Type": "Basket"
@@ -1812,7 +1878,9 @@
     "imageSource": {
       "file": "Product images/FYND/HOME PAGE/CABLE BASKET TRAY.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 512,
+    "imageHeight": 431
   },
   {
     "id": "obc-040",
@@ -1827,7 +1895,7 @@
     "partNumber": null,
     "material": null,
     "finishes": ["GI / Hot Dip Galvanized"],
-    "image": "/images/item-040.webp",
+    "image": "/images/product-cable-basket-tray-accessories.webp",
     "imageAlt": "Cable Basket Tray Accessories",
     "specifications": {
       "Tray Type": "Basket"
@@ -1865,7 +1933,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE BASKET & FITTINGS/CABLE BASKET TRAY CONNECTOR.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 449,
+    "imageHeight": 434
   },
   {
     "id": "obc-042",
@@ -1884,7 +1954,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-042.webp",
+    "image": "/images/product-cable-basket-tray-90-degree-elbow.webp",
     "imageAlt": "Cable Basket Tray 90° Elbow",
     "specifications": {},
     "source": {
@@ -1899,7 +1969,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE BASKET & FITTINGS/CABLE BASKET TRAY 90° ELBOW.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 405,
+    "imageHeight": 450
   },
   {
     "id": "obc-043",
@@ -1918,7 +1990,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-043.webp",
+    "image": "/images/product-cable-basket-tray-90-degree-inside-riser.webp",
     "imageAlt": "Cable Basket Tray 90° Inside Riser",
     "specifications": {},
     "source": {
@@ -1933,7 +2005,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE BASKET & FITTINGS/CABLE BASKET TRAY 90° INSIDE RISER.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 408,
+    "imageHeight": 515
   },
   {
     "id": "obc-044",
@@ -1952,7 +2026,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-044.webp",
+    "image": "/images/product-cable-basket-tray-90-degree-outside-riser.webp",
     "imageAlt": "Cable Basket Tray 90° Outside Riser",
     "specifications": {},
     "source": {
@@ -1967,7 +2041,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE BASKET & FITTINGS/CABLE BASKET TRAY 90° OUTSIDE RISER.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 433,
+    "imageHeight": 524
   },
   {
     "id": "obc-045",
@@ -1986,7 +2062,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-045.webp",
+    "image": "/images/product-cable-basket-tray-cross.webp",
     "imageAlt": "Cable Basket Tray Cross",
     "specifications": {},
     "source": {
@@ -2001,7 +2077,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE BASKET & FITTINGS/CABLE BASKET TRAY CROSS.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 536,
+    "imageHeight": 359
   },
   {
     "id": "obc-046",
@@ -2020,7 +2098,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-046.webp",
+    "image": "/images/product-cable-basket-tray-drop-out.webp",
     "imageAlt": "Cable Basket Tray Drop Out",
     "specifications": {},
     "source": {
@@ -2035,7 +2113,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE BASKET & FITTINGS/CABLE BASKET TRAY DROP OUT.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 416,
+    "imageHeight": 375
   },
   {
     "id": "obc-047",
@@ -2054,7 +2134,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-047.webp",
+    "image": "/images/product-cable-basket-tray-tee.webp",
     "imageAlt": "Cable Basket Tray Tee",
     "specifications": {},
     "source": {
@@ -2069,7 +2149,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE BASKET & FITTINGS/CABLE BASKET TRAY TEE.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 402,
+    "imageHeight": 272
   },
   {
     "id": "obc-048",
@@ -2088,7 +2170,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-048.webp",
+    "image": "/images/product-cable-ladder-4-way-cross.webp",
     "imageAlt": "Cable Ladder 4 Way Cross",
     "specifications": {},
     "source": {
@@ -2103,7 +2185,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER 4 WAY CROSS.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 533,
+    "imageHeight": 429
   },
   {
     "id": "obc-049",
@@ -2122,7 +2206,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-049.webp",
+    "image": "/images/product-cable-ladder-90-degree-elbow.webp",
     "imageAlt": "Cable Ladder 90° Elbow",
     "specifications": {},
     "source": {
@@ -2137,7 +2221,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER 90° ELBOW.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 509,
+    "imageHeight": 308
   },
   {
     "id": "obc-050",
@@ -2156,7 +2242,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-050.webp",
+    "image": "/images/product-cable-ladder-45-degree-elbow.webp",
     "imageAlt": "Cable Ladder 45° Elbow",
     "specifications": {},
     "source": {
@@ -2171,7 +2257,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE LADDER & FITTINGS/LADDER 45° ELBOW.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 348,
+    "imageHeight": 241
   },
   {
     "id": "obc-051",
@@ -2190,7 +2278,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-051.webp",
+    "image": "/images/product-cable-ladder-90-degree-inside-riser.webp",
     "imageAlt": "Cable Ladder 90° Inside Riser",
     "specifications": {},
     "source": {
@@ -2205,7 +2293,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER 90° INSIDE RISER.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 469,
+    "imageHeight": 438
   },
   {
     "id": "obc-052",
@@ -2224,7 +2314,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-052.webp",
+    "image": "/images/product-cable-ladder-90-degree-outside-riser.webp",
     "imageAlt": "Cable Ladder 90° Outside Riser",
     "specifications": {},
     "source": {
@@ -2239,7 +2329,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER 90° OUTSIDE RISER.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 439,
+    "imageHeight": 511
   },
   {
     "id": "obc-053",
@@ -2258,7 +2350,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-053.webp",
+    "image": "/images/product-cable-ladder-hold-down-clamp-type-1.webp",
     "imageAlt": "Cable Ladder Hold Down Clamp – Type 1",
     "specifications": {},
     "source": {
@@ -2273,7 +2365,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER HOLD DOWN CLAMP.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 287,
+    "imageHeight": 307
   },
   {
     "id": "obc-054",
@@ -2292,7 +2386,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-054.webp",
+    "image": "/images/product-cable-ladder-hold-down-clamp-type-2.webp",
     "imageAlt": "Cable Ladder Hold Down Clamp – Type 2",
     "specifications": {},
     "source": {
@@ -2307,7 +2401,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER HOLD DOWN CLAMP-2.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 301,
+    "imageHeight": 294
   },
   {
     "id": "obc-055",
@@ -2326,7 +2422,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-055.webp",
+    "image": "/images/product-cable-ladder-inside-straight-flange.webp",
     "imageAlt": "Cable Ladder Inside Straight Flange",
     "specifications": {},
     "source": {
@@ -2341,7 +2437,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER INSIDE STREIGHT FLANGE.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 520,
+    "imageHeight": 428
   },
   {
     "id": "obc-056",
@@ -2360,7 +2458,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-056.webp",
+    "image": "/images/product-cable-ladder-left-hand-reducer.webp",
     "imageAlt": "Cable Ladder Left Hand Reducer",
     "specifications": {},
     "source": {
@@ -2375,7 +2473,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER LEFT HAND REDUCER.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 380,
+    "imageHeight": 376
   },
   {
     "id": "obc-057",
@@ -2394,7 +2494,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-057.webp",
+    "image": "/images/product-cable-ladder-right-hand-reducer.webp",
     "imageAlt": "Cable Ladder Right Hand Reducer",
     "specifications": {},
     "source": {
@@ -2409,7 +2509,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER RIGHT HAND REDUCER.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 379,
+    "imageHeight": 264
   },
   {
     "id": "obc-058",
@@ -2428,7 +2530,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-058.webp",
+    "image": "/images/product-cable-ladder-straight-reducer.webp",
     "imageAlt": "Cable Ladder Straight Reducer",
     "specifications": {},
     "source": {
@@ -2443,7 +2545,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER STREIGHT REDUCER.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 599,
+    "imageHeight": 405
   },
   {
     "id": "obc-059",
@@ -2462,7 +2566,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-059.webp",
+    "image": "/images/product-cable-ladder-straight-connector.webp",
     "imageAlt": "Cable Ladder Straight Connector",
     "specifications": {},
     "source": {
@@ -2477,7 +2581,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER STREIGHT CONNECTOR.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 410,
+    "imageHeight": 283
   },
   {
     "id": "obc-060",
@@ -2496,7 +2602,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-060.webp",
+    "image": "/images/product-cable-ladder-peaked-cover.webp",
     "imageAlt": "Cable Ladder Peaked Cover",
     "specifications": {},
     "source": {
@@ -2511,7 +2617,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER PEACKED COVER.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 304,
+    "imageHeight": 189
   },
   {
     "id": "obc-061",
@@ -2530,7 +2638,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-061.webp",
+    "image": "/images/product-cable-ladder-solid-cover.webp",
     "imageAlt": "Cable Ladder Solid Cover",
     "specifications": {},
     "source": {
@@ -2545,7 +2653,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER SOLID COVER.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 323,
+    "imageHeight": 241
   },
   {
     "id": "obc-062",
@@ -2564,7 +2674,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-062.webp",
+    "image": "/images/product-cable-ladder-ventilated-cover.webp",
     "imageAlt": "Cable Ladder Ventilated Cover",
     "specifications": {},
     "source": {
@@ -2579,7 +2689,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE LADDER & FITTINGS/CABLE LADDER VENTILATED COVER.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 573,
+    "imageHeight": 539
   },
   {
     "id": "obc-063",
@@ -2598,7 +2710,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-063.webp",
+    "image": "/images/product-cable-tray-peaked-cover.webp",
     "imageAlt": "Cable Tray Peaked Cover",
     "specifications": {},
     "source": {
@@ -2613,7 +2725,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY PEACKED COVER.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 304,
+    "imageHeight": 189
   },
   {
     "id": "obc-064",
@@ -2632,7 +2746,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-064.webp",
+    "image": "/images/product-cable-tray-solid-cover.webp",
     "imageAlt": "Cable Tray Solid Cover",
     "specifications": {},
     "source": {
@@ -2647,7 +2761,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRAY & FITTINGS/CABLE TRAY SOLID COVER.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 323,
+    "imageHeight": 241
   },
   {
     "id": "obc-065",
@@ -2666,7 +2782,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-065.webp",
+    "image": "/images/product-cable-compartment-trunk.webp",
     "imageAlt": "Cable Compartment Trunk",
     "specifications": {},
     "source": {
@@ -2681,7 +2797,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRUNKING & FITTINGS/CABELE COMPARTMENT TRUNK.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 483,
+    "imageHeight": 425
   },
   {
     "id": "obc-066",
@@ -2700,7 +2818,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-066.webp",
+    "image": "/images/product-cable-trunk-45-degree-elbow.webp",
     "imageAlt": "Cable Trunk 45° Elbow",
     "specifications": {},
     "source": {
@@ -2715,7 +2833,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRUNKING & FITTINGS/CABLE TRUNK 45° ELBOW.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 283,
+    "imageHeight": 203
   },
   {
     "id": "obc-067",
@@ -2734,7 +2854,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-067.webp",
+    "image": "/images/product-cable-trunk-90-degree-inside-riser.webp",
     "imageAlt": "Cable Trunk 90° Inside Riser",
     "specifications": {},
     "source": {
@@ -2749,7 +2869,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRUNKING & FITTINGS/CABLE TRUNK 90° INSIDE RISER.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 484,
+    "imageHeight": 467
   },
   {
     "id": "obc-068",
@@ -2768,7 +2890,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-068.webp",
+    "image": "/images/product-cable-trunk-90-degree-outside-riser.webp",
     "imageAlt": "Cable Trunk 90° Outside Riser",
     "specifications": {},
     "source": {
@@ -2783,7 +2905,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRUNKING & FITTINGS/CABLE TRUNK 90° OUTSIDE RISER.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 311,
+    "imageHeight": 335
   },
   {
     "id": "obc-069",
@@ -2802,7 +2926,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-069.webp",
+    "image": "/images/product-cable-trunk-cross.webp",
     "imageAlt": "Cable Trunk Cross",
     "specifications": {},
     "source": {
@@ -2817,7 +2941,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRUNKING & FITTINGS/CABLE TRUNK CROSS.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 414,
+    "imageHeight": 318
   },
   {
     "id": "obc-070",
@@ -2836,7 +2962,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-070.webp",
+    "image": "/images/product-cable-trunk-reducer.webp",
     "imageAlt": "Cable Trunk Reducer",
     "specifications": {},
     "source": {
@@ -2851,7 +2977,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRUNKING & FITTINGS/CABLE TRUNK REDUCER.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 403,
+    "imageHeight": 380
   },
   {
     "id": "obc-071",
@@ -2870,7 +2998,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-071.webp",
+    "image": "/images/product-cable-trunk-straight-connector.webp",
     "imageAlt": "Cable Trunk Straight Connector",
     "specifications": {},
     "source": {
@@ -2885,7 +3013,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRUNKING & FITTINGS/CABLE TRUNK STREIGHT CONNECTOR.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 410,
+    "imageHeight": 283
   },
   {
     "id": "obc-072",
@@ -2904,7 +3034,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-072.webp",
+    "image": "/images/product-cable-trunk-u-connector.webp",
     "imageAlt": "Cable Trunk U-Connector",
     "specifications": {},
     "source": {
@@ -2919,7 +3049,9 @@
     "imageSource": {
       "file": "Product images/FYND/CABLE TRUNKING & FITTINGS/CABLE TRUNK U-CONNECTOR.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 389,
+    "imageHeight": 386
   },
   {
     "id": "obc-073",
@@ -2938,7 +3070,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-073.webp",
+    "image": "/images/product-41x21-slotted-channel.webp",
     "imageAlt": "41x21 Slotted Channel",
     "specifications": {},
     "source": {
@@ -2953,7 +3085,9 @@
     "imageSource": {
       "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/41X21 SLOTTED CHANNEL.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 482,
+    "imageHeight": 522
   },
   {
     "id": "obc-074",
@@ -2972,7 +3106,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-074.webp",
+    "image": "/images/product-41x41-plain-channel.webp",
     "imageAlt": "41x41 Plain Channel",
     "specifications": {},
     "source": {
@@ -2987,7 +3121,9 @@
     "imageSource": {
       "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/41X41 PLAIN CHANNEL.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 477,
+    "imageHeight": 496
   },
   {
     "id": "obc-075",
@@ -3006,7 +3142,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-075.webp",
+    "image": "/images/product-41x61-slotted-channel.webp",
     "imageAlt": "41x61 Slotted Channel",
     "specifications": {},
     "source": {
@@ -3021,7 +3157,9 @@
     "imageSource": {
       "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/41X61 SLOTTED CHANNEL.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 375,
+    "imageHeight": 199
   },
   {
     "id": "obc-076",
@@ -3040,7 +3178,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-076.webp",
+    "image": "/images/product-41x82-back-to-back-welded-slotted-channel.webp",
     "imageAlt": "41x82 Back-to-Back Welded Slotted Channel",
     "specifications": {},
     "source": {
@@ -3055,7 +3193,9 @@
     "imageSource": {
       "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/41X82 B2B WELDED SLOTTED CHANNEL.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 452,
+    "imageHeight": 428
   },
   {
     "id": "obc-077",
@@ -3074,7 +3214,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-077.webp",
+    "image": "/images/product-angle-bracket-1x1-hole.webp",
     "imageAlt": "Angle Bracket 1x1 Hole",
     "specifications": {},
     "source": {
@@ -3089,7 +3229,9 @@
     "imageSource": {
       "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/ANGLE BARCKET 1X1 HOLE.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 367,
+    "imageHeight": 367
   },
   {
     "id": "obc-078",
@@ -3108,7 +3250,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-078.webp",
+    "image": "/images/product-angle-bracket-2x1-hole.webp",
     "imageAlt": "Angle Bracket 2x1 Hole",
     "specifications": {},
     "source": {
@@ -3123,7 +3265,9 @@
     "imageSource": {
       "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/ANGLE BARCKET 2X1 HOLE.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 388,
+    "imageHeight": 301
   },
   {
     "id": "obc-079",
@@ -3142,7 +3286,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-079.webp",
+    "image": "/images/product-angle-bracket-2x2-hole.webp",
     "imageAlt": "Angle Bracket 2x2 Hole",
     "specifications": {},
     "source": {
@@ -3157,7 +3301,9 @@
     "imageSource": {
       "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/ANGLE BARCKET 2X2 HOLE.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 361,
+    "imageHeight": 387
   },
   {
     "id": "obc-080",
@@ -3176,7 +3322,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-080.webp",
+    "image": "/images/product-angle-bracket-welded.webp",
     "imageAlt": "Angle Bracket Welded",
     "specifications": {},
     "source": {
@@ -3191,7 +3337,9 @@
     "imageSource": {
       "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/ANGLE BRACKET WELDED.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 566,
+    "imageHeight": 368
   },
   {
     "id": "obc-081",
@@ -3210,7 +3358,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-081.webp",
+    "image": "/images/product-cantilever-arm-bracket-4-hole.webp",
     "imageAlt": "Cantilever Arm Bracket 4 Hole",
     "specifications": {},
     "source": {
@@ -3225,7 +3373,9 @@
     "imageSource": {
       "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/CANTILIVER ARM BRACKET 4 HOLE.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 512,
+    "imageHeight": 436
   },
   {
     "id": "obc-082",
@@ -3244,7 +3394,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-082.webp",
+    "image": "/images/product-double-base-plate.webp",
     "imageAlt": "Double Base Plate",
     "specifications": {},
     "source": {
@@ -3259,7 +3409,9 @@
     "imageSource": {
       "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/DOUBLE BASE PLATE.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 521,
+    "imageHeight": 463
   },
   {
     "id": "obc-083",
@@ -3278,7 +3430,7 @@
       "GI (Galvanized Iron)",
       "Stainless Steel"
     ],
-    "image": "/images/item-083.webp",
+    "image": "/images/product-single-base-plate-2-hole.webp",
     "imageAlt": "Single Base Plate 2 Hole",
     "specifications": {},
     "source": {
@@ -3293,6 +3445,8 @@
     "imageSource": {
       "file": "Product images/FYND/STRUT CHANNEL & SUPPORT/SINGLE BASE PLATE 2 HOLE.png",
       "kind": "supplied product image"
-    }
+    },
+    "imageWidth": 299,
+    "imageHeight": 420
   }
 ]

@@ -509,9 +509,10 @@ select {
   max-width: 310px;
   font-size: 15px;
 }
-.footer h3 {
+.footer h2 {
   font-family: "Barlow";
   font-size: 14px;
+  letter-spacing: normal;
   margin-bottom: 20px;
 }
 .footer-grid > div > a:not(.footer-brand) {
@@ -935,6 +936,8 @@ select {
 }
 .contact-info > a > span {
   flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
   font-size: 20px;
 }
 .contact-info small {
@@ -2081,4 +2084,18 @@ select {
   .whatsapp-float {
     display: none;
   }
+}
+.h1-lead {
+  display: block;
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #5b6470;
+  margin-bottom: 14px;
+}
+.hero-copy .h1-lead {
+  color: #fff;
 }

@@ -12,7 +12,10 @@ export function Contact() {
       <section className="page-intro container">
         <Breadcrumb name={t.common.contact} />
         <div className="section-heading">
-          <h1>{t.contact.title}</h1>
+          <h1>
+            <span className="h1-lead">{t.contact.h1Lead}</span>{" "}
+            {t.contact.title}
+          </h1>
           <p>{t.contact.intro}</p>
         </div>
       </section>
@@ -51,8 +54,8 @@ export function Contact() {
             <img
               src={sitePath("/images/logo.webp")}
               alt=""
-              width="152"
-              height="64"
+              width="280"
+              height="122"
               loading="lazy"
             />
             <span style={{ whiteSpace: "pre-line" }}>
@@ -133,7 +136,11 @@ export function Contact() {
               <input
                 name="phone"
                 type="tel"
+                inputMode="tel"
                 autoComplete="tel"
+                placeholder={t.contact.phonePlaceholder}
+                pattern="[+0-9 ()\-]{7,20}"
+                title={t.contact.phoneTitle}
                 required
                 maxLength={40}
                 aria-describedby={error ? "form-error" : undefined}

@@ -28,7 +28,8 @@
     "sliderLabel": "Cable management systems — illustrative image gallery",
     "previousSlide": "Previous hero image",
     "nextSlide": "Next hero image",
-    "slide": "Image"
+    "slide": "Image",
+    "h1Lead": "Cable tray & support systems manufacturer in Riyadh"
   },
   "about": {
     "title": "Practical engineering.\nPersonal commitment.",
@@ -36,7 +37,8 @@
     "scopeTitle": "From the first route\nto the final fixing.",
     "applicationsTitle": "Supporting different environments.",
     "applicationsIntro": "Our brochure describes applications across electrical, construction and industrial projects.",
-    "drawingCaption": "Cable tray system · Technical illustration from the OBC brochure"
+    "drawingCaption": "Cable tray system · Technical illustration from the OBC brochure",
+    "h1Lead": "About Osos Al Benaa"
   },
   "catalog": {
     "title": "Find your next connection.",
@@ -58,7 +60,9 @@
     "clearSearch": "Clear search",
     "remove": "Remove",
     "noJs": "Search and filtering require JavaScript. All products are available below.",
-    "imageUnavailable": "Product image unavailable"
+    "imageUnavailable": "Product image unavailable",
+    "h1Lead": "Cable management products",
+    "listHeading": "Products"
   },
   "product": {
     "specs": "Technical specifications",
@@ -101,7 +105,10 @@
     "factory": "Factory:",
     "showroomMap": "Showroom",
     "factoryMap": "Factory",
-    "factoryMapLabel": "Map showing the Osos Al Benaa factory in Riyadh"
+    "factoryMapLabel": "Map showing the Osos Al Benaa factory in Riyadh",
+    "h1Lead": "Contact Osos Al Benaa",
+    "phonePlaceholder": "+966 5X XXX XXXX",
+    "phoneTitle": "Enter a phone number using digits, spaces, + or -"
   },
   "cta": {
     "title": "Your project.\nOur next conversation.",
@@ -121,16 +128,19 @@
     "home": "Return home"
   },
   "seo": {
-    "homeTitle": "OBC | Cable Management Systems in Riyadh",
-    "homeDescription": "Explore cable trays, ladders, trunking and support accessories from Osos Al Benaa in Riyadh, Saudi Arabia.",
-    "aboutTitle": "About Osos Al Benaa | OBC",
-    "aboutDescription": "Meet Osos Al Benaa, a Riyadh-based cable management manufacturer and supplier established in 2022.",
-    "productsTitle": "Products | OBC Cable Management",
-    "productsDescription": "Browse 77 cable management products. Find cable trays, ladders, trunking, supports and cable baskets.",
-    "contactTitle": "Contact OBC | Discuss Your Project",
-    "contactDescription": "Contact Osos Al Benaa in Riyadh. Discuss product specifications and project requirements through WhatsApp or phone.",
-    "catalogueTitle": "Catalogue | OBC",
-    "catalogueDescription": "View or download the Osos Al Benaa cable management catalogue: cable trays, ladders, trunking, channels and supports."
+    "homeTitle": "Cable Tray & Support Systems Manufacturer in Riyadh | OBC",
+    "homeDescription": "Osos Al Benaa (OBC) manufactures cable trays, cable ladders, trunking, strut channels and supports in Riyadh, Saudi Arabia. Browse 77 products and enquire.",
+    "aboutTitle": "About Osos Al Benaa | Cable Tray Manufacturer in Riyadh",
+    "aboutDescription": "Established in 2022, Osos Al Benaa manufactures and fabricates cable trays, ladders, trunking, brackets and frames for electrical projects across Saudi Arabia.",
+    "productsTitle": "Cable Trays, Ladders, Trunking & Channels | OBC Products",
+    "productsDescription": "Browse 77 cable management products: cable trays and fittings, cable ladders, trunking, basket trays, strut channels and supports in HDG, GI and SS finishes.",
+    "contactTitle": "Contact Osos Al Benaa | Showroom & Factory in Riyadh",
+    "contactDescription": "Call +966 56 370 2823 or message us on WhatsApp. Visit the Osos Al Benaa showroom in Al Amal or our factory on Istanbul Street, Riyadh.",
+    "catalogueTitle": "Product Catalogue (PDF) | Osos Al Benaa OBC",
+    "catalogueDescription": "View or download the Osos Al Benaa catalogue: cable tray and ladder ordering guides, part numbers, trunking, channels, supports and ISO certificates.",
+    "notFoundTitle": "Page Not Found | OBC",
+    "notFoundDescription": "The page you are looking for does not exist. Browse Osos Al Benaa cable management products or contact our team in Riyadh.",
+    "ogImageAlt": "Cable trays installed on a project – Osos Al Benaa, Riyadh"
   },
   "common": {
     "home": "Home",
@@ -143,7 +153,8 @@
     "brandTagline": "Co. For Cable Tray",
     "contactMark": "LET’S BUILD\nTHE CONNECTION.",
     "heroLabel": "CABLE MANAGEMENT SYSTEMS",
-    "catalogue": "Catalogue"
+    "catalogue": "Catalogue",
+    "logoAlt": "Osos Al Benaa (OBC) logo"
   },
   "images": {
     "heroAlt": "Illustrative view of galvanized cable management systems in an industrial interior",

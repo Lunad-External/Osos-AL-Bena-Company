@@ -30,7 +30,13 @@ test("facets OR internally and AND across facets", () => {
   assert.equal(filterProducts("", f).length, 19);
   assert.equal(filterProducts("", { ...f, brand: ["OBC"] }).length, 19);
   assert.equal(filterProducts("basket", { ...f, brand: ["OBC"] }).length, 8);
-  assert.equal(filterProducts("", { ...f, material: ["Nylon 06 Glass-filled (LSOH/LSZH)"] }).length, 0);
+  assert.equal(
+    filterProducts("", {
+      ...f,
+      material: ["Nylon 06 Glass-filled (LSOH/LSZH)"],
+    }).length,
+    0,
+  );
 });
 test("URL state roundtrips, rejects unknown values and deduplicates", () => {
   const f = {
@@ -53,4 +59,48 @@ test("WhatsApp encodes reserved characters and Unicode", () => {
   const url = new URL(whatsappUrl("966563702823", message));
   assert.equal(url.searchParams.get("text"), message);
   assert.equal(url.pathname, "/966563702823");
+});
+test("URL rules: slugs, ampersands, case and trailing slashes", async () => {
+  const { slugify, canonicalPathFor, publicRoutes, removedPaths, movedPaths } =
+    await import("../src/seo");
+  assert.equal(
+    slugify("Interior & Exterior Design"),
+    "interior-and-exterior-design",
+  );
+  assert.equal(slugify("Home_Interior"), "home-interior");
+  assert.equal(slugify("20% Discount!"), "20-discount");
+  assert.equal(slugify("office---interior--design"), "office-interior-design");
+  for (const p of products) assert.equal(p.slug, slugify(p.name));
+  for (const r of publicRoutes) {
+    assert.match(r, /^\/([a-z0-9]+(-[a-z0-9]+)*\/)*$/);
+    assert.equal(canonicalPathFor(r), null);
+  }
+  assert.equal(canonicalPathFor("/About"), "/about/");
+  assert.equal(canonicalPathFor("/products"), "/products/");
+  assert.equal(canonicalPathFor("/index.html"), "/");
+  for (const [from, to] of Object.entries(movedPaths)) {
+    assert.equal(canonicalPathFor(from), to);
+    assert.ok(publicRoutes.includes(to));
+  }
+  for (const r of removedPaths) assert.ok(!publicRoutes.includes(r));
+});
+test("every page has unique metadata and valid structured data", async () => {
+  const { pageMeta, publicRoutes, structuredData, sitemapXml } = await import(
+    "../src/seo"
+  );
+  const titles = new Set(),
+    descriptions = new Set();
+  for (const r of publicRoutes) {
+    const meta = pageMeta(r);
+    assert.equal(meta.status, 200);
+    titles.add(meta.title);
+    descriptions.add(meta.description);
+    assert.ok(meta.description.length <= 160, r);
+    JSON.parse(JSON.stringify(structuredData(meta, "https://ososalbenaa.com")));
+  }
+  assert.equal(titles.size, publicRoutes.length);
+  assert.equal(descriptions.size, publicRoutes.length);
+  assert.equal(pageMeta("/missing/").status, 404);
+  const xml = sitemapXml("https://ososalbenaa.com", "2026-01-01");
+  assert.equal((xml.match(/<loc>/g) || []).length, publicRoutes.length);
 });
