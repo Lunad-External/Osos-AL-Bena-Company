@@ -3,7 +3,6 @@ import { Menu, X, ArrowUpRight, Phone, MapPin } from "lucide-react";
 import company from "../data/company.json";
 import site from "../data/site.json";
 import t from "../locales/en.json";
-import { WhatsAppLink } from "./UI";
 import { sitePath } from "../sitePath";
 export function Header({ path }: { path: string }) {
   const [open, setOpen] = useState(false);
@@ -126,7 +125,6 @@ export function Footer() {
               <MapPin size={16} />
               {company.address}
             </p>
-            <WhatsAppLink className="button button-green footer-whatsapp" />
             <a href={sitePath("/contact/")} className="footer-contact-link">
               {t.common.contact}
             </a>
