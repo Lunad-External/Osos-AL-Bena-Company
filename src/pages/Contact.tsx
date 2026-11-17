@@ -4,6 +4,7 @@ import company from "../data/company.json";
 import t from "../locales/en.json";
 import { products, whatsappUrl } from "../catalog";
 import { Breadcrumb, WhatsAppLink } from "../components/UI";
+import { sitePath } from "../sitePath";
 export function Contact() {
   const [error, setError] = useState("");
   return (
@@ -48,7 +49,13 @@ export function Contact() {
           </div>
           <WhatsAppLink />
           <div className="contact-mark" aria-hidden="true">
-            {company.brand}
+            <img
+              src={sitePath("/images/logo.webp")}
+              alt=""
+              width="152"
+              height="64"
+              loading="lazy"
+            />
             <span style={{ whiteSpace: "pre-line" }}>
               {t.common.contactMark}
             </span>
