@@ -23,6 +23,10 @@ export function ProductDetail({ product: p }: { product: Product }) {
               src={p.image}
               alt={p.imageAlt}
               className="detail-image"
+              width={p.imageWidth}
+              height={p.imageHeight}
+              sizes="(max-width: 899px) 100vw, 50vw"
+              priority
             />
             {p.image ? (
               <p className="image-caption">{t.product.illustration}</p>

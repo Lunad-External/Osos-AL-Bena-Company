@@ -9,7 +9,9 @@ export function About() {
       <section className="page-intro container">
         <Breadcrumb name={t.common.about} />
         <div className="section-heading">
-          <h1>{t.about.title}</h1>
+          <h1>
+            <span className="h1-lead">{t.about.h1Lead}</span> {t.about.title}
+          </h1>
           <p>{t.about.intro}</p>
         </div>
       </section>
@@ -17,8 +19,10 @@ export function About() {
         <figure>
           <img
             src={sitePath("/images/system.webp")}
+            srcSet={`${sitePath("/images/system-480.webp")} 480w, ${sitePath("/images/system.webp")} 1186w`}
+            sizes="(max-width: 899px) 100vw, 50vw"
             alt={t.images.systemAlt}
-            width="1200"
+            width="1186"
             height="900"
           />
           <figcaption>{t.about.drawingCaption}</figcaption>

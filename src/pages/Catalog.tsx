@@ -13,6 +13,7 @@ import {
   type Facet,
 } from "../catalog";
 import { Breadcrumb, EnquiryBand, ProductCard } from "../components/UI";
+import { sitePath } from "../sitePath";
 function Facets({
   filters,
   toggle,
@@ -63,7 +64,7 @@ export function Catalog() {
     window.history[replace ? "replaceState" : "pushState"](
       {},
       "",
-      selectionUrl(q, f),
+      sitePath(selectionUrl(q, f)),
     );
   }
   const toggle = (key: Facet, value: string) =>
@@ -85,7 +86,9 @@ export function Catalog() {
     <>
       <section className="page-intro container">
         <Breadcrumb name={t.common.products} />
-        <h1>{t.catalog.title}</h1>
+        <h1>
+          <span className="h1-lead">{t.catalog.h1Lead}</span> {t.catalog.title}
+        </h1>
         <p>{t.catalog.intro}</p>
       </section>
       <section className="catalog-section container">
@@ -172,11 +175,14 @@ export function Catalog() {
               </div>
             ) : null}
             {found.length ? (
-              <div className="product-grid">
-                {found.map((p) => (
-                  <ProductCard key={p.id} product={p} />
-                ))}
-              </div>
+              <>
+                <h2 className="sr-only">{t.catalog.listHeading}</h2>
+                <div className="product-grid">
+                  {found.map((p) => (
+                    <ProductCard key={p.id} product={p} />
+                  ))}
+                </div>
+              </>
             ) : (
               <div className="empty-state">
                 <Search size={36} />
