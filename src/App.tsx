@@ -7,6 +7,7 @@ import { Contact } from "./pages/Contact";
 import { CataloguePage } from "./pages/CataloguePage";
 import { NotFound } from "./pages/NotFound";
 import { products } from "./catalog";
+import { WhatsAppFloat } from "./components/UI";
 export function App({ path }: { path: string }) {
   const product = products.find((p) => path === `/products/${p.slug}/`);
   const page =
@@ -30,6 +31,7 @@ export function App({ path }: { path: string }) {
       <Header path={path} />
       <main id="main">{page}</main>
       <Footer />
+      {product ? null : <WhatsAppFloat />}
     </>
   );
 }
