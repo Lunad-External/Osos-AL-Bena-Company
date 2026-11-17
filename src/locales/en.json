@@ -81,8 +81,8 @@
     "formTitle": "Start a conversation.",
     "handoff": "This form opens a draft in WhatsApp. Review it there and send when you’re ready.",
     "name": "Your name",
-    "phone": "Phone number (optional)",
-    "company": "Company (optional)",
+    "phone": "Phone number",
+    "company": "Company",
     "product": "Product (optional)",
     "choose": "Choose a product",
     "message": "What do you need?",
@@ -112,7 +112,8 @@
     "navigation": "Explore",
     "contact": "Get in touch",
     "copyright": "Osos Al Benaa Company For Metal Industry.",
-    "note": "Product specifications are supplied for reference. Confirm suitability and requirements with our team."
+    "note": "Powered by Lunad Arabia Limited Company",
+    "company": "Osos Al Benaa Co. For Metal Industry,\nCable Tray and Support Systems"
   },
   "notFound": {
     "title": "This connection is missing.",
