@@ -127,6 +127,7 @@ test("broken images switch to local fallback", async ({ page }) => {
     .locator(".product-card img")
     .first()
     .evaluate((image: HTMLImageElement) => {
+      image.removeAttribute("srcset");
       image.src = "/images/missing-image.webp";
     });
   await expect(page.locator(".product-card img").first()).toHaveAttribute(
