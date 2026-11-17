@@ -1,7 +1,7 @@
 {
   "locale": "en",
   "direction": "ltr",
-  "canonicalOrigin": "https://www.ososalbenaa.com",
+  "canonicalOrigin": "https://ososalbenaa.com",
   "nav": [
     {
       "label": "Home",
@@ -24,37 +24,52 @@
       "href": "/contact/"
     }
   ],
-  "featuredIds": ["obc-001", "obc-006", "obc-039", "obc-008"],
+  "featuredIds": [
+    "obc-001",
+    "obc-006",
+    "obc-039",
+    "obc-008"
+  ],
   "families": [
     {
       "name": "Cable trays & fittings",
       "short": "Cable trays",
       "image": "/images/trays.webp",
-      "description": "Straight sections, fittings and connecting accessories."
+      "description": "Straight sections, fittings and connecting accessories.",
+      "imageWidth": 769,
+      "imageHeight": 431
     },
     {
       "name": "Cable ladders & accessories",
       "short": "Cable ladders",
       "image": "/images/family-ladders.webp",
-      "description": "Ladder systems and accessories for cable support."
+      "description": "Ladder systems and accessories for cable support.",
+      "imageWidth": 509,
+      "imageHeight": 401
     },
     {
       "name": "Cable trunking",
       "short": "Cable trunking",
       "image": "/images/family-trunking.webp",
-      "description": "Enclosed cable routing and matching accessories."
+      "description": "Enclosed cable routing and matching accessories.",
+      "imageWidth": 493,
+      "imageHeight": 327
     },
     {
       "name": "Channels & supports",
       "short": "Channels & supports",
       "image": "/images/family-channels.webp",
-      "description": "Channels, brackets, hangers and support fittings."
+      "description": "Channels, brackets, hangers and support fittings.",
+      "imageWidth": 583,
+      "imageHeight": 542
     },
     {
       "name": "Cable baskets",
       "short": "Cable baskets",
       "image": "/images/baskets.webp",
-      "description": "Wire basket trays and their accessories."
+      "description": "Wire basket trays and their accessories.",
+      "imageWidth": 680,
+      "imageHeight": 835
     }
   ],
   "copyrightYear": 2026,

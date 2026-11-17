@@ -9,7 +9,7 @@
   "phoneDigits": "966563702823",
   "whatsappVerified": false,
   "email": "info@ososalbenaa.com",
-  "website": "https://www.ososalbenaa.com",
+  "website": "https://ososalbenaa.com",
   "intro": "From our base in Riyadh, we design, manufacture and supply cable management systems for electrical and construction projects.",
   "about": "Established in 2022, Osos Al Benaa brings cable trays, ladders, trunking and support accessories together in one practical range. Our manufacturing scope includes brackets, frames and custom fabrication for project-specific requirements.",
   "source": "Brochure.pdf, pages 4–5 and 100",
@@ -35,5 +35,8 @@
     }
   ],
   "wordmark": "OSOS AL BENAA",
-  "factoryAddress": "Istanbul Street, Beside Manar Middle Metals, Riyadh 12643, Saudi Arabia"
+  "factoryAddress": "Istanbul Street, Beside Manar Middle Metals, Riyadh 12643, Saudi Arabia",
+  "showroomStreet": "Beside Alinma Bank, gharabi Street, Al Amal",
+  "factoryStreet": "Istanbul Street, Beside Manar Middle Metals",
+  "postalCode": "12643"
 }
