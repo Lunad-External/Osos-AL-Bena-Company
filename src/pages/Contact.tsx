@@ -213,7 +213,7 @@ export function Contact() {
             <figcaption>{t.contact.factoryMap}</figcaption>
             <div className="map-frame">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26257.65893719992!2d46.8455687!3d24.6251598!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2fa74c685e873b%3A0x6d8920bcde960097!2sOsos%20al%20Benna%20Company%20For%20Metal%20Industries%20%26%20cable%20tray%20(support%20system)!5e1!3m2!1sen!2sae!4v1794898687097!5m2!1sen!2sae"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26257.65893719992!2d46.8455687!3d24.6251598!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2fa74c685e873b%3A0x6d8920bcde960097!2sOsos%20al%20Benna%20Company%20For%20Metal%20Industries%20%26%20cable%20tray%20(support%20system)!5e0!3m2!1sen!2sae!4v1794898687097!5m2!1sen!2sae"
                 title={t.contact.factoryMapLabel}
                 width="600"
                 height="450"
