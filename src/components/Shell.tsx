@@ -29,9 +29,9 @@ export function Header({ path }: { path: string }) {
           >
             <img
               src={sitePath("/images/logo.webp")}
-              alt={company.brand}
-              width="152"
-              height="64"
+              alt={t.common.logoAlt}
+              width="280"
+              height="122"
             />
             <span>
               {company.wordmark}
@@ -99,9 +99,9 @@ export function Footer() {
             >
               <img
                 src={sitePath("/images/logo.webp")}
-                alt={company.brand}
-                width="152"
-                height="64"
+                alt={t.common.logoAlt}
+                width="280"
+                height="122"
                 loading="lazy"
               />
             </a>
@@ -109,7 +109,7 @@ export function Footer() {
             <p>{t.footer.description}</p>
           </div>
           <div>
-            <h3>{t.footer.navigation}</h3>
+            <h2>{t.footer.navigation}</h2>
             {site.nav.map((n) => (
               <a key={n.href} href={sitePath(n.href)}>
                 {n.label}
@@ -117,7 +117,7 @@ export function Footer() {
             ))}
           </div>
           <div>
-            <h3>{t.footer.contact}</h3>
+            <h2>{t.footer.contact}</h2>
             <a href={`tel:+${company.phoneDigits}`}>{company.phone}</a>
             <a href={`mailto:${company.email}`}>{company.email}</a>
             <p className="footer-address">

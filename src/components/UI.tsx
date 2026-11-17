@@ -77,21 +77,45 @@ export function ProductImage({
   src,
   alt,
   className = "",
+  width = 960,
+  height = 720,
+  sizes = "(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 300px",
+  priority = false,
 }: {
   src?: string | null;
   alt: string;
   className?: string;
+  width?: number;
+  height?: number;
+  sizes?: string;
+  priority?: boolean;
 }) {
   const [failed, setFailed] = useState(false);
   const unavailable = !src || failed;
+  // Product images ship a 480px variant next to the full-size file.
+  const srcSet =
+    !unavailable &&
+    width > 480 &&
+    src!.startsWith("/images/product-") &&
+    !/^\/images\/product-\d+\.webp$/.test(src!)
+      ? `${sitePath(src!.replace(/\.webp$/, "-480.webp"))} 480w, ${sitePath(src!)} ${width}w`
+      : undefined;
   return (
     <div className={`product-image ${className}`}>
       <img
-        src={unavailable ? sitePath("/images/product-fallback.svg") : sitePath(src!)}
+        src={
+          unavailable
+            ? sitePath("/images/product-fallback.svg")
+            : sitePath(src!)
+        }
+        srcSet={srcSet}
+        sizes={srcSet ? sizes : undefined}
         alt={unavailable ? t.catalog.imageUnavailable : alt}
-        width="960"
-        height="720"
-        loading="lazy"
+        width={width}
+        height={height}
+        loading={priority ? "eager" : "lazy"}
+        fetchPriority={priority ? "high" : undefined}
+        decoding="async"
         onError={() => {
           if (!failed) setFailed(true);
         }}
@@ -114,7 +138,12 @@ export function ProductCard({ product }: { product: Product }) {
         tabIndex={-1}
         aria-hidden="true"
       >
-        <ProductImage src={product.image} alt={product.imageAlt} />
+        <ProductImage
+          src={product.image}
+          alt={product.imageAlt}
+          width={product.imageWidth}
+          height={product.imageHeight}
+        />
       </a>
       <div className="product-card-body">
         <h3>
