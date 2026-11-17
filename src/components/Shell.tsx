@@ -93,19 +93,30 @@ export function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div>
-            <a href={sitePath("/")} className="footer-brand">
-              {company.wordmark}
-              <span>{company.brand}</span>
+            <a
+              href={sitePath("/")}
+              className="footer-brand"
+              aria-label={`${company.name} ${t.common.homeLink}`}
+            >
+              <img
+                src={sitePath("/images/logo.webp")}
+                alt={company.brand}
+                width="152"
+                height="64"
+                loading="lazy"
+              />
             </a>
             <p>{t.footer.description}</p>
           </div>
           <div>
             <h3>{t.footer.navigation}</h3>
-            {site.nav.map((n) => (
-              <a key={n.href} href={sitePath(n.href)}>
-                {n.label}
-              </a>
-            ))}
+            {site.nav
+              .filter((n) => n.href !== "/contact/")
+              .map((n) => (
+                <a key={n.href} href={sitePath(n.href)}>
+                  {n.label}
+                </a>
+              ))}
           </div>
           <div>
             <h3>{t.footer.contact}</h3>
@@ -116,6 +127,9 @@ export function Footer() {
               {company.address}
             </p>
             <WhatsAppLink className="button button-green footer-whatsapp" />
+            <a href={sitePath("/contact/")} className="footer-contact-link">
+              {t.common.contact}
+            </a>
           </div>
         </div>
         <div className="footer-bottom">

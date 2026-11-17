@@ -123,7 +123,7 @@
     "contactTitle": "Contact OBC | Discuss Your Project",
     "contactDescription": "Contact Osos Al Benaa in Riyadh. Discuss product specifications and project requirements through WhatsApp or phone.",
     "catalogueTitle": "Catalogue | OBC",
-    "catalogueDescription": "Download and browse the Osos Al Benaa cable management catalogue."
+    "catalogueDescription": "View or download the Osos Al Benaa cable management catalogue: cable trays, ladders, trunking, channels and supports."
   },
   "common": {
     "home": "Home",
@@ -150,5 +150,14 @@
     "phone": "Phone: {value}",
     "productField": "Product: {value}",
     "requirements": "Requirements: {value}"
+  },
+  "catalogue": {
+    "intro": "Browse our full range of cable trays, ladders, trunking, channels and support systems in one document.",
+    "title": "Osos Al Benaa product catalogue",
+    "body": "Product ranges, ordering guides, part numbering and technical data for our cable management systems.",
+    "meta": "PDF · 32 pages · 4.7 MB",
+    "view": "View catalogue",
+    "download": "Download PDF",
+    "coverAlt": "Cover of the Osos Al Benaa product catalogue"
   }
 }
