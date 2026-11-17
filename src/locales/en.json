@@ -95,7 +95,12 @@
     "privacy": "Your enquiry is not stored on this website. WhatsApp’s own privacy terms apply when you continue.",
     "noJs": "You can also use the direct WhatsApp link or phone number. The form requires JavaScript.",
     "mapTitle": "Find us",
-    "mapLabel": "Map showing the location of Osos Al Benaa in Riyadh"
+    "mapLabel": "Map showing the Osos Al Benaa showroom in Riyadh",
+    "showroom": "Showroom:",
+    "factory": "Factory:",
+    "showroomMap": "Showroom",
+    "factoryMap": "Factory",
+    "factoryMapLabel": "Map showing the Osos Al Benaa factory in Riyadh"
   },
   "cta": {
     "title": "Your project.\nOur next conversation.",
@@ -133,7 +138,7 @@
     "breadcrumb": "Breadcrumb",
     "mainNavigation": "Main navigation",
     "homeLink": "home",
-    "brandTagline": "METAL INDUSTRY",
+    "brandTagline": "Co. For Cable Tray",
     "contactMark": "LET’S BUILD\nTHE CONNECTION.",
     "heroLabel": "CABLE MANAGEMENT SYSTEMS",
     "catalogue": "Catalogue"
