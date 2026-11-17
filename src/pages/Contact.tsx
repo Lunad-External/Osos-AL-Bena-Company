@@ -3,7 +3,7 @@ import { ArrowUpRight, MapPin, Phone, Mail } from "lucide-react";
 import company from "../data/company.json";
 import t from "../locales/en.json";
 import { products, whatsappUrl } from "../catalog";
-import { Breadcrumb, WhatsAppLink } from "../components/UI";
+import { Breadcrumb } from "../components/UI";
 import { sitePath } from "../sitePath";
 export function Contact() {
   const [error, setError] = useState("");
@@ -47,7 +47,6 @@ export function Contact() {
               <strong>{t.contact.factory}</strong> {company.factoryAddress}
             </p>
           </div>
-          <WhatsAppLink />
           <div className="contact-mark" aria-hidden="true">
             <img
               src={sitePath("/images/logo.webp")}
@@ -98,18 +97,12 @@ export function Contact() {
             ]
               .filter(Boolean)
               .join("\n");
-            if (
-              !String(data.get("name")).trim() ||
-              !String(data.get("message")).trim()
-            ) {
+            const missing = ["name", "phone", "company", "message"].find(
+              (field) => !String(data.get(field) ?? "").trim(),
+            );
+            if (missing) {
               setError(t.contact.error);
-              form
-                .querySelector<HTMLElement>(
-                  !String(data.get("name")).trim()
-                    ? '[name="name"]'
-                    : '[name="message"]',
-                )
-                ?.focus();
+              form.querySelector<HTMLElement>(`[name="${missing}"]`)?.focus();
               return;
             }
             setError("");
@@ -136,17 +129,27 @@ export function Contact() {
             </label>
             <label>
               {t.contact.phone}
+              <span className="required">{t.contact.required}</span>
               <input
                 name="phone"
                 type="tel"
                 autoComplete="tel"
+                required
                 maxLength={40}
+                aria-describedby={error ? "form-error" : undefined}
               />
             </label>
           </div>
           <label>
             {t.contact.company}
-            <input name="company" autoComplete="organization" maxLength={160} />
+            <span className="required">{t.contact.required}</span>
+            <input
+              name="company"
+              autoComplete="organization"
+              required
+              maxLength={160}
+              aria-describedby={error ? "form-error" : undefined}
+            />
           </label>
           <label>
             {t.contact.product}
