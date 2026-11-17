@@ -105,17 +105,16 @@ export function Footer() {
                 loading="lazy"
               />
             </a>
+            <p className="footer-company">{t.footer.company}</p>
             <p>{t.footer.description}</p>
           </div>
           <div>
             <h3>{t.footer.navigation}</h3>
-            {site.nav
-              .filter((n) => n.href !== "/contact/")
-              .map((n) => (
-                <a key={n.href} href={sitePath(n.href)}>
-                  {n.label}
-                </a>
-              ))}
+            {site.nav.map((n) => (
+              <a key={n.href} href={sitePath(n.href)}>
+                {n.label}
+              </a>
+            ))}
           </div>
           <div>
             <h3>{t.footer.contact}</h3>
@@ -123,11 +122,16 @@ export function Footer() {
             <a href={`mailto:${company.email}`}>{company.email}</a>
             <p className="footer-address">
               <MapPin size={16} />
-              {company.address}
+              <span>
+                <strong>{t.contact.showroom}</strong> {company.address}
+              </span>
             </p>
-            <a href={sitePath("/contact/")} className="footer-contact-link">
-              {t.common.contact}
-            </a>
+            <p className="footer-address">
+              <MapPin size={16} />
+              <span>
+                <strong>{t.contact.factory}</strong> {company.factoryAddress}
+              </span>
+            </p>
           </div>
         </div>
         <div className="footer-bottom">

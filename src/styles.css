@@ -542,6 +542,15 @@ select {
   padding-block: 24px;
   font-size: 11px;
 }
+.footer-grid > div > p.footer-company {
+  font-weight: 600;
+  color: #17202a;
+  line-height: 1.5;
+}
+.footer-address strong {
+  color: #17202a;
+  font-weight: 600;
+}
 .footer-bottom p:last-child {
   max-width: 410px;
 }
