@@ -59,6 +59,20 @@ export function WhatsAppLink({
     </a>
   );
 }
+export function WhatsAppFloat() {
+  return (
+    <a
+      className="whatsapp-float"
+      href={whatsappUrl(company.phoneDigits, t.messages.general)}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={t.actions.whatsappFloat}
+      title={t.actions.whatsappFloat}
+    >
+      <WhatsAppIcon size={30} />
+    </a>
+  );
+}
 export function ProductImage({
   src,
   alt,
