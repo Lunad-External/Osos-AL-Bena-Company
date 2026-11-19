@@ -62,7 +62,9 @@
     "noJs": "Search and filtering require JavaScript. All products are available below.",
     "imageUnavailable": "Product image unavailable",
     "h1Lead": "Cable management products",
-    "listHeading": "Products"
+    "listHeading": "Products",
+    "rangesTitle": "Browse by range",
+    "dialogTitle": "Filters"
   },
   "product": {
     "specs": "Technical specifications",
@@ -77,7 +79,17 @@
     "model": "Model",
     "material": "Material",
     "finish": "Finish",
-    "partNumber": "Part number"
+    "partNumber": "Part number",
+    "overviewTitle": "About this product",
+    "overview": "The {name} is part of the OBC {family} range, manufactured by Osos Al Benaa in Riyadh, Saudi Arabia.",
+    "madeOf": "It is made from {material}.",
+    "availableIn": "It is available in {finishes}.",
+    "standards": "Referenced standards: {standard}.",
+    "finishesTitle": "Finish options",
+    "orderTitle": "How to order",
+    "order": "Send the size, finish and quantity you need, or a drawing of your cable route, and our team will confirm the configuration. We supply projects in",
+    "and": "and",
+    "family": "Range"
   },
   "contact": {
     "title": "Let’s talk\nabout your project.",
@@ -120,7 +132,8 @@
     "contact": "Get in touch",
     "copyright": "Osos Al Benaa Company For Metal Industry.",
     "note": "Powered by Lunad Arabia Limited Company",
-    "company": "OSOS AL BENAA Co. For Metal Industry,\nCable Tray and Support Systems"
+    "company": "OSOS AL BENAA Co. For Metal Industry,\nCable Tray and Support Systems",
+    "areas": "Areas we serve"
   },
   "notFound": {
     "title": "This connection is missing.",
@@ -129,15 +142,15 @@
   },
   "seo": {
     "homeTitle": "Cable Tray & Support Systems Manufacturer in Riyadh | OBC",
-    "homeDescription": "Osos Al Benaa (OBC) manufactures cable trays, cable ladders, trunking, strut channels and supports in Riyadh, Saudi Arabia. Browse 77 products and enquire.",
+    "homeDescription": "Osos Al Benaa (OBC) manufactures cable trays, ladders, trunking, strut channels and supports in Riyadh, Saudi Arabia. Browse 77 products.",
     "aboutTitle": "About Osos Al Benaa | Cable Tray Manufacturer in Riyadh",
-    "aboutDescription": "Established in 2022, Osos Al Benaa manufactures and fabricates cable trays, ladders, trunking, brackets and frames for electrical projects across Saudi Arabia.",
+    "aboutDescription": "Established in 2022, Osos Al Benaa makes cable trays, ladders, trunking, brackets and frames for electrical projects across Saudi Arabia.",
     "productsTitle": "Cable Trays, Ladders, Trunking & Channels | OBC Products",
-    "productsDescription": "Browse 77 cable management products: cable trays and fittings, cable ladders, trunking, basket trays, strut channels and supports in HDG, GI and SS finishes.",
+    "productsDescription": "77 cable management products: cable trays and fittings, ladders, trunking, basket trays, strut channels and supports in HDG, GI and SS.",
     "contactTitle": "Contact Osos Al Benaa | Showroom & Factory in Riyadh",
     "contactDescription": "Call +966 56 370 2823 or message us on WhatsApp. Visit the Osos Al Benaa showroom in Al Amal or our factory on Istanbul Street, Riyadh.",
-    "catalogueTitle": "Product Catalogue (PDF) | Osos Al Benaa OBC",
-    "catalogueDescription": "View or download the Osos Al Benaa catalogue: cable tray and ladder ordering guides, part numbers, trunking, channels, supports and ISO certificates.",
+    "catalogueTitle": "Cable Tray Product Catalogue (PDF) | Osos Al Benaa OBC",
+    "catalogueDescription": "Download the Osos Al Benaa catalogue: cable tray and ladder ordering guides, part numbers, trunking, strut channels and ISO certificates.",
     "notFoundTitle": "Page Not Found | OBC",
     "notFoundDescription": "The page you are looking for does not exist. Browse Osos Al Benaa cable management products or contact our team in Riyadh.",
     "ogImageAlt": "Cable trays installed on a project – Osos Al Benaa, Riyadh"
@@ -173,9 +186,42 @@
     "intro": "Browse our full range of cable trays, ladders, trunking, channels and support systems in one document.",
     "title": "Osos Al Benaa product catalogue",
     "body": "Company profile, ISO certifications, product ranges, ordering guides, part numbering and technical data for our cable management systems.",
-    "meta": "PDF · 38 pages · 9.5 MB",
+    "meta": "PDF · 38 pages · 6.6 MB",
     "view": "View catalogue",
     "download": "Download PDF",
-    "coverAlt": "Cover of the Osos Al Benaa product catalogue"
+    "coverAlt": "Cover of the Osos Al Benaa product catalogue",
+    "h1": "Product catalogue",
+    "contentsTitle": "What's inside",
+    "contents": [
+      "General information and company profile",
+      "Cable tray system and fittings",
+      "Cable ladder system, including ordering guides and charts",
+      "Over-floor, under-floor and in-cavity cable trunking",
+      "Strut channel framing systems (41 mm and 21 mm series), post bases and connectors",
+      "Shelter cable ladders and racks",
+      "ISO certificates"
+    ],
+    "useTitle": "Using the catalogue",
+    "use": "Use the ordering guides and part numbers to build your bill of quantities, then send it to our team for confirmation. You can also browse every product online by range:"
+  },
+  "category": {
+    "productsTitle": "{count} products in this range",
+    "otherRanges": "Other ranges",
+    "viewAll": "View all {range}"
+  },
+  "finishes": {
+    "Hot Dip Galvanized": "Dipped in molten zinc after fabrication for a thick, durable coating. Suited to outdoor, humid and industrial areas.",
+    "GI (Galvanized Iron)": "Pre-galvanized steel with a thinner zinc coating. An economical choice for dry indoor areas.",
+    "Stainless Steel": "High corrosion resistance for coastal, chemical, food and pharmaceutical environments.",
+    "Aluminium": "Light and naturally corrosion-resistant, and easy to handle on site.",
+    "Polyester Powder Coating": "A coloured finish for visible installations and for colour-coding services.",
+    "GI / Hot Dip Galvanized": "Available in GI for dry indoor areas or hot-dip galvanized for outdoor and humid areas."
+  },
+  "locations": {
+    "title": "Areas we serve",
+    "rangesTitle": "What we supply",
+    "visitTitle": "Showroom and factory",
+    "visit": "Our showroom and factory are both in Riyadh. Call, email or message us on WhatsApp, or visit us to discuss your project.",
+    "otherCities": "We also supply projects in"
   }
 }
