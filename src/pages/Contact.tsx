@@ -3,7 +3,7 @@ import { ArrowUpRight, MapPin, Phone, Mail } from "lucide-react";
 import company from "../data/company.json";
 import t from "../locales/en.json";
 import { products, whatsappUrl } from "../catalog";
-import { Breadcrumb } from "../components/UI";
+import { Breadcrumb, TitleBlock } from "../components/UI";
 import { sitePath } from "../sitePath";
 export function Contact() {
   const [error, setError] = useState("");
@@ -12,10 +12,7 @@ export function Contact() {
       <section className="page-intro container">
         <Breadcrumb name={t.common.contact} />
         <div className="section-heading">
-          <h1>
-            <span className="h1-lead">{t.contact.h1Lead}</span>{" "}
-            {t.contact.title}
-          </h1>
+          <TitleBlock lead={t.contact.h1Lead} title={t.contact.title} />
           <p>{t.contact.intro}</p>
         </div>
       </section>
@@ -58,9 +55,7 @@ export function Contact() {
               height="122"
               loading="lazy"
             />
-            <span style={{ whiteSpace: "pre-line" }}>
-              {t.common.contactMark}
-            </span>
+            <span className="pre-line">{t.common.contactMark}</span>
           </div>
         </div>
         <form
@@ -209,7 +204,6 @@ export function Contact() {
                 title={t.contact.mapLabel}
                 width="600"
                 height="450"
-                style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="strict-origin-when-cross-origin"
@@ -224,7 +218,6 @@ export function Contact() {
                 title={t.contact.factoryMapLabel}
                 width="600"
                 height="450"
-                style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="strict-origin-when-cross-origin"

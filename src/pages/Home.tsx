@@ -3,7 +3,8 @@ import { HeroSlider } from "../components/HeroSlider";
 import company from "../data/company.json";
 import site from "../data/site.json";
 import t from "../locales/en.json";
-import { products, selectionUrl, emptyFilters, type Product } from "../catalog";
+import { products, type Product } from "../catalog";
+import { families, categoryPath } from "../seo";
 import { sitePath } from "../sitePath";
 import { EnquiryBand, ProductCard } from "../components/UI";
 export function Home() {
@@ -17,39 +18,35 @@ export function Home() {
             <p>{t.home.rangeIntro}</p>
           </div>
           <div className="family-grid">
-            {site.families
-              .filter((f) => products.some((p) => p.family === f.name))
-              .map((f, i) => (
-                <a
-                  className={`family-card family-${i}`}
-                  href={sitePath(
-                    selectionUrl("", { ...emptyFilters(), family: [f.name] }),
-                  )}
-                  key={f.name}
-                >
-                  <div className="family-image">
-                    <img
-                      src={sitePath(f.image || "/images/product-fallback.svg")}
-                      srcSet={
-                        f.image && f.imageWidth && f.imageWidth > 480
-                          ? `${sitePath(f.image.replace(/\.webp$/, "-480.webp"))} 480w, ${sitePath(f.image)} ${f.imageWidth}w`
-                          : undefined
-                      }
-                      sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 400px"
-                      alt={f.name}
-                      width={f.imageWidth ?? 600}
-                      height={f.imageHeight ?? 450}
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                  <div>
-                    <h3>{f.short}</h3>
-                    <ArrowUpRight size={24} />
-                  </div>
-                  <p>{f.description}</p>
-                </a>
-              ))}
+            {families.map((f, i) => (
+              <a
+                className={`family-card family-${i}`}
+                href={sitePath(categoryPath(f))}
+                key={f.name}
+              >
+                <div className="family-image">
+                  <img
+                    src={sitePath(f.image || "/images/product-fallback.svg")}
+                    srcSet={
+                      f.image && f.imageWidth && f.imageWidth > 480
+                        ? `${sitePath(f.image.replace(/\.webp$/, "-480.webp"))} 480w, ${sitePath(f.image)} ${f.imageWidth}w`
+                        : undefined
+                    }
+                    sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 400px"
+                    alt={f.name}
+                    width={f.imageWidth ?? 600}
+                    height={f.imageHeight ?? 450}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div>
+                  <h3>{f.short}</h3>
+                  <ArrowUpRight size={24} />
+                </div>
+                <p>{f.description}</p>
+              </a>
+            ))}
           </div>
         </div>
       </section>
