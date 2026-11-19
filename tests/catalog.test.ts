@@ -85,9 +85,8 @@ test("URL rules: slugs, ampersands, case and trailing slashes", async () => {
   for (const r of removedPaths) assert.ok(!publicRoutes.includes(r));
 });
 test("every page has unique metadata and valid structured data", async () => {
-  const { pageMeta, publicRoutes, structuredData, sitemapXml } = await import(
-    "../src/seo"
-  );
+  const { pageMeta, publicRoutes, structuredData, sitemapXml } =
+    await import("../src/seo");
   const titles = new Set(),
     descriptions = new Set();
   for (const r of publicRoutes) {
@@ -95,12 +94,35 @@ test("every page has unique metadata and valid structured data", async () => {
     assert.equal(meta.status, 200);
     titles.add(meta.title);
     descriptions.add(meta.description);
-    assert.ok(meta.description.length <= 160, r);
-    JSON.parse(JSON.stringify(structuredData(meta, "https://ososalbenaa.com")));
+    assert.ok(meta.description.length <= 150, r);
+    assert.ok(
+      meta.title.length >= 40 && meta.title.length <= 60,
+      `${r}: ${meta.title}`,
+    );
+    const graph = structuredData(meta, "https://ososalbenaa.com")["@graph"];
+    assert.ok(
+      graph.some((n) => n["@type"] === "LocalBusiness"),
+      r,
+    );
   }
   assert.equal(titles.size, publicRoutes.length);
   assert.equal(descriptions.size, publicRoutes.length);
   assert.equal(pageMeta("/missing/").status, 404);
   const xml = sitemapXml("https://ososalbenaa.com", "2026-01-01");
   assert.equal((xml.match(/<loc>/g) || []).length, publicRoutes.length);
+});
+
+test("SEO audit: clean category and city URLs, no clashes", async () => {
+  const { publicRoutes, families, locations, categoryPath, pageMeta } =
+    await import("../src/seo");
+  assert.equal(new Set(publicRoutes).size, publicRoutes.length);
+  assert.equal(families.length, 5);
+  assert.equal(locations.length, 3);
+  for (const r of publicRoutes)
+    assert.match(r, /^\/([a-z0-9]+(-[a-z0-9]+)*\/)*$/);
+  const meta = pageMeta(categoryPath(families[0]));
+  assert.equal(meta.status, 200);
+  assert.equal(meta.breadcrumb?.length, 3);
+  const product = pageMeta("/products/cable-basket-tray/");
+  assert.equal(product.breadcrumb?.[2].path, "/products/cable-baskets/");
 });
