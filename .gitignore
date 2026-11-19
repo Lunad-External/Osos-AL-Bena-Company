@@ -5,3 +5,6 @@ playwright-report/
 .env*
 !.env.example
 dist-server/
+deploy/
+dist-static/
+obc-website-static.zip

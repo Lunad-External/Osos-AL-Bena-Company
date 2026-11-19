@@ -19,10 +19,10 @@ const template = readFileSync(join(clientDir, "index.html"), "utf8").replace(
 );
 const ORIGIN = (process.env.SITE_URL || DEFAULT_ORIGIN).replace(/\/$/, "");
 const CANONICAL_HOST = new URL(ORIGIN).host;
-const PRODUCTION = process.env.NODE_ENV === "production";
-// Redirect other hosts / plain HTTP to the preferred origin (production only).
-const ENFORCE_ORIGIN =
-  process.env.ENFORCE_CANONICAL_ORIGIN !== "false" && PRODUCTION;
+// Redirect www and plain HTTP to the preferred origin. Only hosts we know are
+// redirected, so a host's preview URL keeps working, and HTTP is detected from
+// the proxy's X-Forwarded-Proto header so a proxy that hides it can't loop.
+const ENFORCE_ORIGIN = process.env.ENFORCE_CANONICAL_ORIGIN !== "false";
 const NOINDEX = process.env.NOINDEX === "true"; // for staging deployments
 const LASTMOD = new Date(
   process.env.SITEMAP_LASTMOD || statSync(join(clientDir, "index.html")).mtime,
@@ -42,19 +42,26 @@ app.use((req, res, next) => {
     "X-Frame-Options": "SAMEORIGIN",
     "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
   });
-  if (PRODUCTION && !NOINDEX)
+  const host = (req.headers["x-forwarded-host"] || req.headers.host || "")
+    .toString()
+    .split(",")[0]
+    .trim()
+    .toLowerCase();
+  const proto = (req.headers["x-forwarded-proto"] || (req.secure ? "https" : ""))
+    .toString()
+    .split(",")[0]
+    .trim();
+  if (proto === "https" && host === CANONICAL_HOST && !NOINDEX)
     res.set("Strict-Transport-Security", "max-age=31536000; includeSubDomains");
   if (NOINDEX) res.set("X-Robots-Tag", "noindex, nofollow");
-  if (ENFORCE_ORIGIN) {
-    const host = (req.headers["x-forwarded-host"] || req.headers.host || "")
-      .toString()
-      .split(",")[0]
-      .trim();
-    if (host !== CANONICAL_HOST || req.protocol !== "https") {
-      const target = canonicalPathFor(req.path) ?? req.path;
-      const query = req.originalUrl.slice(req.path.length);
-      return res.redirect(301, ORIGIN + target + query);
-    }
+  if (
+    ENFORCE_ORIGIN &&
+    (host === "www." + CANONICAL_HOST ||
+      (host === CANONICAL_HOST && proto === "http"))
+  ) {
+    const target = canonicalPathFor(req.path) ?? req.path;
+    const query = req.originalUrl.slice(req.path.length);
+    return res.redirect(301, ORIGIN + target + query);
   }
   next();
 });

@@ -2,6 +2,7 @@
   "name": "obc-website",
   "private": true,
   "version": "1.0.0",
+  "main": "server.mjs",
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
@@ -10,7 +11,9 @@
     "start": "NODE_ENV=production node server.mjs",
     "preview": "node server.mjs",
     "test": "node --import tsx tests/catalog.test.ts",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "package:godaddy": "node scripts/package-godaddy.mjs",
+    "build:static": "node --import tsx scripts/build-static.tsx"
   },
   "dependencies": {
     "compression": "^1.7.5",
