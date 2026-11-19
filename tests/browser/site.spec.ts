@@ -56,7 +56,8 @@ test("every product detail is directly served with specifications", async ({
     const r = await request.get(`/products/${p.slug}/`);
     expect(r.status()).toBe(200);
     const html = await r.text();
-    expect(html).toContain("<h1>" + p.name.replaceAll("&", "&amp;") + "</h1>");
+    const name = (p as { seoName?: string }).seoName ?? p.name;
+    expect(html).toContain("<h1>" + name.replaceAll("&", "&amp;") + "</h1>");
     expect(html).toContain("Technical specifications");
     expect(html).not.toContain("undefined");
   }
