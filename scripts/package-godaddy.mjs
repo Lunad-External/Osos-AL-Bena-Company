@@ -45,11 +45,16 @@ await cp("dist", `${out}/dist`, {
 });
 
 // Leave out images no page references (old uploads kept in the repo).
-const code = (await readFile(`${out}/dist-server/entry-server.js`, "utf8")) +
+const code =
+  (await readFile(`${out}/dist-server/entry-server.js`, "utf8")) +
   (await readFile("dist/index.html", "utf8")) +
-  (await Promise.all(
-    (await readdir("dist/assets")).map((f) => readFile(`dist/assets/${f}`, "utf8").catch(() => "")),
-  )).join("");
+  (
+    await Promise.all(
+      (await readdir("dist/assets")).map((f) =>
+        readFile(`dist/assets/${f}`, "utf8").catch(() => ""),
+      ),
+    )
+  ).join("");
 let removed = 0;
 for (const f of await readdir(`${out}/dist/images`)) {
   const base = f.replace(/-480(\.\w+)$/, "$1");

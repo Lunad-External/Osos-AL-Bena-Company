@@ -3,9 +3,18 @@
 // renderer the Node server uses, and an .htaccess file reproduces the
 // server's redirects, 404/410 pages, caching and security headers.
 // Run `npm run build` first, then `npm run build:static`; upload dist-static/.
-import { cp, mkdir, readFile, rm, writeFile, stat, readdir } from "node:fs/promises";
+import {
+  cp,
+  mkdir,
+  readFile,
+  rm,
+  writeFile,
+  stat,
+  readdir,
+} from "node:fs/promises";
 import { readFileSync } from "node:fs";
 import { execFileSync } from "node:child_process";
+import { createHash } from "node:crypto";
 import {
   render,
   publicRoutes,
@@ -27,10 +36,37 @@ await cp("dist", out, {
 });
 
 // Inline the stylesheet, as the Node server does.
+let css = "";
 const template = (await readFile("dist/index.html", "utf8")).replace(
   /<link rel="stylesheet"[^>]*href="\/(assets\/[^"]+\.css)"[^>]*>/,
-  (_tag, file) => `<style>${readFileSync(`dist/${file}`, "utf8")}</style>`,
+  (_tag, file) =>
+    `<style>${(css = readFileSync(`dist/${file}`, "utf8"))}</style>`,
 );
+const sha = (text: string) =>
+  `'sha256-${createHash("sha256").update(text, "utf8").digest("base64")}'`;
+
+// Content-Security-Policy. GoDaddy cPanel hosting appends a monitoring
+// snippet to every page (an inline script plus img1.wsimg.com/…/tccl.min.js);
+// the client chose to allow it, so its exact hash and hosts are listed.
+// If GoDaddy changes the snippet, update GODADDY_SNIPPET_HASH.
+const GODADDY_SNIPPET_HASH =
+  process.env.GODADDY_SNIPPET_HASH ??
+  "'sha256-bleUM8pQb+/qLCF0bJ96Y/pfcb+IPRX8ndIERbrHsUs='";
+const csp = [
+  "default-src 'self'",
+  `script-src 'self' ${GODADDY_SNIPPET_HASH} https://img1.wsimg.com`,
+  `style-src 'self' ${sha(css)}`,
+  "img-src 'self' data: https://img1.wsimg.com",
+  "font-src 'self'",
+  "connect-src 'self' https://img1.wsimg.com https://*.secureserver.net",
+  "frame-src 'self' https://www.google.com",
+  "manifest-src 'self'",
+  "object-src 'none'",
+  "base-uri 'self'",
+  "form-action 'self'",
+  "frame-ancestors 'self'",
+  "upgrade-insecure-requests",
+].join("; ");
 
 const write = async (file: string, html: string) => {
   await mkdir(file.substring(0, file.lastIndexOf("/")), { recursive: true });
@@ -50,15 +86,27 @@ await writeFile(`${out}/robots.txt`, robotsTxt(origin));
 await writeFile(`${out}/sitemap.xml`, sitemapXml(origin, lastmod));
 
 // Leave out images no page references (old uploads kept in the repo).
-const pages = (await Promise.all(
-  [...publicRoutes.map((p) => `${out}${p}index.html`), `${out}/404.html`].map((f) => readFile(f, "utf8")),
-)).join("");
-const bundles = (await Promise.all(
-  (await readdir(`${out}/assets`)).map((f) => readFile(`${out}/assets/${f}`, "utf8")),
-)).join("");
+const pages = (
+  await Promise.all(
+    [...publicRoutes.map((p) => `${out}${p}index.html`), `${out}/404.html`].map(
+      (f) => readFile(f, "utf8"),
+    ),
+  )
+).join("");
+const bundles = (
+  await Promise.all(
+    (await readdir(`${out}/assets`)).map((f) =>
+      readFile(`${out}/assets/${f}`, "utf8"),
+    ),
+  )
+).join("");
 for (const f of await readdir(`${out}/images`)) {
   const base = f.replace(/-480(\.\w+)$/, "$1");
-  if (![pages, bundles].some((c) => c.includes(`images/${f}`) || c.includes(`images/${base}`)))
+  if (
+    ![pages, bundles].some(
+      (c) => c.includes(`images/${f}`) || c.includes(`images/${base}`),
+    )
+  )
     await rm(`${out}/images/${f}`);
 }
 
@@ -120,6 +168,7 @@ const lines: string[] = [
   `  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" "expr=%{HTTPS} == 'on' && %{HTTP_HOST} == '${host}'"`,
   '  <FilesMatch "\\.html$">',
   '    Header set Cache-Control "public, max-age=0, must-revalidate"',
+  `    Header always set Content-Security-Policy "${csp}"`,
   "  </FilesMatch>",
   '  <FilesMatch "\\.(webp|avif|png|jpe?g|svg|ico)$">',
   '    Header set Cache-Control "public, max-age=2592000"',
@@ -127,6 +176,9 @@ const lines: string[] = [
   '  <FilesMatch "\\.pdf$">',
   '    Header set Cache-Control "public, max-age=86400"',
   "  </FilesMatch>",
+  '  <Files "osos-al-benaa-catalogue.pdf">',
+  `    Header set Link "<${origin}/osos-al-benaa-catalogue.pdf>; rel=\\"canonical\\""`,
+  "  </Files>",
   '  <FilesMatch "\\.(txt|xml|webmanifest)$">',
   '    Header set Cache-Control "public, max-age=3600"',
   "  </FilesMatch>",
