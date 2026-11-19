@@ -3,7 +3,12 @@
 import { products, type Product } from "./catalog";
 import site from "./data/site.json";
 import company from "./data/company.json";
+import locations from "./data/locations.json";
 import t from "./locales/en.json";
+
+export type Family = (typeof site.families)[number];
+export type Location = (typeof locations)[number];
+export { locations };
 
 export const DEFAULT_ORIGIN = "https://ososalbenaa.com";
 
@@ -48,12 +53,30 @@ export const staticRoutes = [
 ];
 
 export const productPath = (p: Product) => `/products/${p.slug}/`;
+export const categoryPath = (f: Family) => `/products/${f.slug}/`;
+export const locationPath = (l: Location) => `/${l.slug}/`;
 
-export const publicRoutes = [...staticRoutes, ...products.map(productPath)];
+/** Product ranges that have at least one product. */
+export const families = site.families.filter((f) =>
+  products.some((p) => p.family === f.name),
+);
+export const familyOf = (p: Product) =>
+  families.find((f) => f.name === p.family);
+
+export const publicRoutes = [
+  ...staticRoutes,
+  ...families.map(categoryPath),
+  ...locations.map(locationPath),
+  ...products.map(productPath),
+];
 
 export function findProduct(path: string) {
   return products.find((p) => productPath(p) === path);
 }
+export const findFamily = (path: string) =>
+  families.find((f) => categoryPath(f) === path);
+export const findLocation = (path: string) =>
+  locations.find((l) => locationPath(l) === path);
 
 /**
  * Normalise a request path: lowercase, single slashes, trailing slash,
@@ -76,10 +99,26 @@ export function canonicalPathFor(rawPath: string): string | null {
 const familyLabel = (name: string) =>
   site.families.find((f) => f.name === name)?.short ?? name;
 
-function clip(text: string, max = 160) {
+function clip(text: string, max = 150) {
   if (text.length <= max) return text;
   const cut = text.slice(0, max - 1);
   return cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:\-–]$/, "") + "…";
+}
+
+/** Product titles: as descriptive as fits in 60 characters. */
+export function productTitle(p: Product) {
+  const range = familyOf(p)?.short ?? familyLabel(p.family);
+  // A few product names are too long for a title; they carry a shorter seoName.
+  const name = (p as { seoName?: string }).seoName ?? p.name;
+  const options = [
+    `${name} | ${range} in Riyadh, Saudi Arabia | OBC`,
+    `${name} | ${range} Manufacturer in Riyadh | OBC`,
+    `${name} | ${range} in Riyadh | OBC`,
+    `${name} | OBC Riyadh, Saudi Arabia`,
+    `${name} | OBC Riyadh`,
+    `${name} | OBC`,
+  ];
+  return options.find((o) => o.length <= 60) ?? options[options.length - 1];
 }
 
 function productDescription(p: Product) {
@@ -104,6 +143,8 @@ export type PageMeta = {
   imageAlt: string;
   indexable: boolean;
   product?: Product;
+  family?: Family;
+  location?: Location;
   breadcrumb?: { name: string; path: string }[];
 };
 
@@ -119,7 +160,7 @@ export function pageMeta(path: string): PageMeta {
     return {
       ...base,
       status: 200,
-      title: `${product.name} | OBC`,
+      title: productTitle(product),
       description: productDescription(product),
       image: product.image || base.image,
       imageAlt: product.imageAlt,
@@ -127,7 +168,44 @@ export function pageMeta(path: string): PageMeta {
       breadcrumb: [
         { name: t.common.home, path: "/" },
         { name: t.common.products, path: "/products/" },
+        ...(familyOf(product)
+          ? [
+              {
+                name: familyOf(product)!.name,
+                path: categoryPath(familyOf(product)!),
+              },
+            ]
+          : []),
         { name: product.name, path },
+      ],
+    };
+  const family = findFamily(path);
+  if (family)
+    return {
+      ...base,
+      status: 200,
+      title: family.seoTitle,
+      description: family.seoDescription,
+      image: family.image || base.image,
+      imageAlt: family.name,
+      family,
+      breadcrumb: [
+        { name: t.common.home, path: "/" },
+        { name: t.common.products, path: "/products/" },
+        { name: family.name, path },
+      ],
+    };
+  const location = findLocation(path);
+  if (location)
+    return {
+      ...base,
+      status: 200,
+      title: location.seoTitle,
+      description: location.seoDescription,
+      location,
+      breadcrumb: [
+        { name: t.common.home, path: "/" },
+        { name: location.h1, path },
       ],
     };
   const page = (
@@ -224,7 +302,17 @@ function localBusiness(origin: string, loc: typeof showroom) {
     },
     geo: { "@type": "GeoCoordinates", ...loc.geo },
     hasMap: loc.map,
-    areaServed: { "@type": "Country", name: "Saudi Arabia" },
+    areaServed: [
+      ...locations.map((l) => ({
+        "@type": "City",
+        name: l.city,
+        containedInPlace: {
+          "@type": "AdministrativeArea",
+          name: l.region,
+        },
+      })),
+      { "@type": "Country", name: "Saudi Arabia" },
+    ],
   };
 }
 
@@ -271,23 +359,21 @@ export function structuredData(meta: PageMeta, origin: string) {
     publisher: { "@id": orgId },
   };
   if (meta.path === "/") {
-    graph.push(
-      {
-        "@type": "WebSite",
-        "@id": abs(origin, "/") + "#website",
-        url: abs(origin, "/"),
-        name: company.name,
-        inLanguage: "en",
-        publisher: { "@id": orgId },
-      },
-      localBusiness(origin, showroom),
-      localBusiness(origin, factory),
-    );
+    graph.push({
+      "@type": "WebSite",
+      "@id": abs(origin, "/") + "#website",
+      url: abs(origin, "/"),
+      name: company.name,
+      inLanguage: "en",
+      publisher: { "@id": orgId },
+    });
   }
+  // The showroom and factory are on every page so search engines always see
+  // the business's name, address, phone and service areas.
+  graph.push(localBusiness(origin, showroom), localBusiness(origin, factory));
   if (meta.path === "/about/") webPage["@type"] = "AboutPage";
   if (meta.path === "/contact/") {
     webPage["@type"] = "ContactPage";
-    graph.push(localBusiness(origin, showroom), localBusiness(origin, factory));
   }
   if (meta.path === "/products/") {
     webPage["@type"] = "CollectionPage";
@@ -300,6 +386,32 @@ export function structuredData(meta: PageMeta, origin: string) {
         url: abs(origin, productPath(p)),
         name: p.name,
       })),
+    };
+  }
+  if (meta.family) {
+    const list = products.filter((p) => p.family === meta.family!.name);
+    webPage["@type"] = "CollectionPage";
+    webPage.mainEntity = {
+      "@type": "ItemList",
+      name: meta.family.name,
+      numberOfItems: list.length,
+      itemListElement: list.map((p, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        url: abs(origin, productPath(p)),
+        name: p.name,
+      })),
+    };
+  }
+  if (meta.location) {
+    webPage.about = { "@id": abs(origin, "/") + showroom.id };
+    webPage.spatialCoverage = {
+      "@type": "City",
+      name: meta.location.city,
+      containedInPlace: {
+        "@type": "AdministrativeArea",
+        name: meta.location.region,
+      },
     };
   }
   if (meta.product) {

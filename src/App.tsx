@@ -6,10 +6,15 @@ import { ProductDetail } from "./pages/ProductDetail";
 import { Contact } from "./pages/Contact";
 import { CataloguePage } from "./pages/CataloguePage";
 import { NotFound } from "./pages/NotFound";
+import { CategoryPage } from "./pages/CategoryPage";
+import { LocationPage } from "./pages/LocationPage";
+import { findFamily, findLocation } from "./seo";
 import { products } from "./catalog";
 import { WhatsAppFloat } from "./components/UI";
 export function App({ path }: { path: string }) {
   const product = products.find((p) => path === `/products/${p.slug}/`);
+  const family = findFamily(path);
+  const location = findLocation(path);
   const page =
     path === "/" ? (
       <Home />
@@ -21,6 +26,10 @@ export function App({ path }: { path: string }) {
       <CataloguePage />
     ) : path === "/contact/" ? (
       <Contact />
+    ) : family ? (
+      <CategoryPage family={family} />
+    ) : location ? (
+      <LocationPage location={location} />
     ) : product ? (
       <ProductDetail product={product} />
     ) : (
