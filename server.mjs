@@ -3,6 +3,7 @@
 import express from "express";
 import compression from "compression";
 import { readFileSync, statSync } from "node:fs";
+import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -12,11 +13,29 @@ const { render, canonicalPathFor, robotsTxt, sitemapXml, DEFAULT_ORIGIN } =
   await import(join(root, "dist-server", "entry-server.js"));
 
 // Inline the (small) stylesheet so first paint does not wait for a CSS request.
+let css = "";
 const template = readFileSync(join(clientDir, "index.html"), "utf8").replace(
   /<link rel="stylesheet"[^>]*href="\/(assets\/[^"]+\.css)"[^>]*>/,
   (_tag, file) =>
-    `<style>${readFileSync(join(clientDir, file), "utf8")}</style>`,
+    `<style>${(css = readFileSync(join(clientDir, file), "utf8"))}</style>`,
 );
+// Strict Content-Security-Policy for pages: only our own scripts, the
+// inlined stylesheet (by hash) and the Google Maps embeds on Contact.
+const CSP = [
+  "default-src 'self'",
+  "script-src 'self'",
+  `style-src 'self' 'sha256-${createHash("sha256").update(css, "utf8").digest("base64")}'`,
+  "img-src 'self' data:",
+  "font-src 'self'",
+  "connect-src 'self'",
+  "frame-src 'self' https://www.google.com",
+  "manifest-src 'self'",
+  "object-src 'none'",
+  "base-uri 'self'",
+  "form-action 'self'",
+  "frame-ancestors 'self'",
+  "upgrade-insecure-requests",
+].join("; ");
 const ORIGIN = (process.env.SITE_URL || DEFAULT_ORIGIN).replace(/\/$/, "");
 const CANONICAL_HOST = new URL(ORIGIN).host;
 // Redirect www and plain HTTP to the preferred origin. Only hosts we know are
@@ -47,7 +66,9 @@ app.use((req, res, next) => {
     .split(",")[0]
     .trim()
     .toLowerCase();
-  const proto = (req.headers["x-forwarded-proto"] || (req.secure ? "https" : ""))
+  const proto = (
+    req.headers["x-forwarded-proto"] || (req.secure ? "https" : "")
+  )
     .toString()
     .split(",")[0]
     .trim();
@@ -76,7 +97,10 @@ const serveStatic = express.static(clientDir, {
     else if (/\.(webp|avif|png|jpe?g|svg|ico)$/.test(file))
       res.set("Cache-Control", "public, max-age=2592000");
     else if (file.endsWith(".pdf"))
-      res.set("Cache-Control", "public, max-age=86400");
+      res.set({
+        "Cache-Control": "public, max-age=86400",
+        Link: `<${ORIGIN}/${file.split(/[\\/]/).pop()}>; rel="canonical"`,
+      });
     else res.set("Cache-Control", "public, max-age=3600");
   },
 });
@@ -110,6 +134,7 @@ app.get("*", (req, res) => {
     res
       .status(status)
       .type("html")
+      .set("Content-Security-Policy", CSP)
       .set("Cache-Control", "public, max-age=0, must-revalidate")
       .send(html);
   } catch (error) {
