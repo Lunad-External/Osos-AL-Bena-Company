@@ -2,16 +2,19 @@ import { ArrowUpRight, Check } from "lucide-react";
 import company from "../data/company.json";
 import t from "../locales/en.json";
 import { sitePath } from "../sitePath";
-import { Breadcrumb, EnquiryBand, WhatsAppLink } from "../components/UI";
+import {
+  Breadcrumb,
+  EnquiryBand,
+  TitleBlock,
+  WhatsAppLink,
+} from "../components/UI";
 export function About() {
   return (
     <>
       <section className="page-intro container">
         <Breadcrumb name={t.common.about} />
         <div className="section-heading">
-          <h1>
-            <span className="h1-lead">{t.about.h1Lead}</span> {t.about.title}
-          </h1>
+          <TitleBlock lead={t.about.h1Lead} title={t.about.title} />
           <p>{t.about.intro}</p>
         </div>
       </section>
@@ -37,7 +40,7 @@ export function About() {
       <section className="section container capability-list">
         {company.capabilities.map((c) => (
           <article key={c.title}>
-            <h2>{c.title}</h2>
+            <h3>{c.title}</h3>
             <p>{c.body}</p>
             <ArrowUpRight size={26} aria-hidden="true" />
           </article>

@@ -24,52 +24,82 @@
       "href": "/contact/"
     }
   ],
-  "featuredIds": [
-    "obc-001",
-    "obc-006",
-    "obc-039",
-    "obc-008"
-  ],
+  "featuredIds": ["obc-001", "obc-006", "obc-039", "obc-008"],
   "families": [
     {
       "name": "Cable trays & fittings",
+      "slug": "cable-trays-and-fittings",
       "short": "Cable trays",
       "image": "/images/trays.webp",
       "description": "Straight sections, fittings and connecting accessories.",
       "imageWidth": 769,
-      "imageHeight": 431
+      "imageHeight": 431,
+      "seoTitle": "Cable Trays & Fittings Manufacturer in Riyadh | OBC",
+      "seoDescription": "Perforated cable trays, elbows, tees, reducers, risers, covers and connectors in HDG, GI and stainless steel, made by OBC in Riyadh.",
+      "intro": [
+        "Cable trays carry power, control and data cables along walls, ceilings and structural steel, keeping each run organised, ventilated and easy to inspect. OBC manufactures perforated cable trays and the fittings that keep a route continuous: horizontal elbows and tees, crosses, reducers, inside and outside risers, drop-outs, blind ends and connectors.",
+        "Trays are offered in hot-dip galvanized, GI and stainless steel, with solid, peaked or louvered covers where cables need protection from falling debris or direct sun. Share the tray width, side height, finish and quantities, or send your cable route drawing, and our team in Riyadh will confirm the configuration."
+      ]
     },
     {
       "name": "Cable ladders & accessories",
+      "slug": "cable-ladders-and-accessories",
       "short": "Cable ladders",
       "image": "/images/family-ladders.webp",
       "description": "Ladder systems and accessories for cable support.",
       "imageWidth": 509,
-      "imageHeight": 401
+      "imageHeight": 401,
+      "seoTitle": "Cable Ladders & Accessories Manufacturer in Riyadh | OBC",
+      "seoDescription": "NEMA VE1/VE2 cable ladders with elbows, crosses, reducers, risers, covers, clamps and connectors, manufactured by OBC in Riyadh.",
+      "intro": [
+        "Cable ladders support heavy cable loads over long spans. Two side rails joined by rungs leave cables open to the air, which helps heat dissipation, and give plenty of fixing points for ties and cleats. That makes ladders a common choice in industrial plants, substations, plant rooms and vertical risers.",
+        "OBC's range covers NEMA VE1/VE2 ladder-type cable tray with 45° and 90° elbows, four-way crosses, left, right and straight reducers, inside and outside risers, straight flanges and connectors, plus solid, peaked and ventilated covers and hold-down clamps."
+      ]
     },
     {
       "name": "Cable trunking",
+      "slug": "cable-trunking",
       "short": "Cable trunking",
       "image": "/images/family-trunking.webp",
       "description": "Enclosed cable routing and matching accessories.",
       "imageWidth": 493,
-      "imageHeight": 327
+      "imageHeight": 327,
+      "seoTitle": "Cable Trunking Manufacturer in Riyadh | OBC",
+      "seoDescription": "HDG cable trunking, compartment trunking, elbows, crosses, reducers, risers and connectors, manufactured by OBC in Riyadh.",
+      "intro": [
+        "Cable trunking encloses cables completely, protecting them from dust, moisture and mechanical damage and giving a neat finish in plant rooms, car parks, workshops and commercial interiors.",
+        "OBC supplies hot-dip galvanized cable trunking with matching elbows, crosses, reducers, risers and straight and U connectors. Compartment trunking keeps power and data circuits separated within a single run."
+      ]
     },
     {
       "name": "Channels & supports",
+      "slug": "channels-and-supports",
       "short": "Channels & supports",
       "image": "/images/family-channels.webp",
       "description": "Channels, brackets, hangers and support fittings.",
       "imageWidth": 583,
-      "imageHeight": 542
+      "imageHeight": 542,
+      "seoTitle": "Strut Channels & Supports Manufacturer in Riyadh | OBC",
+      "seoDescription": "41 mm series slotted and plain strut channels, brackets, cantilever arms, base plates and hangers, made by OBC in Riyadh.",
+      "intro": [
+        "Strut channels, brackets and base plates form the framework that holds trays, ladders, trunking and pipework in place. OBC's 41 mm series slotted and plain channels, including 41x21, 41x41, 41x61 and back-to-back welded 41x82 sections, combine with angle brackets, cantilever arms, base plates and hangers to build supports around your installation.",
+        "Where a standard part doesn't fit, we fabricate project-specific brackets and frames in our Riyadh factory."
+      ]
     },
     {
       "name": "Cable baskets",
+      "slug": "cable-baskets",
       "short": "Cable baskets",
       "image": "/images/baskets.webp",
       "description": "Wire basket trays and their accessories.",
       "imageWidth": 680,
-      "imageHeight": 835
+      "imageHeight": 835,
+      "seoTitle": "Wire Mesh Cable Basket Trays in Riyadh | OBC",
+      "seoDescription": "Wire mesh cable basket trays with elbows, tees, crosses, risers, drop-outs and accessories, supplied by OBC in Riyadh.",
+      "intro": [
+        "Wire mesh cable baskets are light, open and easy to cut and shape on site, which makes them a good fit for data, communications and light power cabling above ceilings and under raised floors. The open mesh keeps cables ventilated and visible for inspection.",
+        "OBC supplies basket trays with 90° elbows, tees, crosses, inside and outside risers, drop-outs and fixing accessories."
+      ]
     }
   ],
   "copyrightYear": 2026,

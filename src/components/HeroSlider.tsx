@@ -9,6 +9,7 @@ import {
 import site from "../data/site.json";
 import t from "../locales/en.json";
 import { sitePath, siteSrcSet } from "../sitePath";
+import { TitleBlock } from "./UI";
 
 export function HeroSlider() {
   const [active, setActive] = useState(0);
@@ -52,9 +53,7 @@ export function HeroSlider() {
       <div className="hero-overlay" aria-hidden="true" />
       <div className="container hero-inner">
         <div className="hero-copy">
-          <h1>
-            <span className="h1-lead">{t.home.h1Lead}</span> {t.home.title}
-          </h1>
+          <TitleBlock lead={t.home.h1Lead} title={t.home.title} />
           <p>{t.home.intro}</p>
           <div className="hero-actions">
             <a className="button" href={sitePath("/products/")}>

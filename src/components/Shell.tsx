@@ -3,6 +3,7 @@ import { Menu, X, ArrowUpRight, Phone, MapPin } from "lucide-react";
 import company from "../data/company.json";
 import site from "../data/site.json";
 import t from "../locales/en.json";
+import { locations, locationPath } from "../seo";
 import { sitePath } from "../sitePath";
 export function Header({ path }: { path: string }) {
   const [open, setOpen] = useState(false);
@@ -108,16 +109,24 @@ export function Footer() {
             <p className="footer-company">{t.footer.company}</p>
             <p>{t.footer.description}</p>
           </div>
-          <div>
-            <h2>{t.footer.navigation}</h2>
+          <nav aria-label={t.footer.navigation}>
+            <p className="footer-heading">{t.footer.navigation}</p>
             {site.nav.map((n) => (
               <a key={n.href} href={sitePath(n.href)}>
                 {n.label}
               </a>
             ))}
-          </div>
+          </nav>
+          <nav aria-label={t.footer.areas}>
+            <p className="footer-heading">{t.footer.areas}</p>
+            {locations.map((l) => (
+              <a key={l.slug} href={sitePath(locationPath(l))}>
+                {l.label}
+              </a>
+            ))}
+          </nav>
           <div>
-            <h2>{t.footer.contact}</h2>
+            <p className="footer-heading">{t.footer.contact}</p>
             <a href={`tel:+${company.phoneDigits}`}>{company.phone}</a>
             <a href={`mailto:${company.email}`}>{company.email}</a>
             <p className="footer-address">

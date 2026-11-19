@@ -1,5 +1,5 @@
 import { ArrowUpRight, ImageOff } from "lucide-react";
-import { useState, type ReactNode, type SVGProps } from "react";
+import { Fragment, useState, type ReactNode, type SVGProps } from "react";
 import company from "../data/company.json";
 import t from "../locales/en.json";
 import { whatsappUrl, type Product } from "../catalog";
@@ -166,7 +166,7 @@ export function EnquiryBand() {
   return (
     <section className="enquiry-band">
       <div className="container enquiry-inner">
-        <h2>{t.cta.title}</h2>
+        <p className="enquiry-title">{t.cta.title}</p>
         <div>
           <p>{t.cta.body}</p>
           <WhatsAppLink />
@@ -178,21 +178,37 @@ export function EnquiryBand() {
 export function Breadcrumb({
   name,
   parent,
+  trail = [],
 }: {
   name: string;
   parent?: boolean;
+  trail?: { name: string; href: string }[];
 }) {
+  const links = [
+    ...(parent ? [{ name: t.common.products, href: "/products/" }] : []),
+    ...trail,
+  ];
   return (
     <nav className="breadcrumb" aria-label={t.common.breadcrumb}>
       <a href={sitePath("/")}>{t.common.home}</a>
       <span aria-hidden="true">/</span>
-      {parent ? (
-        <>
-          <a href={sitePath("/products/")}>{t.common.products}</a>
+      {links.map((l) => (
+        <Fragment key={l.href}>
+          <a href={sitePath(l.href)}>{l.name}</a>
           <span aria-hidden="true">/</span>
-        </>
-      ) : null}
+        </Fragment>
+      ))}
       <span aria-current="page">{name}</span>
     </nav>
+  );
+}
+
+/** A short, keyword-led H1 with the brand line shown large beneath it. */
+export function TitleBlock({ lead, title }: { lead: string; title: string }) {
+  return (
+    <div className="title-block">
+      <h1 className="h1-lead">{lead}</h1>
+      <p className="display-title">{title}</p>
+    </div>
   );
 }

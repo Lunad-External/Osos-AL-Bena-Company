@@ -2,7 +2,7 @@
 @theme {
   --color-action: #c81520;
   --color-ink: #17202a;
-  --font-sans:  sans-serif;
+  --font-sans: sans-serif;
   --font-display: sans-serif;
 }
 :root {
@@ -67,21 +67,30 @@ h3 {
 }
 h1,
 h2,
-h3 {
+h3,
+.display-title,
+.enquiry-title,
+.dialog-title {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 600;
   line-height: 1.05;
 }
 h1,
-h2 {
+h2,
+.display-title,
+.enquiry-title,
+.dialog-title {
   white-space: pre-line;
   text-wrap: balance;
 }
-h1 {
+h1,
+.display-title {
   font-size: clamp(2.75rem, 5.4vw, 5rem);
   letter-spacing: -0.018em;
 }
-h2 {
+h2,
+.enquiry-title,
+.dialog-title {
   font-size: clamp(2.1rem, 3.8vw, 3.5rem);
   letter-spacing: -0.01em;
 }
@@ -465,7 +474,7 @@ select {
   gap: 80px;
   align-items: center;
 }
-.enquiry-inner h2 {
+.enquiry-inner .enquiry-title {
   font-size: clamp(2.5rem, 4.3vw, 4rem);
 }
 .enquiry-inner p {
@@ -480,7 +489,7 @@ select {
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.3fr 0.7fr 1fr;
+  grid-template-columns: 1.3fr 0.7fr 0.7fr 1fr;
   gap: 64px;
   padding-bottom: 48px;
 }
@@ -509,13 +518,18 @@ select {
   max-width: 310px;
   font-size: 15px;
 }
-.footer h2 {
+.footer .footer-heading {
   font-family: "Barlow";
+  font-weight: 600;
+  line-height: 1.05;
+  margin-top: 0;
+  max-width: none;
+  color: inherit;
   font-size: 14px;
   letter-spacing: normal;
   margin-bottom: 20px;
 }
-.footer-grid > div > a:not(.footer-brand) {
+.footer-grid > :is(div, nav) > a:not(.footer-brand) {
   display: flex;
   font-size: 15px;
   margin-top: 8px;
@@ -616,7 +630,7 @@ select {
   border-bottom: 1px solid var(--line);
   align-items: center;
 }
-.capability-list h2 {
+.capability-list h3 {
   font-size: 32px;
 }
 .applications {
@@ -822,7 +836,7 @@ select {
   padding: 20px 24px;
   border-bottom: 1px solid var(--line);
 }
-.dialog-heading h2 {
+.dialog-heading .dialog-title {
   font-size: 30px;
 }
 .dialog-content {
@@ -1307,7 +1321,7 @@ select {
     grid-template-columns: 1fr;
     gap: 24px;
   }
-  .enquiry-inner h2 {
+  .enquiry-inner .enquiry-title {
     font-size: 46px;
   }
   .enquiry-inner p {
@@ -1339,7 +1353,8 @@ select {
     margin-bottom: 28px;
     gap: 8px;
   }
-  .page-intro h1 {
+  .page-intro h1,
+  .page-intro .display-title {
     font-size: 48px;
   }
   .page-intro > p {
@@ -1368,7 +1383,7 @@ select {
     grid-column: 2;
     grid-row: 1;
   }
-  .capability-list h2 {
+  .capability-list h3 {
     font-size: 30px;
   }
   .applications ul {
@@ -1508,7 +1523,7 @@ select {
   .footer-grid {
     grid-template-columns: 1fr;
   }
-  .footer-grid > div {
+  .footer-grid > * {
     grid-column: 1 !important;
   }
 }
@@ -1573,7 +1588,8 @@ select {
   max-width: 700px;
   padding-block: 28px 56px;
 }
-.hero-copy h1 {
+.hero-copy h1,
+.hero-copy .display-title {
   color: #fff;
   max-width: 680px;
   font-size: clamp(48px, 5.8vw, 84px);
@@ -1684,7 +1700,7 @@ select {
 .section-heading h2,
 .company-copy h2,
 .about-panel h2,
-.capability-list h2,
+.capability-list h3,
 .contact-info h2,
 .enquiry-form h2,
 .spec-section h2 {
@@ -1717,7 +1733,8 @@ select {
 .enquiry-inner {
   width: calc(100% - 64px);
 }
-.page-intro h1 {
+.page-intro h1,
+.page-intro .display-title {
   color: var(--action);
 }
 .about-panel {
@@ -1801,7 +1818,8 @@ select {
     padding-block: 0 40px;
     max-width: 100%;
   }
-  .hero-copy h1 {
+  .hero-copy h1,
+  .hero-copy .display-title {
     font-size: 52px;
     max-width: 370px;
   }
@@ -1916,7 +1934,8 @@ select {
   }
 }
 @media (max-width: 359px) {
-  .hero-copy h1 {
+  .hero-copy h1,
+  .hero-copy .display-title {
     font-size: 46px;
   }
   .hero-inner {
@@ -2098,4 +2117,250 @@ select {
 }
 .hero-copy .h1-lead {
   color: #fff;
+}
+
+/* SEO audit: keyword H1 shown as the small lead line; brand line stays large. */
+.title-block h1.h1-lead,
+.hero-copy .title-block h1.h1-lead,
+.page-intro .title-block h1.h1-lead {
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #5b6470;
+  max-width: none;
+  margin: 0 0 14px;
+  white-space: normal;
+}
+.hero-copy .title-block h1.h1-lead {
+  color: #fff;
+}
+.metadata a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.range-links {
+  margin-top: 32px;
+}
+.range-links-title {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5b6470;
+  margin-bottom: 12px;
+}
+.range-links ul,
+.catalogue-contents .range-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.range-links a,
+.catalogue-contents .range-list a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 16px;
+  border: 1px solid #d5d9e0;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--brand-blue);
+  font-weight: 500;
+  font-size: 15px;
+}
+.range-links a:hover,
+.catalogue-contents .range-list a:hover {
+  border-color: var(--action);
+  color: var(--action);
+}
+.category-intro p {
+  max-width: 760px;
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--muted);
+}
+.category-intro p + p {
+  margin-top: 16px;
+}
+.category-products h2,
+.product-overview h2,
+.location-copy h2,
+.location-aside h2,
+.catalogue-contents h2 {
+  color: var(--brand-blue);
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  margin-bottom: 24px;
+}
+.product-overview {
+  margin-top: 56px;
+  padding-top: 48px;
+  border-top: 1px solid var(--line);
+}
+.overview-copy {
+  max-width: 820px;
+}
+.overview-copy p,
+.location-copy p,
+.location-aside p,
+.catalogue-contents p,
+.catalogue-contents li {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+.overview-copy p + p,
+.location-copy p + p {
+  margin-top: 16px;
+}
+.overview-copy h3 {
+  margin: 32px 0 14px;
+  font-size: 1.5rem;
+}
+.overview-copy a:not(.button),
+.location-copy p a,
+.location-aside a:not(.button),
+.location-others a {
+  color: var(--action);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.finish-list {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+}
+.finish-list > div {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+.finish-list dt {
+  font-weight: 600;
+  color: var(--brand-blue);
+}
+.finish-list dd {
+  margin: 0;
+  color: var(--muted);
+}
+.location-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: 64px;
+  align-items: start;
+}
+.location-copy > div + div {
+  margin-top: 48px;
+}
+.location-ranges {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+.location-ranges a {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 16px;
+  padding: 18px 20px;
+  border: 1px solid #e0e3e9;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--brand-blue);
+  text-decoration: none;
+}
+.location-ranges a span {
+  grid-column: 1;
+  color: var(--muted);
+  font-size: 15px;
+}
+.location-ranges a svg {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+}
+.location-ranges a:hover {
+  border-color: var(--action);
+}
+.location-aside .button {
+  justify-self: start;
+}
+.location-aside {
+  border: 1px solid #e0e3e9;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: var(--panel-shadow);
+  padding: 32px;
+  display: grid;
+  gap: 16px;
+  position: sticky;
+  top: 120px;
+}
+.location-aside .footer-address {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.location-aside .footer-address svg {
+  flex: none;
+  margin-top: 5px;
+}
+.catalogue-contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-block: 56px;
+}
+.catalogue-contents ul:not(.range-list) {
+  margin: 0;
+  padding-left: 20px;
+}
+.catalogue-contents ul:not(.range-list) li + li {
+  margin-top: 6px;
+}
+.catalogue-contents .range-list {
+  margin-top: 20px;
+}
+@media (max-width: 899px) {
+  .location-body,
+  .catalogue-contents {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .location-aside {
+    position: static;
+  }
+  .finish-list > div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+@media (max-width: 639px) {
+  .location-aside {
+    padding: 24px;
+  }
+}
+.pre-line {
+  white-space: pre-line;
+}
+.map-card iframe,
+iframe {
+  border: 0;
+}
+.enquiry-inner p.enquiry-title {
+  color: inherit;
+  max-width: none;
+  margin-bottom: 0;
+}
+.dialog-heading p.dialog-title {
+  color: inherit;
 }

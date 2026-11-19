@@ -2,6 +2,7 @@ import { Download, ExternalLink } from "lucide-react";
 import t from "../locales/en.json";
 import { sitePath } from "../sitePath";
 import { Breadcrumb } from "../components/UI";
+import { families, categoryPath } from "../seo";
 const pdf = "/osos-al-benaa-catalogue.pdf";
 export function CataloguePage() {
   return (
@@ -9,7 +10,7 @@ export function CataloguePage() {
       <section className="page-intro container">
         <Breadcrumb name={t.common.catalogue} />
         <div className="section-heading">
-          <h1>{t.common.catalogue}</h1>
+          <h1>{t.catalogue.h1}</h1>
           <p>{t.catalogue.intro}</p>
         </div>
       </section>
@@ -52,6 +53,27 @@ export function CataloguePage() {
                 <Download size={18} />
               </a>
             </div>
+          </div>
+        </div>
+        <div className="catalogue-contents">
+          <div>
+            <h2>{t.catalogue.contentsTitle}</h2>
+            <ul>
+              {t.catalogue.contents.map((c) => (
+                <li key={c}>{c}</li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h2>{t.catalogue.useTitle}</h2>
+            <p>{t.catalogue.use}</p>
+            <ul className="range-list">
+              {families.map((f) => (
+                <li key={f.slug}>
+                  <a href={sitePath(categoryPath(f))}>{f.name}</a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
         <div className="catalogue-viewer">

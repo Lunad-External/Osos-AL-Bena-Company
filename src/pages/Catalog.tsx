@@ -12,7 +12,13 @@ import {
   type Filters,
   type Facet,
 } from "../catalog";
-import { Breadcrumb, EnquiryBand, ProductCard } from "../components/UI";
+import {
+  Breadcrumb,
+  EnquiryBand,
+  ProductCard,
+  TitleBlock,
+} from "../components/UI";
+import { families, categoryPath } from "../seo";
 import { sitePath } from "../sitePath";
 function Facets({
   filters,
@@ -86,10 +92,18 @@ export function Catalog() {
     <>
       <section className="page-intro container">
         <Breadcrumb name={t.common.products} />
-        <h1>
-          <span className="h1-lead">{t.catalog.h1Lead}</span> {t.catalog.title}
-        </h1>
+        <TitleBlock lead={t.catalog.h1Lead} title={t.catalog.title} />
         <p>{t.catalog.intro}</p>
+        <nav className="range-links" aria-label={t.catalog.rangesTitle}>
+          <p className="range-links-title">{t.catalog.rangesTitle}</p>
+          <ul>
+            {families.map((f) => (
+              <li key={f.slug}>
+                <a href={sitePath(categoryPath(f))}>{f.name}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </section>
       <section className="catalog-section container">
         <div className="search-row">
@@ -205,7 +219,9 @@ export function Catalog() {
           onClose={() => returnFocus.current?.focus()}
         >
           <div className="dialog-heading">
-            <h2 id="filter-dialog-title">{t.catalog.filters}</h2>
+            <p className="dialog-title" id="filter-dialog-title">
+              {t.catalog.dialogTitle}
+            </p>
             <button
               className="icon-button"
               aria-label={t.catalog.close}

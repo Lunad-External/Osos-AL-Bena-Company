@@ -13,22 +13,40 @@ npm run build        # client bundle -> dist/, server renderer -> dist-server/
 npm run preview      # SSR server on http://localhost:3000
 ```
 
-## Production (SSR)
+## Live site: GoDaddy cPanel (static build)
+
+https://ososalbenaa.com runs on the client's GoDaddy **Web Hosting Deluxe (cPanel)** plan. That plan has no Node.js runtime, so production uses a static build: every page is pre-rendered to full HTML by the same renderer as the SSR server, and `.htaccess` reproduces the server's behaviour (www/HTTP → `https://ososalbenaa.com`, lowercase + trailing-slash 301s, renamed products 301, withdrawn products 410, custom 404, caching, gzip and security headers incl. HSTS).
+
+To publish an update:
+
+```sh
+npm ci && npm run build && npm run build:static
+```
+
+1. In cPanel → File Manager → `public_html`, upload `obc-website-static.zip` (or the contents of `dist-static/`, including the hidden `.htaccess`).
+2. Extract it over the existing files (overwrite), then delete the zip.
+3. Check https://ososalbenaa.com, `/robots.txt` and `/sitemap.xml`.
+
+If the catalogue PDF hasn't changed, you can leave it out of the zip to keep the upload small. GoDaddy's placeholder files were moved to `~/godaddy-placeholder-backup`.
+
+## Production on a Node.js host (SSR)
 
 ```sh
 npm ci && npm run build
 NODE_ENV=production PORT=3000 SITE_URL=https://ososalbenaa.com npm start
 ```
 
+For GoDaddy's Node.js Hosting (Upload ZIP), `npm run package:godaddy` writes `deploy/obc-website-godaddy.zip` with the prebuilt site and a runtime-only `package.json`.
+
 Or with Docker: `docker build -t obc-website . && docker run -p 3000:3000 obc-website`.
 
 Run it behind HTTPS (a load balancer, Nginx or the host's TLS). The server:
 
 - renders every page per request and returns real status codes (200, 301, 404, 410);
-- redirects other hosts (e.g. `www.ososalbenaa.com`) and plain HTTP to `https://ososalbenaa.com` in one 301 hop (it trusts `X-Forwarded-Proto`/`X-Forwarded-Host`); set `ENFORCE_CANONICAL_ORIGIN=false` to turn this off;
+- redirects `www.ososalbenaa.com`, and plain HTTP on `ososalbenaa.com` (detected from `X-Forwarded-Proto`), to `https://ososalbenaa.com` in one 301 hop; other hosts (e.g. a host's preview URL) are served as-is; set `ENFORCE_CANONICAL_ORIGIN=false` to turn this off;
 - lowercases URLs and adds the trailing slash, and 301-redirects renamed product URLs (see `movedPaths` in `src/seo.ts`); withdrawn products return 410;
 - serves `/robots.txt` and `/sitemap.xml` (with product images) generated from the product data;
-- compresses responses, caches hashed assets for a year, and sends security headers (HSTS in production).
+- compresses responses, caches hashed assets for a year, and sends security headers (HSTS on HTTPS requests to the preferred origin).
 
 Environment variables: `PORT`, `SITE_URL` (preferred origin, default `https://ososalbenaa.com`), `NODE_ENV=production`, `NOINDEX=true` for a staging deployment, `SITEMAP_LASTMOD` (YYYY-MM-DD).
 
@@ -36,7 +54,7 @@ All SEO rules live in `src/seo.ts`: page titles and descriptions, URL slug rules
 
 ## Staging preview (GitHub Pages)
 
-`.github/workflows/deploy-pages.yml` publishes a **noindex** static preview of `main` to `https://lunad-external.github.io/Osos-AL-Bena-Company/` using `npm run build:pages`. It is for review only and is hidden from search engines; production must use the SSR server above.
+`.github/workflows/deploy-pages.yml` publishes a **noindex** static preview of `main` to `https://lunad-external.github.io/Osos-AL-Bena-Company/` using `npm run build:pages`. It is for review only and is hidden from search engines; production uses the cPanel static build or the SSR server above.
 
 ## Edit content without editing components
 
